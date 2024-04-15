@@ -25,9 +25,9 @@ namespace QuanLyKS
 
         private void continueBtn_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(mailTb.Text))
+            if(string.IsNullOrEmpty(txbMail.Text))
             {
-                mEp.SetError(mailTb, "Please enter your mail!");
+                mEp.SetError(txbMail, "Please enter your mail!");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace QuanLyKS
                 SmtpClient smtp = new SmtpClient();
 
                 message.From = new MailAddress("Hotel.HL.BB@gmail.com");
-                message.To.Add(new MailAddress(mailTb.Text));
+                message.To.Add(new MailAddress(txbMail.Text));
                 message.Subject = title;
                 message.Body = body;
 

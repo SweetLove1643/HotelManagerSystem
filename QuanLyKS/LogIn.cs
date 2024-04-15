@@ -18,11 +18,11 @@ namespace QuanLyKS
         public LogIn()
         {
             InitializeComponent();
-            loginBtn.Click += loginBtn_Click;
-            hideBtn.MouseDown += hideBtn_MouseDown;
-            hideBtn.MouseUp += hideBtn_MouseUp;
-            passwordTb.Enter += passwordTb_Enter;
-            passwordTb.Leave += passwordTb_Leave;
+            btnLogin.Click += loginBtn_Click;
+            btnHidePass.MouseDown += hideBtn_MouseDown;
+            btnHidePass.MouseUp += hideBtn_MouseUp;
+            txbPassword.Enter += passwordTb_Enter;
+            txbPassword.Leave += passwordTb_Leave;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -36,19 +36,19 @@ namespace QuanLyKS
             usnblank.Visible = false;
             pwblank.Visible = false;
             invalidup.Visible = false;
-            if (string.IsNullOrEmpty(usernameTb.Text))
+            if (string.IsNullOrEmpty(txbUsername.Text))
             {
                 warningIcon.Visible = true;
                 usnblank.Visible = true;
                 return;
             }
-            else if (string.IsNullOrEmpty(passwordTb.Text))
+            else if (string.IsNullOrEmpty(txbPassword.Text))
             {
                 warningIcon.Visible = true;
                 pwblank.Visible = true;
                 return;
             }
-            if (usernameTb.Text != username || passwordTb.Text!=password)
+            if (txbUsername.Text != username || txbPassword.Text!=password)
             {
                 warningIcon.Visible = true;
                 invalidup.Visible = true;
@@ -64,8 +64,8 @@ namespace QuanLyKS
         {
             if (e.KeyCode == Keys.Enter)
             {
-                passwordTb.Focus();
-                passwordTb.SelectAll();
+                txbPassword.Focus();
+                txbPassword.SelectAll();
                 e.Handled = true;
             }
         }
@@ -74,51 +74,51 @@ namespace QuanLyKS
         {
             if(e.KeyCode==Keys.Enter)
             {
-                loginBtn.PerformClick();
+                btnLogin.PerformClick();
                 e.Handled = true;
             }
         }
 
         private void usernameTb_DoubleClick(object sender, EventArgs e)
         {
-            usernameTb.SelectAll();
+            txbUsername.SelectAll();
         }
 
         private void passwordTb_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            passwordTb.SelectAll();
+            txbPassword.SelectAll();
         }
 
         private void logupBt_Click(object sender, EventArgs e)
         {
             SignUp dangky = new SignUp();
-            dangky.Show();
             this.Hide();
+            dangky.ShowDialog();
         }
 
         private void passwordTb_Enter(object sender, EventArgs e)
         {
-            hideBtn.Visible = true;
+            btnHidePass.Visible = true;
         }
 
         private void passwordTb_Leave(object sender, EventArgs e)
         {
-            hideBtn.Visible = false;
+            btnHidePass.Visible = false;
         }
 
         private void hideBtn_MouseDown(object sender, MouseEventArgs e)
         {
-            hideBtn.Visible = false;
+            btnHidePass.Visible = false;
             viewBtn.Visible = true;
-            passwordTb.UseSystemPasswordChar = false;
-            passwordTb.PasswordChar = '\0';
+            txbPassword.UseSystemPasswordChar = false;
+            txbPassword.PasswordChar = '\0';
         }
         
         private void hideBtn_MouseUp(object sender, MouseEventArgs e)
         {
-            hideBtn.Visible = true;
+            btnHidePass.Visible = true;
             viewBtn.Visible = false;
-            passwordTb.UseSystemPasswordChar = true;
+            txbPassword.UseSystemPasswordChar = true;
         }
 
         private void forgotLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

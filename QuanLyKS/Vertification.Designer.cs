@@ -32,14 +32,14 @@ namespace QuanLyKS
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vertification));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.noteTb = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.vcTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbOTP = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.continueBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
             this.vcEp = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vcEp)).BeginInit();
@@ -58,41 +58,41 @@ namespace QuanLyKS
             this.guna2CirclePictureBox1.TabIndex = 25;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // exitBtn
+            // btnExit
             // 
-            this.exitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.exitBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exitBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
-            this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.exitBtn.Location = new System.Drawing.Point(640, 10);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(50, 40);
-            this.exitBtn.TabIndex = 27;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(640, 10);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 40);
+            this.btnExit.TabIndex = 27;
+            this.btnExit.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // backBtn
+            // btnBack
             // 
-            this.backBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.backBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.backBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.backBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.backBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.backBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.backBtn.ForeColor = System.Drawing.Color.White;
-            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
-            this.backBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.backBtn.Location = new System.Drawing.Point(10, 260);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(40, 40);
-            this.backBtn.TabIndex = 37;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Location = new System.Drawing.Point(10, 260);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 37;
+            this.btnBack.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -124,33 +124,33 @@ namespace QuanLyKS
             this.noteTb.TabIndex = 40;
             this.noteTb.Text = null;
             // 
-            // vcTb
+            // txbOTP
             // 
-            this.vcTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.vcTb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.vcTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.vcTb.BorderThickness = 0;
-            this.vcTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.vcTb.DefaultText = "";
-            this.vcTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.vcTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.vcTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.vcTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.vcTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.vcTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.vcTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.vcTb.ForeColor = System.Drawing.Color.Black;
-            this.vcTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.vcTb.IconLeft = ((System.Drawing.Image)(resources.GetObject("vcTb.IconLeft")));
-            this.vcTb.Location = new System.Drawing.Point(115, 150);
-            this.vcTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.vcTb.Name = "vcTb";
-            this.vcTb.PasswordChar = '\0';
-            this.vcTb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.vcTb.PlaceholderText = "Vertification code";
-            this.vcTb.SelectedText = "";
-            this.vcTb.Size = new System.Drawing.Size(480, 50);
-            this.vcTb.TabIndex = 41;
+            this.txbOTP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbOTP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbOTP.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbOTP.BorderThickness = 0;
+            this.txbOTP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbOTP.DefaultText = "";
+            this.txbOTP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbOTP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbOTP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbOTP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbOTP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbOTP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbOTP.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbOTP.ForeColor = System.Drawing.Color.Black;
+            this.txbOTP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbOTP.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbOTP.IconLeft")));
+            this.txbOTP.Location = new System.Drawing.Point(115, 150);
+            this.txbOTP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbOTP.Name = "txbOTP";
+            this.txbOTP.PasswordChar = '\0';
+            this.txbOTP.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbOTP.PlaceholderText = "Vertification code";
+            this.txbOTP.SelectedText = "";
+            this.txbOTP.Size = new System.Drawing.Size(480, 50);
+            this.txbOTP.TabIndex = 41;
             // 
             // guna2Panel1
             // 
@@ -160,23 +160,23 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(480, 1);
             this.guna2Panel1.TabIndex = 42;
             // 
-            // continueBtn
+            // btnContinue
             // 
-            this.continueBtn.BorderRadius = 5;
-            this.continueBtn.BorderThickness = 1;
-            this.continueBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.continueBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.continueBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.continueBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.continueBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.continueBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.continueBtn.ForeColor = System.Drawing.Color.Black;
-            this.continueBtn.Location = new System.Drawing.Point(265, 230);
-            this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(180, 45);
-            this.continueBtn.TabIndex = 43;
-            this.continueBtn.Text = "Continue";
-            this.continueBtn.Click += new System.EventHandler(this.continueBtn_Click);
+            this.btnContinue.BorderRadius = 5;
+            this.btnContinue.BorderThickness = 1;
+            this.btnContinue.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnContinue.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnContinue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnContinue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnContinue.FillColor = System.Drawing.Color.LightCoral;
+            this.btnContinue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnContinue.ForeColor = System.Drawing.Color.Black;
+            this.btnContinue.Location = new System.Drawing.Point(265, 230);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(180, 45);
+            this.btnContinue.TabIndex = 43;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
             // vcEp
             // 
@@ -184,18 +184,20 @@ namespace QuanLyKS
             // 
             // Vertification
             // 
+            this.AcceptButton = this.btnContinue;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 310);
-            this.Controls.Add(this.continueBtn);
+            this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.vcTb);
+            this.Controls.Add(this.txbOTP);
             this.Controls.Add(this.noteTb);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Vertification";
@@ -210,14 +212,14 @@ namespace QuanLyKS
         #endregion
 
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button exitBtn;
-        private Guna.UI2.WinForms.Guna2Button backBtn;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel noteTb;
-        private Guna.UI2.WinForms.Guna2TextBox vcTb;
+        private Guna.UI2.WinForms.Guna2TextBox txbOTP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button continueBtn;
+        private Guna.UI2.WinForms.Guna2Button btnContinue;
         private System.Windows.Forms.ErrorProvider vcEp;
     }
 }

@@ -32,19 +32,19 @@ namespace QuanLyKS
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPassword));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.npwTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbNewPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cnpwTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbConfirmNewPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.viewnpwBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.hidenpwBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHideNewPassword = new Guna.UI2.WinForms.Guna2Button();
             this.viewcnpwBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.hidecnpwBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.continueBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.backBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHideConfirmNewPassword = new Guna.UI2.WinForms.Guna2Button();
+            this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.npEp = new System.Windows.Forms.ErrorProvider(this.components);
             this.cnpEp = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -65,23 +65,23 @@ namespace QuanLyKS
             this.guna2CirclePictureBox1.TabIndex = 26;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // exitBtn
+            // btnExit
             // 
-            this.exitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.exitBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exitBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
-            this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.exitBtn.Location = new System.Drawing.Point(640, 10);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(50, 40);
-            this.exitBtn.TabIndex = 28;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(640, 10);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 40);
+            this.btnExit.TabIndex = 28;
+            this.btnExit.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -102,36 +102,36 @@ namespace QuanLyKS
             this.guna2Panel2.Size = new System.Drawing.Size(285, 1);
             this.guna2Panel2.TabIndex = 40;
             // 
-            // npwTb
+            // txbNewPassword
             // 
-            this.npwTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.npwTb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.npwTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.npwTb.BorderThickness = 0;
-            this.npwTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.npwTb.DefaultText = "";
-            this.npwTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.npwTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.npwTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.npwTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.npwTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.npwTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.npwTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.npwTb.ForeColor = System.Drawing.Color.Black;
-            this.npwTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.npwTb.IconLeft = ((System.Drawing.Image)(resources.GetObject("npwTb.IconLeft")));
-            this.npwTb.Location = new System.Drawing.Point(115, 115);
-            this.npwTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.npwTb.Name = "npwTb";
-            this.npwTb.PasswordChar = '●';
-            this.npwTb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.npwTb.PlaceholderText = "New password";
-            this.npwTb.SelectedText = "";
-            this.npwTb.Size = new System.Drawing.Size(480, 50);
-            this.npwTb.TabIndex = 42;
-            this.npwTb.UseSystemPasswordChar = true;
-            this.npwTb.Enter += new System.EventHandler(this.npwTb_Enter);
-            this.npwTb.Leave += new System.EventHandler(this.npwTb_Leave);
+            this.txbNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNewPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNewPassword.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbNewPassword.BorderThickness = 0;
+            this.txbNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbNewPassword.DefaultText = "";
+            this.txbNewPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbNewPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbNewPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbNewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbNewPassword.ForeColor = System.Drawing.Color.Black;
+            this.txbNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbNewPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbNewPassword.IconLeft")));
+            this.txbNewPassword.Location = new System.Drawing.Point(115, 115);
+            this.txbNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbNewPassword.Name = "txbNewPassword";
+            this.txbNewPassword.PasswordChar = '●';
+            this.txbNewPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbNewPassword.PlaceholderText = "New password";
+            this.txbNewPassword.SelectedText = "";
+            this.txbNewPassword.Size = new System.Drawing.Size(480, 50);
+            this.txbNewPassword.TabIndex = 42;
+            this.txbNewPassword.UseSystemPasswordChar = true;
+            this.txbNewPassword.Enter += new System.EventHandler(this.npwTb_Enter);
+            this.txbNewPassword.Leave += new System.EventHandler(this.npwTb_Leave);
             // 
             // guna2Panel1
             // 
@@ -141,36 +141,36 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(480, 1);
             this.guna2Panel1.TabIndex = 43;
             // 
-            // cnpwTb
+            // txbConfirmNewPassword
             // 
-            this.cnpwTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cnpwTb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cnpwTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.cnpwTb.BorderThickness = 0;
-            this.cnpwTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cnpwTb.DefaultText = "";
-            this.cnpwTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.cnpwTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.cnpwTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cnpwTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.cnpwTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cnpwTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cnpwTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cnpwTb.ForeColor = System.Drawing.Color.Black;
-            this.cnpwTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cnpwTb.IconLeft = ((System.Drawing.Image)(resources.GetObject("cnpwTb.IconLeft")));
-            this.cnpwTb.Location = new System.Drawing.Point(115, 185);
-            this.cnpwTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cnpwTb.Name = "cnpwTb";
-            this.cnpwTb.PasswordChar = '●';
-            this.cnpwTb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.cnpwTb.PlaceholderText = "Confirm your new password";
-            this.cnpwTb.SelectedText = "";
-            this.cnpwTb.Size = new System.Drawing.Size(480, 50);
-            this.cnpwTb.TabIndex = 44;
-            this.cnpwTb.UseSystemPasswordChar = true;
-            this.cnpwTb.Enter += new System.EventHandler(this.cnpwTb_Enter);
-            this.cnpwTb.Leave += new System.EventHandler(this.cnpwTb_Leave);
+            this.txbConfirmNewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbConfirmNewPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbConfirmNewPassword.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbConfirmNewPassword.BorderThickness = 0;
+            this.txbConfirmNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbConfirmNewPassword.DefaultText = "";
+            this.txbConfirmNewPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbConfirmNewPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbConfirmNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbConfirmNewPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbConfirmNewPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbConfirmNewPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbConfirmNewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbConfirmNewPassword.ForeColor = System.Drawing.Color.Black;
+            this.txbConfirmNewPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbConfirmNewPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbConfirmNewPassword.IconLeft")));
+            this.txbConfirmNewPassword.Location = new System.Drawing.Point(115, 185);
+            this.txbConfirmNewPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbConfirmNewPassword.Name = "txbConfirmNewPassword";
+            this.txbConfirmNewPassword.PasswordChar = '●';
+            this.txbConfirmNewPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbConfirmNewPassword.PlaceholderText = "Confirm your new password";
+            this.txbConfirmNewPassword.SelectedText = "";
+            this.txbConfirmNewPassword.Size = new System.Drawing.Size(480, 50);
+            this.txbConfirmNewPassword.TabIndex = 44;
+            this.txbConfirmNewPassword.UseSystemPasswordChar = true;
+            this.txbConfirmNewPassword.Enter += new System.EventHandler(this.cnpwTb_Enter);
+            this.txbConfirmNewPassword.Leave += new System.EventHandler(this.cnpwTb_Leave);
             // 
             // guna2Panel3
             // 
@@ -201,25 +201,25 @@ namespace QuanLyKS
             this.viewnpwBtn.TabIndex = 50;
             this.viewnpwBtn.Visible = false;
             // 
-            // hidenpwBtn
+            // btnHideNewPassword
             // 
-            this.hidenpwBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.hidenpwBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.hidenpwBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.hidenpwBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.hidenpwBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidenpwBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hidenpwBtn.ForeColor = System.Drawing.Color.White;
-            this.hidenpwBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidenpwBtn.Image = ((System.Drawing.Image)(resources.GetObject("hidenpwBtn.Image")));
-            this.hidenpwBtn.Location = new System.Drawing.Point(565, 130);
-            this.hidenpwBtn.Name = "hidenpwBtn";
-            this.hidenpwBtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidenpwBtn.Size = new System.Drawing.Size(30, 20);
-            this.hidenpwBtn.TabIndex = 51;
-            this.hidenpwBtn.Visible = false;
-            this.hidenpwBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hidenpwBtn_MouseDown);
-            this.hidenpwBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hidenpwBtn_MouseUp);
+            this.btnHideNewPassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHideNewPassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHideNewPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHideNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHideNewPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideNewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHideNewPassword.ForeColor = System.Drawing.Color.White;
+            this.btnHideNewPassword.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideNewPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnHideNewPassword.Image")));
+            this.btnHideNewPassword.Location = new System.Drawing.Point(565, 130);
+            this.btnHideNewPassword.Name = "btnHideNewPassword";
+            this.btnHideNewPassword.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideNewPassword.Size = new System.Drawing.Size(30, 20);
+            this.btnHideNewPassword.TabIndex = 51;
+            this.btnHideNewPassword.Visible = false;
+            this.btnHideNewPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hidenpwBtn_MouseDown);
+            this.btnHideNewPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hidenpwBtn_MouseUp);
             // 
             // viewcnpwBtn
             // 
@@ -242,61 +242,61 @@ namespace QuanLyKS
             this.viewcnpwBtn.TabIndex = 52;
             this.viewcnpwBtn.Visible = false;
             // 
-            // hidecnpwBtn
+            // btnHideConfirmNewPassword
             // 
-            this.hidecnpwBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.hidecnpwBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.hidecnpwBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.hidecnpwBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.hidecnpwBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidecnpwBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hidecnpwBtn.ForeColor = System.Drawing.Color.White;
-            this.hidecnpwBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidecnpwBtn.Image = ((System.Drawing.Image)(resources.GetObject("hidecnpwBtn.Image")));
-            this.hidecnpwBtn.Location = new System.Drawing.Point(565, 200);
-            this.hidecnpwBtn.Name = "hidecnpwBtn";
-            this.hidecnpwBtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hidecnpwBtn.Size = new System.Drawing.Size(30, 20);
-            this.hidecnpwBtn.TabIndex = 53;
-            this.hidecnpwBtn.Visible = false;
-            this.hidecnpwBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hidecnpwBtn_MouseDown);
-            this.hidecnpwBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hidecnpwBtn_MouseUp);
+            this.btnHideConfirmNewPassword.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHideConfirmNewPassword.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHideConfirmNewPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHideConfirmNewPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHideConfirmNewPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideConfirmNewPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHideConfirmNewPassword.ForeColor = System.Drawing.Color.White;
+            this.btnHideConfirmNewPassword.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideConfirmNewPassword.Image = ((System.Drawing.Image)(resources.GetObject("btnHideConfirmNewPassword.Image")));
+            this.btnHideConfirmNewPassword.Location = new System.Drawing.Point(565, 200);
+            this.btnHideConfirmNewPassword.Name = "btnHideConfirmNewPassword";
+            this.btnHideConfirmNewPassword.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHideConfirmNewPassword.Size = new System.Drawing.Size(30, 20);
+            this.btnHideConfirmNewPassword.TabIndex = 53;
+            this.btnHideConfirmNewPassword.Visible = false;
+            this.btnHideConfirmNewPassword.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hidecnpwBtn_MouseDown);
+            this.btnHideConfirmNewPassword.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hidecnpwBtn_MouseUp);
             // 
-            // continueBtn
+            // btnContinue
             // 
-            this.continueBtn.BorderRadius = 5;
-            this.continueBtn.BorderThickness = 1;
-            this.continueBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.continueBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.continueBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.continueBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.continueBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.continueBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.continueBtn.ForeColor = System.Drawing.Color.Black;
-            this.continueBtn.Location = new System.Drawing.Point(260, 270);
-            this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(180, 45);
-            this.continueBtn.TabIndex = 54;
-            this.continueBtn.Text = "Continue";
-            this.continueBtn.Click += new System.EventHandler(this.continueBtn_Click);
+            this.btnContinue.BorderRadius = 5;
+            this.btnContinue.BorderThickness = 1;
+            this.btnContinue.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnContinue.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnContinue.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnContinue.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnContinue.FillColor = System.Drawing.Color.LightCoral;
+            this.btnContinue.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnContinue.ForeColor = System.Drawing.Color.Black;
+            this.btnContinue.Location = new System.Drawing.Point(260, 270);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(180, 45);
+            this.btnContinue.TabIndex = 54;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
-            // backBtn
+            // btnBack
             // 
-            this.backBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.backBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.backBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.backBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.backBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.backBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.backBtn.ForeColor = System.Drawing.Color.White;
-            this.backBtn.Image = ((System.Drawing.Image)(resources.GetObject("backBtn.Image")));
-            this.backBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.backBtn.Location = new System.Drawing.Point(10, 300);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(40, 40);
-            this.backBtn.TabIndex = 55;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Location = new System.Drawing.Point(10, 300);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 55;
+            this.btnBack.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // npEp
             // 
@@ -308,23 +308,25 @@ namespace QuanLyKS
             // 
             // NewPassword
             // 
+            this.AcceptButton = this.btnContinue;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 350);
-            this.Controls.Add(this.backBtn);
-            this.Controls.Add(this.continueBtn);
-            this.Controls.Add(this.hidecnpwBtn);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.btnHideConfirmNewPassword);
             this.Controls.Add(this.viewcnpwBtn);
-            this.Controls.Add(this.hidenpwBtn);
+            this.Controls.Add(this.btnHideNewPassword);
             this.Controls.Add(this.viewnpwBtn);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.cnpwTb);
+            this.Controls.Add(this.txbConfirmNewPassword);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.npwTb);
+            this.Controls.Add(this.txbNewPassword);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Controls.Add(this.exitBtn);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NewPassword";
@@ -340,19 +342,19 @@ namespace QuanLyKS
         #endregion
 
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button exitBtn;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox npwTb;
+        private Guna.UI2.WinForms.Guna2TextBox txbNewPassword;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox cnpwTb;
+        private Guna.UI2.WinForms.Guna2TextBox txbConfirmNewPassword;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Button viewnpwBtn;
-        private Guna.UI2.WinForms.Guna2Button hidenpwBtn;
+        private Guna.UI2.WinForms.Guna2Button btnHideNewPassword;
         private Guna.UI2.WinForms.Guna2Button viewcnpwBtn;
-        private Guna.UI2.WinForms.Guna2Button hidecnpwBtn;
-        private Guna.UI2.WinForms.Guna2Button continueBtn;
-        private Guna.UI2.WinForms.Guna2Button backBtn;
+        private Guna.UI2.WinForms.Guna2Button btnHideConfirmNewPassword;
+        private Guna.UI2.WinForms.Guna2Button btnContinue;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.ErrorProvider npEp;
         private System.Windows.Forms.ErrorProvider cnpEp;
     }

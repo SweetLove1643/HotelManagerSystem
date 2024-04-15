@@ -19,7 +19,7 @@ namespace QuanLyKS
             fpF = fp;
             if(fp != null)
             {
-                string mail = fp.mailTb.Text;
+                string mail = fp.txbMail.Text;
                 noteTb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
             }
         }
@@ -37,9 +37,9 @@ namespace QuanLyKS
 
         private void continueBtn_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(vcTb.Text))
+            if(string.IsNullOrEmpty(txbOTP.Text))
             {
-                vcEp.SetError(vcTb, "Please enter the vertification code!");
+                vcEp.SetError(txbOTP, "Please enter the vertification code!");
             }
             else
             {

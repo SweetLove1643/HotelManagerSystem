@@ -19,65 +19,65 @@ namespace QuanLyKS
 
             vcF = vc;
 
-            hidenpwBtn.MouseDown += hidenpwBtn_MouseDown;
-            hidenpwBtn.MouseUp += hidenpwBtn_MouseUp;
-            npwTb.Enter += npwTb_Enter;
-            npwTb.Leave += npwTb_Leave;
+            btnHideNewPassword.MouseDown += hidenpwBtn_MouseDown;
+            btnHideNewPassword.MouseUp += hidenpwBtn_MouseUp;
+            txbNewPassword.Enter += npwTb_Enter;
+            txbNewPassword.Leave += npwTb_Leave;
 
-            hidecnpwBtn.MouseDown += hidecnpwBtn_MouseDown;
-            hidecnpwBtn.MouseUp += hidecnpwBtn_MouseUp;
-            cnpwTb.Enter += cnpwTb_Enter;
-            cnpwTb.Leave += cnpwTb_Leave;
+            btnHideConfirmNewPassword.MouseDown += hidecnpwBtn_MouseDown;
+            btnHideConfirmNewPassword.MouseUp += hidecnpwBtn_MouseUp;
+            txbConfirmNewPassword.Enter += cnpwTb_Enter;
+            txbConfirmNewPassword.Leave += cnpwTb_Leave;
         }
 
         private void npwTb_Enter(object sender, EventArgs e)
         {
-            hidenpwBtn.Visible = true;
+            btnHideNewPassword.Visible = true;
         }
 
         private void npwTb_Leave(object sender, EventArgs e)
         {
-            hidenpwBtn.Visible = false;
+            btnHideNewPassword.Visible = false;
         }
 
         private void hidenpwBtn_MouseDown(object sender, MouseEventArgs e)
         {
-            hidenpwBtn.Visible = false;
+            btnHideNewPassword.Visible = false;
             viewnpwBtn.Visible = true;
-            npwTb.UseSystemPasswordChar = false;
-            npwTb.PasswordChar = '\0';
+            txbNewPassword.UseSystemPasswordChar = false;
+            txbNewPassword.PasswordChar = '\0';
         }
 
         private void hidenpwBtn_MouseUp(object sender, MouseEventArgs e)
         {
-            hidenpwBtn.Visible = true;
+            btnHideNewPassword.Visible = true;
             viewnpwBtn.Visible = false;
-            npwTb.UseSystemPasswordChar = true;
+            txbNewPassword.UseSystemPasswordChar = true;
         }
 
         private void cnpwTb_Enter(object sender, EventArgs e)
         {
-            hidecnpwBtn.Visible = true;
+            btnHideConfirmNewPassword.Visible = true;
         }
 
         private void cnpwTb_Leave(object sender, EventArgs e)
         {
-            hidecnpwBtn.Visible = false;
+            btnHideConfirmNewPassword.Visible = false;
         }
 
         private void hidecnpwBtn_MouseDown(object sender, MouseEventArgs e)
         {
-            hidecnpwBtn.Visible = false;
+            btnHideConfirmNewPassword.Visible = false;
             viewcnpwBtn.Visible = true;
-            cnpwTb.UseSystemPasswordChar = false;
-            cnpwTb.PasswordChar = '\0';
+            txbConfirmNewPassword.UseSystemPasswordChar = false;
+            txbConfirmNewPassword.PasswordChar = '\0';
         }
 
         private void hidecnpwBtn_MouseUp(object sender, MouseEventArgs e)
         {
-            hidecnpwBtn.Visible = true;
+            btnHideConfirmNewPassword.Visible = true;
             viewcnpwBtn.Visible = false;
-            cnpwTb.UseSystemPasswordChar = true;
+            txbConfirmNewPassword.UseSystemPasswordChar = true;
         }
 
         private void exitBtn_Click(object sender, EventArgs e)

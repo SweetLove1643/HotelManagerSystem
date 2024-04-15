@@ -16,3 +16,19 @@ C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPas
 C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
 C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Signup.resources
 C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe.config
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.pdb
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\Guna.UI2.dll
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.LogIn.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.SignUp.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CopyComplete
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.exe
+C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.pdb

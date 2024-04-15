@@ -32,19 +32,19 @@ namespace QuanLyKS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.usernameTb = new Guna.UI2.WinForms.Guna2TextBox();
-            this.passwordTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.warningIcon = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.loginBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.invalidup = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.forgotLink = new System.Windows.Forms.LinkLabel();
-            this.logupBt = new Guna.UI2.WinForms.Guna2Button();
+            this.btnForgetPass = new System.Windows.Forms.LinkLabel();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.usnblank = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pwblank = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.viewBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.hideBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHidePass = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warningIcon)).BeginInit();
             this.SuspendLayout();
@@ -67,68 +67,68 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(470, 1);
             this.guna2Panel1.TabIndex = 3;
             // 
-            // usernameTb
+            // txbUsername
             // 
-            this.usernameTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.usernameTb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.usernameTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.usernameTb.BorderThickness = 0;
-            this.usernameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usernameTb.DefaultText = "";
-            this.usernameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.usernameTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.usernameTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.usernameTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.usernameTb.ForeColor = System.Drawing.Color.Black;
-            this.usernameTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameTb.IconLeft = ((System.Drawing.Image)(resources.GetObject("usernameTb.IconLeft")));
-            this.usernameTb.Location = new System.Drawing.Point(110, 195);
-            this.usernameTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.usernameTb.Name = "usernameTb";
-            this.usernameTb.PasswordChar = '\0';
-            this.usernameTb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.usernameTb.PlaceholderText = "Username";
-            this.usernameTb.SelectedText = "";
-            this.usernameTb.Size = new System.Drawing.Size(470, 50);
-            this.usernameTb.TabIndex = 4;
-            this.usernameTb.DoubleClick += new System.EventHandler(this.usernameTb_DoubleClick);
-            this.usernameTb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameTb_KeyDown);
+            this.txbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbUsername.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbUsername.BorderThickness = 0;
+            this.txbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbUsername.DefaultText = "";
+            this.txbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbUsername.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbUsername.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbUsername.ForeColor = System.Drawing.Color.Black;
+            this.txbUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbUsername.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbUsername.IconLeft")));
+            this.txbUsername.Location = new System.Drawing.Point(110, 195);
+            this.txbUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbUsername.Name = "txbUsername";
+            this.txbUsername.PasswordChar = '\0';
+            this.txbUsername.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbUsername.PlaceholderText = "Username";
+            this.txbUsername.SelectedText = "";
+            this.txbUsername.Size = new System.Drawing.Size(470, 50);
+            this.txbUsername.TabIndex = 4;
+            this.txbUsername.DoubleClick += new System.EventHandler(this.usernameTb_DoubleClick);
+            this.txbUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameTb_KeyDown);
             // 
-            // passwordTb
+            // txbPassword
             // 
-            this.passwordTb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.passwordTb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.passwordTb.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.passwordTb.BorderThickness = 0;
-            this.passwordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passwordTb.DefaultText = "";
-            this.passwordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.passwordTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.passwordTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.passwordTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.passwordTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTb.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.passwordTb.ForeColor = System.Drawing.Color.Black;
-            this.passwordTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTb.IconLeft = ((System.Drawing.Image)(resources.GetObject("passwordTb.IconLeft")));
-            this.passwordTb.Location = new System.Drawing.Point(110, 265);
-            this.passwordTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.passwordTb.Name = "passwordTb";
-            this.passwordTb.PasswordChar = '●';
-            this.passwordTb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.passwordTb.PlaceholderText = "Password";
-            this.passwordTb.SelectedText = "";
-            this.passwordTb.Size = new System.Drawing.Size(470, 50);
-            this.passwordTb.TabIndex = 5;
-            this.passwordTb.UseSystemPasswordChar = true;
-            this.passwordTb.Enter += new System.EventHandler(this.passwordTb_Enter);
-            this.passwordTb.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTb_KeyDown);
-            this.passwordTb.Leave += new System.EventHandler(this.passwordTb_Leave);
-            this.passwordTb.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.passwordTb_MouseDoubleClick);
+            this.txbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbPassword.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbPassword.BorderThickness = 0;
+            this.txbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbPassword.DefaultText = "";
+            this.txbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbPassword.ForeColor = System.Drawing.Color.Black;
+            this.txbPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPassword.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbPassword.IconLeft")));
+            this.txbPassword.Location = new System.Drawing.Point(110, 265);
+            this.txbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '●';
+            this.txbPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbPassword.PlaceholderText = "Password";
+            this.txbPassword.SelectedText = "";
+            this.txbPassword.Size = new System.Drawing.Size(470, 50);
+            this.txbPassword.TabIndex = 5;
+            this.txbPassword.UseSystemPasswordChar = true;
+            this.txbPassword.Enter += new System.EventHandler(this.passwordTb_Enter);
+            this.txbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTb_KeyDown);
+            this.txbPassword.Leave += new System.EventHandler(this.passwordTb_Leave);
+            this.txbPassword.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.passwordTb_MouseDoubleClick);
             // 
             // guna2Panel2
             // 
@@ -151,41 +151,41 @@ namespace QuanLyKS
             this.warningIcon.TabStop = false;
             this.warningIcon.Visible = false;
             // 
-            // loginBtn
+            // btnLogin
             // 
-            this.loginBtn.BorderRadius = 5;
-            this.loginBtn.BorderThickness = 1;
-            this.loginBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.loginBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.loginBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.loginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.loginBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.loginBtn.ForeColor = System.Drawing.Color.Black;
-            this.loginBtn.Location = new System.Drawing.Point(270, 380);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(180, 45);
-            this.loginBtn.TabIndex = 9;
-            this.loginBtn.Text = "Log in";
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.btnLogin.BorderRadius = 5;
+            this.btnLogin.BorderThickness = 1;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.LightCoral;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(270, 380);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(180, 45);
+            this.btnLogin.TabIndex = 9;
+            this.btnLogin.Text = "Log in";
+            this.btnLogin.Click += new System.EventHandler(this.loginBtn_Click);
             // 
-            // guna2Button2
+            // btnExit
             // 
-            this.guna2Button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(640, 10);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(50, 40);
-            this.guna2Button2.TabIndex = 11;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(640, 10);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 40);
+            this.btnExit.TabIndex = 11;
+            this.btnExit.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // invalidup
             // 
@@ -199,38 +199,38 @@ namespace QuanLyKS
             this.invalidup.Text = "Invalid username or password";
             this.invalidup.Visible = false;
             // 
-            // forgotLink
+            // btnForgetPass
             // 
-            this.forgotLink.AutoSize = true;
-            this.forgotLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.forgotLink.ForeColor = System.Drawing.Color.Gray;
-            this.forgotLink.LinkColor = System.Drawing.Color.Gray;
-            this.forgotLink.Location = new System.Drawing.Point(435, 326);
-            this.forgotLink.Name = "forgotLink";
-            this.forgotLink.Size = new System.Drawing.Size(153, 17);
-            this.forgotLink.TabIndex = 10;
-            this.forgotLink.TabStop = true;
-            this.forgotLink.Text = "Forgot your password?";
-            this.forgotLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotLink_LinkClicked);
+            this.btnForgetPass.AutoSize = true;
+            this.btnForgetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnForgetPass.ForeColor = System.Drawing.Color.Gray;
+            this.btnForgetPass.LinkColor = System.Drawing.Color.Gray;
+            this.btnForgetPass.Location = new System.Drawing.Point(435, 326);
+            this.btnForgetPass.Name = "btnForgetPass";
+            this.btnForgetPass.Size = new System.Drawing.Size(144, 16);
+            this.btnForgetPass.TabIndex = 10;
+            this.btnForgetPass.TabStop = true;
+            this.btnForgetPass.Text = "Forgot your password?";
+            this.btnForgetPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotLink_LinkClicked);
             // 
-            // logupBt
+            // btnSignUp
             // 
-            this.logupBt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.logupBt.BorderRadius = 5;
-            this.logupBt.BorderThickness = 1;
-            this.logupBt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.logupBt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.logupBt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.logupBt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.logupBt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.logupBt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.logupBt.ForeColor = System.Drawing.Color.Black;
-            this.logupBt.Location = new System.Drawing.Point(270, 445);
-            this.logupBt.Name = "logupBt";
-            this.logupBt.Size = new System.Drawing.Size(180, 26);
-            this.logupBt.TabIndex = 13;
-            this.logupBt.Text = "Sign up";
-            this.logupBt.Click += new System.EventHandler(this.logupBt_Click);
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnSignUp.BorderRadius = 5;
+            this.btnSignUp.BorderThickness = 1;
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignUp.ForeColor = System.Drawing.Color.Black;
+            this.btnSignUp.Location = new System.Drawing.Point(270, 445);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(180, 26);
+            this.btnSignUp.TabIndex = 13;
+            this.btnSignUp.Text = "Sign up";
+            this.btnSignUp.Click += new System.EventHandler(this.logupBt_Click);
             // 
             // usnblank
             // 
@@ -277,55 +277,55 @@ namespace QuanLyKS
             this.viewBtn.TabIndex = 16;
             this.viewBtn.Visible = false;
             // 
-            // hideBtn
+            // btnHidePass
             // 
-            this.hideBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.hideBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.hideBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.hideBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.hideBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hideBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.hideBtn.ForeColor = System.Drawing.Color.White;
-            this.hideBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hideBtn.Image = ((System.Drawing.Image)(resources.GetObject("hideBtn.Image")));
-            this.hideBtn.Location = new System.Drawing.Point(550, 278);
-            this.hideBtn.Name = "hideBtn";
-            this.hideBtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.hideBtn.Size = new System.Drawing.Size(30, 20);
-            this.hideBtn.TabIndex = 17;
-            this.hideBtn.Visible = false;
-            this.hideBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hideBtn_MouseDown);
-            this.hideBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hideBtn_MouseUp);
+            this.btnHidePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHidePass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHidePass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHidePass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHidePass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHidePass.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHidePass.ForeColor = System.Drawing.Color.White;
+            this.btnHidePass.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHidePass.Image = ((System.Drawing.Image)(resources.GetObject("btnHidePass.Image")));
+            this.btnHidePass.Location = new System.Drawing.Point(550, 278);
+            this.btnHidePass.Name = "btnHidePass";
+            this.btnHidePass.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnHidePass.Size = new System.Drawing.Size(30, 20);
+            this.btnHidePass.TabIndex = 17;
+            this.btnHidePass.Visible = false;
+            this.btnHidePass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hideBtn_MouseDown);
+            this.btnHidePass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hideBtn_MouseUp);
             // 
-            // Login
+            // LogIn
             // 
-            this.AcceptButton = this.loginBtn;
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = global::QuanLyKS.Properties.Resources.Screenshot_2024_04_05_133738;
-            this.CancelButton = this.guna2Button2;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 500);
-            this.Controls.Add(this.hideBtn);
+            this.Controls.Add(this.btnHidePass);
             this.Controls.Add(this.viewBtn);
             this.Controls.Add(this.pwblank);
             this.Controls.Add(this.usnblank);
-            this.Controls.Add(this.logupBt);
-            this.Controls.Add(this.forgotLink);
+            this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.btnForgetPass);
             this.Controls.Add(this.invalidup);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.warningIcon);
             this.Controls.Add(this.guna2Panel2);
-            this.Controls.Add(this.passwordTb);
-            this.Controls.Add(this.usernameTb);
+            this.Controls.Add(this.txbPassword);
+            this.Controls.Add(this.txbUsername);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Login";
+            this.Name = "LogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -339,19 +339,19 @@ namespace QuanLyKS
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox usernameTb;
-        private Guna.UI2.WinForms.Guna2TextBox passwordTb;
+        private Guna.UI2.WinForms.Guna2TextBox txbUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txbPassword;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2PictureBox warningIcon;
-        private Guna.UI2.WinForms.Guna2Button loginBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2HtmlLabel invalidup;
-        private System.Windows.Forms.LinkLabel forgotLink;
-        private Guna.UI2.WinForms.Guna2Button logupBt;
+        private System.Windows.Forms.LinkLabel btnForgetPass;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
         private Guna.UI2.WinForms.Guna2HtmlLabel usnblank;
         private Guna.UI2.WinForms.Guna2HtmlLabel pwblank;
         private Guna.UI2.WinForms.Guna2Button viewBtn;
-        private Guna.UI2.WinForms.Guna2Button hideBtn;
+        private Guna.UI2.WinForms.Guna2Button btnHidePass;
     }
 }
 

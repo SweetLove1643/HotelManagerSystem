@@ -151,13 +151,6 @@
     <None Include="Resources\Screenshot 2024-04-05 130345.png" />
     <None Include="Resources\Screenshot 2024-04-05 123706.png" />
     <None Include="Resources\Screenshot 2024-04-05 122824.png" />
-    <Content Include="TaiKhoan.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TaiKhoan_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>TaiKhoan.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

@@ -26,15 +26,15 @@ namespace QuanLyKS
             RCeP = new ErrorProvider();
             PeP = new ErrorProvider();
 
-            hidepwBtn.MouseDown += hidepwBtn_MouseDown;
-            hidepwBtn.MouseUp += hidepwBtn_MouseUp;
-            pwTb.Enter += pwTb_Enter;
-            pwTb.Leave += pwTb_Leave;
+            btnHidePass.MouseDown += hidepwBtn_MouseDown;
+            btnHidePass.MouseUp += hidepwBtn_MouseUp;
+            txbPassWord.Enter += pwTb_Enter;
+            txbPassWord.Leave += pwTb_Leave;
 
-            hidecpwBtn.MouseDown += hiderpwBtn_MouseDown;
-            hidecpwBtn.MouseUp += hiderpwBtn_MouseUp;
-            cpwTb.Enter += rpwTb_Enter;
-            cpwTb.Leave += rpwTb_Leave;
+            btnHideConfirmPass.MouseDown += hiderpwBtn_MouseDown;
+            btnHideConfirmPass.MouseUp += hiderpwBtn_MouseUp;
+            txbConfirmPassword.Enter += rpwTb_Enter;
+            txbConfirmPassword.Leave += rpwTb_Leave;
 
             viewpwBtn.Visible = false;
         }
@@ -54,74 +54,74 @@ namespace QuanLyKS
 
         private void Logup_Load(object sender, EventArgs e)
         {
-            maleCheckbox.Checked = true;
-            femaleCheckbox.Checked = false;
+            ChbMale.Checked = true;
+            ChbFemale.Checked = false;
         }
 
         private void maleCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            if (maleCheckbox.Checked == true)
+            if (ChbMale.Checked == true)
             {
-                femaleCheckbox.Checked = false;
+                ChbFemale.Checked = false;
             }
         }
 
         private void femaleCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            if (femaleCheckbox.Checked == true)
+            if (ChbFemale.Checked == true)
             {
-                maleCheckbox.Checked = false;
+                ChbMale.Checked = false;
             }
         }
 
         private void pwTb_Enter(object sender, EventArgs e)
         {
-            hidepwBtn.Visible = true;
+            btnHidePass.Visible = true;
         }
 
         private void pwTb_Leave(object sender, EventArgs e)
         {
-            hidepwBtn.Visible = false;
+            btnHidePass.Visible = false;
         }
 
         private void hidepwBtn_MouseDown(object sender, MouseEventArgs e)
         {
-            hidepwBtn.Visible = false;
+            btnHidePass.Visible = false;
             viewpwBtn.Visible = true;
-            pwTb.UseSystemPasswordChar = false;
-            pwTb.PasswordChar = '\0';
+            txbPassWord.UseSystemPasswordChar = false;
+            txbPassWord.PasswordChar = '\0';
         }
 
         private void hidepwBtn_MouseUp(object sender, MouseEventArgs e)
         {
-            hidepwBtn.Visible = true;
+            btnHidePass.Visible = true;
             viewpwBtn.Visible = false;
-            pwTb.UseSystemPasswordChar = true;
+            txbPassWord.UseSystemPasswordChar = true;
         }
 
         private void rpwTb_Enter(object sender, EventArgs e)
         {
-            hidecpwBtn.Visible = true;
+            btnHideConfirmPass.Visible = true;
         }
 
         private void rpwTb_Leave(object sender, EventArgs e)
         {
-            hidecpwBtn.Visible = false;
+            btnHideConfirmPass.Visible = false;
         }
 
         private void hiderpwBtn_MouseDown(object sender, MouseEventArgs e)
         {
-            hidecpwBtn.Visible = false;
+            btnHideConfirmPass.Visible = false;
             viewcpwBtn.Visible = true;
-            cpwTb.UseSystemPasswordChar = false;
-            cpwTb.PasswordChar = '\0';
+            txbConfirmPassword.UseSystemPasswordChar = false;
+            txbConfirmPassword.PasswordChar = '\0';
         }
 
         private void hiderpwBtn_MouseUp(object sender, MouseEventArgs e)
         {
-            hidecpwBtn.Visible = true;
+            btnHideConfirmPass.Visible = true;
             viewcpwBtn.Visible = false;
-            cpwTb.UseSystemPasswordChar = true;
+            txbConfirmPassword.UseSystemPasswordChar = true;
         }
 
         private void signupBtn_Click(object sender, EventArgs e)
@@ -132,9 +132,9 @@ namespace QuanLyKS
                 ep.Clear();
             }
 
-            if (string.IsNullOrEmpty(fnTb.Text))
+            if (string.IsNullOrEmpty(txbFistName.Text))
             {
-                FNeP.SetError(fnTb, "Please enter your firstname!");
+                FNeP.SetError(txbFistName, "Please enter your firstname!");
             }
             else
             {
@@ -143,9 +143,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(lnTb.Text))
+            if (string.IsNullOrEmpty(txbLastName.Text))
             {
-                LNeP.SetError(lnTb, "Please enter your lastname!");
+                LNeP.SetError(txbLastName, "Please enter your lastname!");
             }
             else
             {
@@ -154,9 +154,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(unTb.Text))
+            if (string.IsNullOrEmpty(txbUserName.Text))
             {
-                UNeP.SetError(unTb, "Please enter your username!");
+                UNeP.SetError(txbUserName, "Please enter your username!");
             }
             else
             {
@@ -165,9 +165,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(pwTb.Text))
+            if (string.IsNullOrEmpty(txbPassWord.Text))
             {
-                PWeP.SetError(pwTb, "Please enter your password!");
+                PWeP.SetError(txbPassWord, "Please enter your password!");
             }
             else
             {
@@ -176,9 +176,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(cpwTb.Text))
+            if (string.IsNullOrEmpty(txbConfirmPassword.Text))
             {
-                CPWeP.SetError(cpwTb, "Please confirm your password!");
+                CPWeP.SetError(txbConfirmPassword, "Please confirm your password!");
             }
             else
             {
@@ -187,9 +187,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(mTb.Text))
+            if (string.IsNullOrEmpty(txbMail.Text))
             {
-                MeP.SetError(mTb, "Please enter your mail!");
+                MeP.SetError(txbMail, "Please enter your mail!");
             }
             else
             {
@@ -198,9 +198,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(rcTb.Text))
+            if (string.IsNullOrEmpty(txbRegistration.Text))
             {
-                RCeP.SetError(rcTb, "Please enter your registration code!");
+                RCeP.SetError(txbRegistration, "Please enter your registration code!");
             }
             else
             {
@@ -209,9 +209,9 @@ namespace QuanLyKS
 
 
 
-            if (string.IsNullOrEmpty(pTb.Text))
+            if (string.IsNullOrEmpty(txbPhone.Text))
             {
-                PeP.SetError(pTb, "Please enter your phone number!");
+                PeP.SetError(txbPhone, "Please enter your phone number!");
             }
             else
             {
