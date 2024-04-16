@@ -15,6 +15,7 @@ namespace QuanLyKS
         public tesst()
         {
             InitializeComponent();
+            //dsssssssssssss
         }
     }
 }
