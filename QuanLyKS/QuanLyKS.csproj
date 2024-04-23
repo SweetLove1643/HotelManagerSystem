@@ -67,13 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="ClassFuncion\DataProvider.cs" />
-    <Compile Include="ClassFuncion\GetAccountDB.cs" />
-    <Compile Include="ClassFuncion\Hashing.cs" />
-    <Compile Include="ClassObject\AccountObject.cs" />
-    <Compile Include="ClassObject\PersonnelObject.cs" />
-=======
+
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +80,6 @@
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
->>>>>>> 4916fdfc9e9c152c35e7cb879a5df7a8e126dbcd
     <Compile Include="ForgottenPassword.cs">
       <SubType>Form</SubType>
     </Compile>
