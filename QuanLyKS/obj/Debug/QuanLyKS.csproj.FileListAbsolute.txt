@@ -56,3 +56,10 @@ C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\Interop.WMPLib.d
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\AxInterop.WMPLib.dll
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.ResolveComReference.cache
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.EmployeeUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Employee.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.Check_inUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.CustomerUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.PaymentUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.RevenueUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.RoomUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.User.resources

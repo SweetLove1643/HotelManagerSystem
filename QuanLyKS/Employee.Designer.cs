@@ -32,33 +32,33 @@ namespace QuanLyKS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.adminBtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.accountBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.employeeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cusomerBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.revenueBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.roomBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.adminBtn = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.accountBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.employeeBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.cusomerBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.revenueBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.roomBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.sidebar.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -90,6 +90,19 @@ namespace QuanLyKS
             this.guna2Panel4.Size = new System.Drawing.Size(237, 62);
             this.guna2Panel4.TabIndex = 2;
             // 
+            // adminBtn
+            // 
+            this.adminBtn.BackColor = System.Drawing.Color.LightCoral;
+            this.adminBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adminBtn.Image = ((System.Drawing.Image)(resources.GetObject("adminBtn.Image")));
+            this.adminBtn.ImageRotate = 0F;
+            this.adminBtn.Location = new System.Drawing.Point(9, 9);
+            this.adminBtn.Name = "adminBtn";
+            this.adminBtn.Size = new System.Drawing.Size(45, 45);
+            this.adminBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.adminBtn.TabIndex = 2;
+            this.adminBtn.TabStop = false;
+            // 
             // guna2Button6
             // 
             this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -116,6 +129,23 @@ namespace QuanLyKS
             this.guna2Panel3.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel3.TabIndex = 1;
             // 
+            // accountBtn
+            // 
+            this.accountBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.accountBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.accountBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.accountBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.accountBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accountBtn.ForeColor = System.Drawing.Color.Black;
+            this.accountBtn.Image = ((System.Drawing.Image)(resources.GetObject("accountBtn.Image")));
+            this.accountBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.accountBtn.Location = new System.Drawing.Point(3, 3);
+            this.accountBtn.Name = "accountBtn";
+            this.accountBtn.Size = new System.Drawing.Size(231, 44);
+            this.accountBtn.TabIndex = 1;
+            this.accountBtn.Text = "Check-in";
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.Controls.Add(this.employeeBtn);
@@ -123,6 +153,23 @@ namespace QuanLyKS
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel2.TabIndex = 3;
+            // 
+            // employeeBtn
+            // 
+            this.employeeBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.employeeBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.employeeBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.employeeBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.employeeBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.employeeBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.employeeBtn.ForeColor = System.Drawing.Color.Black;
+            this.employeeBtn.Image = ((System.Drawing.Image)(resources.GetObject("employeeBtn.Image")));
+            this.employeeBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.employeeBtn.Location = new System.Drawing.Point(3, 3);
+            this.employeeBtn.Name = "employeeBtn";
+            this.employeeBtn.Size = new System.Drawing.Size(231, 44);
+            this.employeeBtn.TabIndex = 1;
+            this.employeeBtn.Text = "Payment";
             // 
             // guna2Panel10
             // 
@@ -132,6 +179,21 @@ namespace QuanLyKS
             this.guna2Panel10.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel10.TabIndex = 5;
             // 
+            // cusomerBtn
+            // 
+            this.cusomerBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.cusomerBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.cusomerBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.cusomerBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.cusomerBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.cusomerBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cusomerBtn.ForeColor = System.Drawing.Color.Black;
+            this.cusomerBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cusomerBtn.Location = new System.Drawing.Point(3, 3);
+            this.cusomerBtn.Name = "cusomerBtn";
+            this.cusomerBtn.Size = new System.Drawing.Size(234, 44);
+            this.cusomerBtn.TabIndex = 1;
+            // 
             // guna2Panel9
             // 
             this.guna2Panel9.Controls.Add(this.revenueBtn);
@@ -140,6 +202,21 @@ namespace QuanLyKS
             this.guna2Panel9.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel9.TabIndex = 4;
             // 
+            // revenueBtn
+            // 
+            this.revenueBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.revenueBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.revenueBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.revenueBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.revenueBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.revenueBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.revenueBtn.ForeColor = System.Drawing.Color.Black;
+            this.revenueBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.revenueBtn.Location = new System.Drawing.Point(3, 3);
+            this.revenueBtn.Name = "revenueBtn";
+            this.revenueBtn.Size = new System.Drawing.Size(234, 44);
+            this.revenueBtn.TabIndex = 1;
+            // 
             // guna2Panel8
             // 
             this.guna2Panel8.Controls.Add(this.roomBtn);
@@ -147,6 +224,21 @@ namespace QuanLyKS
             this.guna2Panel8.Name = "guna2Panel8";
             this.guna2Panel8.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel8.TabIndex = 2;
+            // 
+            // roomBtn
+            // 
+            this.roomBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.roomBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.roomBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.roomBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.roomBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.roomBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.roomBtn.ForeColor = System.Drawing.Color.Black;
+            this.roomBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.roomBtn.Location = new System.Drawing.Point(3, 3);
+            this.roomBtn.Name = "roomBtn";
+            this.roomBtn.Size = new System.Drawing.Size(234, 44);
+            this.roomBtn.TabIndex = 1;
             // 
             // guna2Panel1
             // 
@@ -177,98 +269,6 @@ namespace QuanLyKS
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel7.TabIndex = 27;
-            // 
-            // adminBtn
-            // 
-            this.adminBtn.BackColor = System.Drawing.Color.LightCoral;
-            this.adminBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.adminBtn.Image = ((System.Drawing.Image)(resources.GetObject("adminBtn.Image")));
-            this.adminBtn.ImageRotate = 0F;
-            this.adminBtn.Location = new System.Drawing.Point(9, 9);
-            this.adminBtn.Name = "adminBtn";
-            this.adminBtn.Size = new System.Drawing.Size(45, 45);
-            this.adminBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.adminBtn.TabIndex = 2;
-            this.adminBtn.TabStop = false;
-            // 
-            // accountBtn
-            // 
-            this.accountBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.accountBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.accountBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.accountBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.accountBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.accountBtn.ForeColor = System.Drawing.Color.Black;
-            this.accountBtn.Image = ((System.Drawing.Image)(resources.GetObject("accountBtn.Image")));
-            this.accountBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.accountBtn.Location = new System.Drawing.Point(3, 3);
-            this.accountBtn.Name = "accountBtn";
-            this.accountBtn.Size = new System.Drawing.Size(234, 44);
-            this.accountBtn.TabIndex = 1;
-            this.accountBtn.Text = "Check-in";
-            // 
-            // employeeBtn
-            // 
-            this.employeeBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.employeeBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.employeeBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.employeeBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.employeeBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.employeeBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.employeeBtn.ForeColor = System.Drawing.Color.Black;
-            this.employeeBtn.Image = ((System.Drawing.Image)(resources.GetObject("employeeBtn.Image")));
-            this.employeeBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.employeeBtn.Location = new System.Drawing.Point(3, 3);
-            this.employeeBtn.Name = "employeeBtn";
-            this.employeeBtn.Size = new System.Drawing.Size(234, 44);
-            this.employeeBtn.TabIndex = 1;
-            this.employeeBtn.Text = "Payment";
-            // 
-            // cusomerBtn
-            // 
-            this.cusomerBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.cusomerBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.cusomerBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.cusomerBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.cusomerBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.cusomerBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cusomerBtn.ForeColor = System.Drawing.Color.Black;
-            this.cusomerBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.cusomerBtn.Location = new System.Drawing.Point(3, 3);
-            this.cusomerBtn.Name = "cusomerBtn";
-            this.cusomerBtn.Size = new System.Drawing.Size(234, 44);
-            this.cusomerBtn.TabIndex = 1;
-            // 
-            // revenueBtn
-            // 
-            this.revenueBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.revenueBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.revenueBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.revenueBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.revenueBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.revenueBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.revenueBtn.ForeColor = System.Drawing.Color.Black;
-            this.revenueBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.revenueBtn.Location = new System.Drawing.Point(3, 3);
-            this.revenueBtn.Name = "revenueBtn";
-            this.revenueBtn.Size = new System.Drawing.Size(234, 44);
-            this.revenueBtn.TabIndex = 1;
-            // 
-            // roomBtn
-            // 
-            this.roomBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.roomBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.roomBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.roomBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.roomBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.roomBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.roomBtn.ForeColor = System.Drawing.Color.Black;
-            this.roomBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.roomBtn.Location = new System.Drawing.Point(3, 3);
-            this.roomBtn.Name = "roomBtn";
-            this.roomBtn.Size = new System.Drawing.Size(234, 44);
-            this.roomBtn.TabIndex = 1;
             // 
             // guna2Button7
             // 
@@ -315,13 +315,13 @@ namespace QuanLyKS
             this.Size = new System.Drawing.Size(1100, 600);
             this.sidebar.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
