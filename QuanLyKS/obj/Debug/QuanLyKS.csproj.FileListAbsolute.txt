@@ -35,7 +35,6 @@ C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSyste
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe.config
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.pdb
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\Guna.UI2.dll
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.AssemblyReference.cache
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Admin.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources

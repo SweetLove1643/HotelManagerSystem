@@ -35,11 +35,11 @@ namespace QuanLyKS
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2CustomRadioButton3 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2CustomRadioButton4 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2CustomRadioButton5 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2CustomRadioButton4 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2CustomRadioButton3 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -122,53 +122,21 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(200, 30);
             this.guna2Panel1.TabIndex = 29;
             // 
-            // guna2CustomRadioButton1
+            // guna2CustomRadioButton5
             // 
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(10, 5);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton1.TabIndex = 0;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2CustomRadioButton2
-            // 
-            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(50, 5);
-            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton2.TabIndex = 1;
-            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2CustomRadioButton3
-            // 
-            this.guna2CustomRadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton3.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton3.Location = new System.Drawing.Point(90, 5);
-            this.guna2CustomRadioButton3.Name = "guna2CustomRadioButton3";
-            this.guna2CustomRadioButton3.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton3.TabIndex = 2;
-            this.guna2CustomRadioButton3.Text = "guna2CustomRadioButton3";
-            this.guna2CustomRadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton3.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton5.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton5.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton5.Location = new System.Drawing.Point(170, 5);
+            this.guna2CustomRadioButton5.Name = "guna2CustomRadioButton5";
+            this.guna2CustomRadioButton5.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton5.TabIndex = 4;
+            this.guna2CustomRadioButton5.Text = "guna2CustomRadioButton5";
+            this.guna2CustomRadioButton5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton5.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // guna2CustomRadioButton4
             // 
@@ -186,21 +154,53 @@ namespace QuanLyKS
             this.guna2CustomRadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.guna2CustomRadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // guna2CustomRadioButton5
+            // guna2CustomRadioButton3
             // 
-            this.guna2CustomRadioButton5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton5.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton5.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton5.Location = new System.Drawing.Point(170, 5);
-            this.guna2CustomRadioButton5.Name = "guna2CustomRadioButton5";
-            this.guna2CustomRadioButton5.Size = new System.Drawing.Size(20, 20);
-            this.guna2CustomRadioButton5.TabIndex = 4;
-            this.guna2CustomRadioButton5.Text = "guna2CustomRadioButton5";
-            this.guna2CustomRadioButton5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2CustomRadioButton5.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton3.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton3.Location = new System.Drawing.Point(90, 5);
+            this.guna2CustomRadioButton3.Name = "guna2CustomRadioButton3";
+            this.guna2CustomRadioButton3.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton3.TabIndex = 2;
+            this.guna2CustomRadioButton3.Text = "guna2CustomRadioButton3";
+            this.guna2CustomRadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton3.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // guna2CustomRadioButton2
+            // 
+            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(50, 5);
+            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton2.TabIndex = 1;
+            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // guna2CustomRadioButton1
+            // 
+            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(10, 5);
+            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(20, 20);
+            this.guna2CustomRadioButton1.TabIndex = 0;
+            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // guna2PictureBox1
             // 
@@ -236,7 +236,7 @@ namespace QuanLyKS
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(854, 12);
+            this.guna2Button3.Location = new System.Drawing.Point(800, 12);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(180, 45);
             this.guna2Button3.TabIndex = 32;
