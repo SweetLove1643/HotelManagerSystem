@@ -67,6 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassFuncion\DataProvider.cs" />
+    <Compile Include="ClassFuncion\GetAccountDB.cs" />
+    <Compile Include="ClassFuncion\Hashing.cs" />
+    <Compile Include="ClassObject\AccountObject.cs" />
+    <Compile Include="ClassObject\PersonnelObject.cs" />
     <Compile Include="ForgottenPassword.cs">
       <SubType>Form</SubType>
     </Compile>
