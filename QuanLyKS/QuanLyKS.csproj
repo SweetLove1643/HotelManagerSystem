@@ -67,11 +67,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ClassFuncion\DataProvider.cs" />
     <Compile Include="ClassFuncion\GetAccountDB.cs" />
     <Compile Include="ClassFuncion\Hashing.cs" />
     <Compile Include="ClassObject\AccountObject.cs" />
     <Compile Include="ClassObject\PersonnelObject.cs" />
+=======
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+>>>>>>> 4916fdfc9e9c152c35e7cb879a5df7a8e126dbcd
     <Compile Include="ForgottenPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +105,48 @@
     <Compile Include="NewPassword.Designer.cs">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resources\AccountUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\AccountUC.Designer.cs">
+      <DependentUpon>AccountUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Check-inUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\Check-inUC.Designer.cs">
+      <DependentUpon>Check-inUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CustomerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\CustomerUC.Designer.cs">
+      <DependentUpon>CustomerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EmployeeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\EmployeeUC.Designer.cs">
+      <DependentUpon>EmployeeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PaymentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\PaymentUC.Designer.cs">
+      <DependentUpon>PaymentUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RevenueUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\RevenueUC.Designer.cs">
+      <DependentUpon>RevenueUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RoomUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\RoomUC.Designer.cs">
+      <DependentUpon>RoomUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,12 +155,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vertification.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vertification.Designer.cs">
       <DependentUpon>Vertification.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgottenPassword.resx">
       <DependentUpon>ForgottenPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +181,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewPassword.resx">
       <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AccountUC.resx">
+      <DependentUpon>AccountUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Check-inUC.resx">
+      <DependentUpon>Check-inUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CustomerUC.resx">
+      <DependentUpon>CustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EmployeeUC.resx">
+      <DependentUpon>EmployeeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PaymentUC.resx">
+      <DependentUpon>PaymentUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RevenueUC.resx">
+      <DependentUpon>RevenueUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RoomUC.resx">
+      <DependentUpon>RoomUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
@@ -126,6 +216,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vertification.resx">
       <DependentUpon>Vertification.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +261,25 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
