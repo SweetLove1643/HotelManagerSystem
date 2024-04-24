@@ -4,49 +4,51 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanLyKS.ClassObject
 {
-    public class PersonnelObject
+    public class GuestObject
     {
-        private int idnv;
+        private int id;
         private string name;
         private string sex;
         private DateTime dateofbrith;
-        private string position;
-        private string phone;
         private string cccd;
+        private string nationality;
+        private string phone;
         private string mail;
-        public int Idnv { get => idnv; set => idnv = value; }
+
+        public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public string Sex { get => sex; set => sex = value; }
         public DateTime Dateofbrith { get => dateofbrith; set => dateofbrith = value; }
-        public string Position { get => position; set => position = value; }
-        public string Phone { get => phone; set => phone = value; }
         public string Cccd { get => cccd; set => cccd = value; }
+        public string Nationality { get => nationality; set => nationality = value; }
+        public string Phone { get => phone; set => phone = value; }
         public string Mail { get => mail; set => mail = value; }
-        public PersonnelObject() { }
-
-        public PersonnelObject(int Idnv, string Name, string Sex, DateTime Date, string Position, string Phone, string Cccd, string Mail)
+        
+        public GuestObject() { }
+        public GuestObject(int Id, string Name, string Sex, DateTime Dateofbrith, string Cccd, string Nationality, string Phone, string Mail)
         {
-            this.Idnv = Idnv;
+            this.Id = Id;
             this.Name = Name;
             this.Sex = Sex;
-            this.Dateofbrith = Date;
-            this.Position = Position;
-            this.Phone = Phone;
+            this.Dateofbrith = Dateofbrith;
             this.Cccd = Cccd;
+            this.Nationality = Nationality;
+            this.Phone = Phone;
             this.Mail = Mail;
         }
-        public PersonnelObject(DataRow row)
+        public GuestObject(DataRow row)
         {
-            this.Idnv = (int)row["IDNV"];
-            this.Name = (string)row["TenNV"];
+            this.Id = (int)row["IDKhach"];
+            this.Name = (string)row["TenKhach"];
             this.Sex = (string)row["GioiTinh"];
             this.Dateofbrith = (DateTime)row["NgaySinh"];
-            this.Position = (string)row["ChucVu"];
-            this.Phone = (string)row["SDT"];
             this.Cccd = (string)row["CCCD"];
+            this.Nationality = (string)row["QuocTich"];
+            this.Phone = (string)row["SDT"];
             this.Mail = (string)row["Mail"];
         }
     }
