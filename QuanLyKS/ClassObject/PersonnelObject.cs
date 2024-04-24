@@ -17,7 +17,7 @@ namespace QuanLyKS.ClassObject
         private string cccd;
         private string mail;
         public PersonnelObject() { }
-        public PersonnelObject(int ID)
+        //public PersonnelObject(int ID)
         public int Idnv { get => idnv; set => idnv = value; }
         public string Name { get => name; set => name = value; }
         public string Sex { get => sex; set => sex = value; }

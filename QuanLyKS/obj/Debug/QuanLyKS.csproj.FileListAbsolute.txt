@@ -1,64 +1,31 @@
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\TaiKhoan.mdf
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\TaiKhoan_log.ldf
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\QuanLyKS.exe.config
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\QuanLyKS.exe
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\QuanLyKS.pdb
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\bin\Debug\Guna.UI2.dll
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.csproj.AssemblyReference.cache
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Properties.Resources.resources
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.csproj.GenerateResource.cache
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.csproj.CopyComplete
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.exe
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.pdb
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Login.resources
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.Signup.resources
-C:\Lap trinh tren Windows\ProjectCuoiKy\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe.config
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.pdb
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\bin\Debug\Guna.UI2.dll
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.AssemblyReference.cache
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.LogIn.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.SignUp.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Properties.Resources.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.GenerateResource.cache
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CopyComplete
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.exe
-C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.pdb
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe.config
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.pdb
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.AssemblyReference.cache
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Admin.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.LogIn.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.SignUp.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Properties.Resources.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.GenerateResource.cache
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CopyComplete
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.exe
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.pdb
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.AccountUC.resources
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\Interop.WMPLib.dll
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\AxInterop.WMPLib.dll
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\Interop.WMPLib.dll
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\AxInterop.WMPLib.dll
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.ResolveComReference.cache
-C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.EmployeeUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Admin.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Employee.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.ForgottenPassword.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.LogIn.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.NewPassword.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.AccountUC.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.Check_inUC.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.CustomerUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.EmployeeUC.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.PaymentUC.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.RevenueUC.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Resources.RoomUC.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.SignUp.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Properties.Resources.resources
 C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.User.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.Vertification.resources
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.GenerateResource.cache
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe.config
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.exe
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\QuanLyKS.pdb
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\Guna.UI2.dll
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\Interop.WMPLib.dll
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\bin\Debug\AxInterop.WMPLib.dll
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.csproj.CopyComplete
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.exe
+C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\obj\Debug\QuanLyKS.pdb

@@ -50,11 +50,13 @@
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -102,7 +104,6 @@
     <Compile Include="NewPassword.Designer.cs">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Resources\AccountUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -180,15 +181,6 @@
     <EmbeddedResource Include="NewPassword.resx">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Admin.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.ForgottenPassword.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Login.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.NewPassword.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Resources.AccountUC.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Resources.EmployeeUC.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Signup.resources" />
-    <EmbeddedResource Include="obj\Debug\QuanLyKS.Vertification.resources" />
     <EmbeddedResource Include="Resources\AccountUC.resx">
       <DependentUpon>AccountUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,14 +221,6 @@
     <EmbeddedResource Include="Vertification.resx">
       <DependentUpon>Vertification.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\QuanLyKS.exe.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\QuanLyKS.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\QuanLyKS.csproj.CopyComplete" />
-    <None Include="obj\Debug\QuanLyKS.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\QuanLyKS.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\QuanLyKS.csproj.ResolveComReference.cache" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -296,21 +280,6 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\AxInterop.WMPLib.dll" />
-    <Content Include="bin\Debug\Guna.UI2.dll" />
-    <Content Include="bin\Debug\Interop.WMPLib.dll" />
-    <Content Include="bin\Debug\QuanLyKS.exe" />
-    <Content Include="bin\Debug\QuanLyKS.pdb" />
-    <Content Include="obj\Debug\AxInterop.WMPLib.dll" />
-    <Content Include="obj\Debug\Interop.WMPLib.dll" />
-    <Content Include="obj\Debug\QuanLyKS.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\QuanLyKS.exe" />
-    <Content Include="obj\Debug\QuanLyKS.pdb" />
-    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="bin\Release\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
