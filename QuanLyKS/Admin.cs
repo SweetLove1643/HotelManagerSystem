@@ -13,6 +13,7 @@ namespace QuanLyKS
     public partial class Admin : Form
     {
         bool sidebarExpand;
+        bool accountCollapse;
         public Admin()
         {
             InitializeComponent();
@@ -50,6 +51,48 @@ namespace QuanLyKS
         private void guna2Button8_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void accountContainer_Tick(object sender, EventArgs e)
+        {
+            if(accountCollapse)
+            {
+                accountContainer.Height += 10;
+                blankContainer.Height -= 10;
+                if(accountContainer.Height==accountContainer.MaximumSize.Height && blankContainer.Height==blankContainer.MinimumSize.Height)
+                {
+                    accountCollapse = false;
+                    accountTimer.Stop();
+                    blankTimer.Stop();
+                }
+            }
+            else
+            {
+                accountContainer.Height -= 10;
+                blankContainer.Height += 10;
+                if(accountContainer.Height==accountContainer.MinimumSize.Height && blankContainer.Height==blankContainer.MaximumSize.Height)
+                {
+                    accountCollapse = true;
+                    accountTimer.Stop();
+                    blankTimer.Stop();
+                }
+            }
+        }
+
+        private void accountBtn_Click(object sender, EventArgs e)
+        {
+            accountTimer.Start();
+            blankTimer.Start();
         }
     }
 }

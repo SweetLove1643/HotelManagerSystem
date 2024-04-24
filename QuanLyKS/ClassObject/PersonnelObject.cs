@@ -17,6 +17,11 @@ namespace QuanLyKS.ClassObject
         private string phone;
         private string cccd;
         private string mail;
+<<<<<<< HEAD
+=======
+        public PersonnelObject() { }
+        //public PersonnelObject(int ID)
+>>>>>>> 4dd53037faa99a75ee403a2aac08405f513393a4
         public int Idnv { get => idnv; set => idnv = value; }
         public string Name { get => name; set => name = value; }
         public string Sex { get => sex; set => sex = value; }
