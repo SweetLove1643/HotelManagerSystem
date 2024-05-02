@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace QuanLyKS
@@ -93,6 +94,13 @@ namespace QuanLyKS
         {
             accountTimer.Start();
             blankTimer.Start();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            LogIn login = new LogIn();
+            login.Show();
+            this.Hide();
         }
     }
 }
