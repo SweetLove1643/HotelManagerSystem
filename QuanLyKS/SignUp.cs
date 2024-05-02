@@ -17,14 +17,6 @@ namespace QuanLyKS
         {
             InitializeComponent();
 
-            FNeP = new ErrorProvider();
-            LNeP = new ErrorProvider();
-            UNeP = new ErrorProvider();
-            PWeP = new ErrorProvider();
-            CPWeP = new ErrorProvider();
-            MeP = new ErrorProvider();
-            RCeP = new ErrorProvider();
-            PeP = new ErrorProvider();
 
             btnHidePass.MouseDown += hidepwBtn_MouseDown;
             btnHidePass.MouseUp += hidepwBtn_MouseUp;
@@ -37,19 +29,6 @@ namespace QuanLyKS
             txbConfirmPassword.Leave += rpwTb_Leave;
 
             viewpwBtn.Visible = false;
-        }
-
-        public void RunCheckDataValid(bool flag, ErrorProvider eP, Control c, string e)
-        {
-            if(flag==false)
-            {
-                c.Focus();
-                eP.SetError(c, e);
-            }
-            else
-            {
-                eP.SetError(c, null);
-            }
         }
 
         private void Logup_Load(object sender, EventArgs e)
@@ -126,96 +105,84 @@ namespace QuanLyKS
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
-            ErrorProvider[] ePs = { FNeP, LNeP, UNeP, PWeP, CPWeP, MeP, RCeP, PeP };
-            foreach (ErrorProvider ep in ePs)
+            if(string.IsNullOrEmpty(txbFistName.Text))
             {
-                ep.Clear();
-            }
-
-            if (string.IsNullOrEmpty(txbFistName.Text))
-            {
-                FNeP.SetError(txbFistName, "Please enter your firstname!");
+                fnPb.Visible = true;
+                invalidInfoTT.SetToolTip(fnPb, "Please enter your firstname!");
             }
             else
             {
-                FNeP.Clear();
+                fnPb.Visible = false;
             }
-
-
 
             if (string.IsNullOrEmpty(txbLastName.Text))
             {
-                LNeP.SetError(txbLastName, "Please enter your lastname!");
+                lnPb.Visible = true;
+                invalidInfoTT.SetToolTip(lnPb, "Please enter your lastname!");
             }
             else
             {
-                LNeP.Clear();
+                lnPb.Visible = false;
             }
 
-
+            if(string.IsNullOrEmpty(txbRegistration.Text))
+            {
+                rcPb.Visible = true;
+                invalidInfoTT.SetToolTip(rcPb, "Please enter your registration code!");
+            }
+            else
+            {
+                rcPb.Visible = false;
+            }
 
             if (string.IsNullOrEmpty(txbUserName.Text))
             {
-                UNeP.SetError(txbUserName, "Please enter your username!");
+                unPb.Visible = true;
+                invalidInfoTT.SetToolTip(unPb, "Please enter your username!");
             }
             else
             {
-                UNeP.Clear();
+                unPb.Visible = false;
             }
-
-
 
             if (string.IsNullOrEmpty(txbPassWord.Text))
             {
-                PWeP.SetError(txbPassWord, "Please enter your password!");
+                pwPb.Visible = true;
+                invalidInfoTT.SetToolTip(pwPb, "Please enter your password!");
             }
             else
             {
-                PWeP.Clear();
+                pwPb.Visible = false;
             }
-
-
 
             if (string.IsNullOrEmpty(txbConfirmPassword.Text))
             {
-                CPWeP.SetError(txbConfirmPassword, "Please confirm your password!");
+                cpwPb.Visible = true;
+                invalidInfoTT.SetToolTip(cpwPb, "Please confirm your password!");
             }
             else
             {
-                CPWeP.Clear();
+                cpwPb.Visible = false;
             }
-
-
 
             if (string.IsNullOrEmpty(txbMail.Text))
             {
-                MeP.SetError(txbMail, "Please enter your mail!");
+                mPb.Visible = true;
+                invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
             }
             else
             {
-                MeP.Clear();
+                mPb.Visible = false;
             }
-
-
-
-            if (string.IsNullOrEmpty(txbRegistration.Text))
-            {
-                RCeP.SetError(txbRegistration, "Please enter your registration code!");
-            }
-            else
-            {
-                RCeP.Clear();
-            }
-
-
 
             if (string.IsNullOrEmpty(txbPhone.Text))
             {
-                PeP.SetError(txbPhone, "Please enter your phone number!");
+                pPb.Visible = true;
+                invalidInfoTT.SetToolTip(pPb, "Please enter your phonenumber!");
             }
             else
             {
-                PeP.Clear();
+                pPb.Visible = false;
             }
         }
 

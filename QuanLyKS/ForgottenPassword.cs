@@ -19,18 +19,18 @@ namespace QuanLyKS
         {
             InitializeComponent();
             lnF = ln;
-
-            mEp = new ErrorProvider();
         }
 
         private void continueBtn_Click(object sender, EventArgs e)
         {
             if(string.IsNullOrEmpty(txbMail.Text))
             {
-                mEp.SetError(txbMail, "Please enter your mail!");
+                mPb.Visible = true;
+                invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
             }
             else
             {
+                mPb.Visible = false;
                 var title = "This is a title";
                 var body ="Ro22ty như cc";
                 SendMail(title, body);

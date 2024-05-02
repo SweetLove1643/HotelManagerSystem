@@ -36,7 +36,7 @@ namespace QuanLyKS
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.noteTb = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.noteLb = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txbOTP = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
@@ -113,16 +113,16 @@ namespace QuanLyKS
             this.guna2Panel2.Size = new System.Drawing.Size(285, 1);
             this.guna2Panel2.TabIndex = 39;
             // 
-            // noteTb
+            // noteLb
             // 
-            this.noteTb.AutoSize = false;
-            this.noteTb.BackColor = System.Drawing.Color.Transparent;
-            this.noteTb.ForeColor = System.Drawing.Color.Gray;
-            this.noteTb.Location = new System.Drawing.Point(100, 100);
-            this.noteTb.Name = "noteTb";
-            this.noteTb.Size = new System.Drawing.Size(550, 40);
-            this.noteTb.TabIndex = 40;
-            this.noteTb.Text = null;
+            this.noteLb.AutoSize = false;
+            this.noteLb.BackColor = System.Drawing.Color.Transparent;
+            this.noteLb.ForeColor = System.Drawing.Color.Gray;
+            this.noteLb.Location = new System.Drawing.Point(100, 100);
+            this.noteLb.Name = "noteLb";
+            this.noteLb.Size = new System.Drawing.Size(550, 40);
+            this.noteLb.TabIndex = 40;
+            this.noteLb.Text = null;
             // 
             // txbOTP
             // 
@@ -193,7 +193,7 @@ namespace QuanLyKS
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbOTP);
-            this.Controls.Add(this.noteTb);
+            this.Controls.Add(this.noteLb);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.btnBack);
@@ -216,7 +216,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel noteTb;
+        private Guna.UI2.WinForms.Guna2HtmlLabel noteLb;
         private Guna.UI2.WinForms.Guna2TextBox txbOTP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnContinue;

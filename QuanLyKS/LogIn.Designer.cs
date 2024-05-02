@@ -207,7 +207,7 @@ namespace QuanLyKS
             this.btnForgetPass.LinkColor = System.Drawing.Color.Gray;
             this.btnForgetPass.Location = new System.Drawing.Point(435, 326);
             this.btnForgetPass.Name = "btnForgetPass";
-            this.btnForgetPass.Size = new System.Drawing.Size(144, 16);
+            this.btnForgetPass.Size = new System.Drawing.Size(153, 17);
             this.btnForgetPass.TabIndex = 10;
             this.btnForgetPass.TabStop = true;
             this.btnForgetPass.Text = "Forgot your password?";

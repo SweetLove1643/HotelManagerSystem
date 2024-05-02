@@ -20,7 +20,7 @@ namespace QuanLyKS
             if(fp != null)
             {
                 string mail = fp.txbMail.Text;
-                noteTb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
+                noteLb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
             }
         }
 

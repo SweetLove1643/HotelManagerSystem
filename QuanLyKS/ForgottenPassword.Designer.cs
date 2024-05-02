@@ -29,7 +29,6 @@ namespace QuanLyKS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgottenPassword));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.FypTb = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,9 +39,10 @@ namespace QuanLyKS
             this.linePn = new Guna.UI2.WinForms.Guna2Panel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.mEp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.mPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.invalidInfoTT = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mEp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPb)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
@@ -179,10 +179,24 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(480, 1);
             this.guna2Panel1.TabIndex = 37;
             // 
-            // mEp
+            // mPb
             // 
-            this.mEp.ContainerControl = this;
-            this.mEp.Icon = ((System.Drawing.Icon)(resources.GetObject("mEp.Icon")));
+            this.mPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.mPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.mPb.Image = ((System.Drawing.Image)(resources.GetObject("mPb.Image")));
+            this.mPb.ImageRotate = 0F;
+            this.mPb.Location = new System.Drawing.Point(594, 150);
+            this.mPb.Name = "mPb";
+            this.mPb.Size = new System.Drawing.Size(20, 20);
+            this.mPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mPb.TabIndex = 56;
+            this.mPb.TabStop = false;
+            this.mPb.Visible = false;
+            // 
+            // invalidInfoTT
+            // 
+            this.invalidInfoTT.AllowLinksHandling = true;
+            this.invalidInfoTT.MaximumSize = new System.Drawing.Size(0, 0);
             // 
             // ForgottenPassword
             // 
@@ -192,6 +206,7 @@ namespace QuanLyKS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 295);
+            this.Controls.Add(this.mPb);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.linePn);
@@ -206,7 +221,7 @@ namespace QuanLyKS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgottenPassword";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mEp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,6 +237,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public Guna.UI2.WinForms.Guna2TextBox txbMail;
-        private System.Windows.Forms.ErrorProvider mEp;
+        private Guna.UI2.WinForms.Guna2PictureBox mPb;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip invalidInfoTT;
     }
 }
