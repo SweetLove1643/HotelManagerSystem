@@ -18,7 +18,7 @@ namespace QuanLyKS.ClassFuncion
     public class DataProvider : Execute
     {
         private static DataProvider instance;
-        private string connectionSTR = "Data source = SWEETLOVE; initial catalog = DBHotelManagerSystem; Integrated Security = True";
+        private string connectionSTR = "Data source = localhost; initial catalog = DBHotelManagerSystem; Integrated Security = True";
         public static DataProvider Instance
         {
             get
