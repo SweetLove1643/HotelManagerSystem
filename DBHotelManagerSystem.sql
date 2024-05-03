@@ -196,3 +196,12 @@ BEGIN
 END
 GO
 
+CREATE PROC SeachEmail @Email VARCHAR(30) 
+AS
+BEGIN
+    SELECT * FROM dbo.TaiKhoan WHERE Mail = @Email
+END
+
+-- varchar(30)
+GO
+

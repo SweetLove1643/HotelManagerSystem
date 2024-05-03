@@ -62,13 +62,6 @@ namespace QuanLyKS
             catch (FormatException ex)
             {
                 Console.WriteLine(ex.Message);
-                mPb.Visible = false;
-                var title = "This is a title";
-                var body ="Ro22ty như cc";
-                SendMail(title, body);
-                Vertification vc = new Vertification(this);
-                vc.Show();
-                this.Hide();
             }
         }
 
