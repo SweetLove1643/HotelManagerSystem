@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKS.ClassFuncion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,11 @@ namespace QuanLyKS
 {
     public partial class ForgottenPassword : Form
     {
+        Random random = new Random();
+        public static int otp =  
         private LogIn lnF;
+
+
         public ForgottenPassword(LogIn ln)
         {
             InitializeComponent();
@@ -25,18 +30,41 @@ namespace QuanLyKS
 
         private void continueBtn_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txbMail.Text))
+            try
             {
-                mEp.SetError(txbMail, "Please enter your mail!");
+                if (string.IsNullOrEmpty(txbMail.Text)) // kiểm tra txb rỗng
+                {
+                    mEp.SetError(txbMail, "Please enter your mail!");
+                }
+                else
+                {
+                    if (IsValidEmail(txbMail.Text)) // Kiểm tra định dạng email người dùng nhập
+                    {
+                        if (DataProvider.Instance.ExecuteNonQuerry("EXEC SeachEmail @Email ", new object[] { txbMail.Text }) != 0)// email tồn tại trong db thì...
+                        {
+                            var title = "Mã xác nhận OTP";
+                            var body = "Mã xác nhận OTP của bạn là";
+                            SendMail(title, body);
+                            Vertification vc = new Vertification(this);
+                            vc.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Email này chưa liên kết với bất kì tài khoản", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+
             }
-            else
+            catch (FormatException ex)
             {
-                var title = "This is a title";
-                var body ="Ro22ty như cc";
-                SendMail(title, body);
-                Vertification vc = new Vertification(this);
-                vc.Show();
-                this.Hide();
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -59,6 +87,7 @@ namespace QuanLyKS
                 smtp.Credentials = new NetworkCredential("Hotel.HL.BB@gmail.com", "ucfocygvvxbawius");
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(message);
+                MessageBox.Show("OTP đã được gửi qua mail", "Messages", MessageBoxButtons.OK);
             }
             catch (Exception ex)
             {
@@ -66,6 +95,18 @@ namespace QuanLyKS
             }
         }
 
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                MailAddress mailAddress = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException ex)
+            {
+                return false;
+            }
+        }
         private void backBtn_Click(object sender, EventArgs e)
         {
             lnF.Show();

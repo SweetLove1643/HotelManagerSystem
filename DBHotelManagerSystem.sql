@@ -176,7 +176,6 @@ END
 GO
 
 
-
 CREATE PROCEDURE CreateNewAccount 
 	@SDT VARCHAR(30), @Mail VARCHAR(30), @Password NVARCHAR(30), @Accounttype NVARCHAR(20)
 AS
@@ -197,46 +196,3 @@ BEGIN
 END
 GO
 
--- EXEC dbo.CreateNewAccount @SDT, @Mail, @Password, @Accounttype
-GO
-
-CREATE PROCEDURE CreateNewGuest
-@Guestname NVARCHAR(50),
-@Sex NVARCHAR(5),
-@DateOfBrith DATE,
-@CCCD VARCHAR(15),
-@Nationality NVARCHAR(50),
-@Phone VARCHAR(11),
-@Mail VARCHAR(50)
-AS
-BEGIN
-    INSERT INTO dbo.Khach
-    (
-        TenKhach,
-        GioiTinh,
-        NgaySinh,
-        CCCD,
-        QuocTich,
-        SDT,
-        Mail
-    )
-    VALUES
-    (   @Guestname, -- TenKhach - nvarchar(50)
-        @Sex, -- GioiTinh - nvarchar(5)
-        @DateOfBrith, -- NgaySinh - date
-        @CCCD,   -- CCCD - varchar(15)
-        @Nationality, -- QuocTich - nvarchar(50)
-        @Phone, -- SDT - varchar(11)
-        @Mail    -- Mail - varchar(50)
-    )
-END
-
--- EXEC dbo.CreateNewGuest @Guestname, @Sex, @DateOfBrith, @CCCD, @Nationality, @Phone, @Mail
-EXEC dbo.CreateNewGuest @Guestname = N'',            -- nvarchar(50)
-                        @Sex = N'',                  -- nvarchar(5)
-                        @DateOfBrith = '2024-05-01', -- date
-                        @CCCD = '',                  -- varchar(15)
-                        @Nationality = N'',          -- nvarchar(50)
-                        @Phone = '',                 -- varchar(11)
-                        @Mail = ''                   -- varchar(50)
-GO
