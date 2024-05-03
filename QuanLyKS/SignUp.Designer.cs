@@ -29,7 +29,6 @@ namespace QuanLyKS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
@@ -54,29 +53,30 @@ namespace QuanLyKS
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.FNeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.LNeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.UNeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.PWeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.CPWeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.MeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.RCeP = new System.Windows.Forms.ErrorProvider(this.components);
-            this.PeP = new System.Windows.Forms.ErrorProvider(this.components);
             this.ChbMale = new Guna.UI2.WinForms.Guna2CheckBox();
             this.ChbFemale = new Guna.UI2.WinForms.Guna2CheckBox();
             this.btnHidePass = new Guna.UI2.WinForms.Guna2Button();
             this.viewpwBtn = new Guna.UI2.WinForms.Guna2Button();
             this.viewcpwBtn = new Guna.UI2.WinForms.Guna2Button();
             this.btnHideConfirmPass = new Guna.UI2.WinForms.Guna2Button();
+            this.fnPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.invalidInfoTT = new Guna.UI2.WinForms.Guna2HtmlToolTip();
+            this.lnPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.unPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pwPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.mPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.rcPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cpwPb = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FNeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LNeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PWeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CPWeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RCeP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PeP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fnPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lnPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pwPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rcPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpwPb)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -467,38 +467,6 @@ namespace QuanLyKS
             this.btnLogin.Text = "Log in";
             this.btnLogin.Click += new System.EventHandler(this.loginBt_Click);
             // 
-            // FNeP
-            // 
-            this.FNeP.ContainerControl = this;
-            // 
-            // LNeP
-            // 
-            this.LNeP.ContainerControl = this;
-            // 
-            // UNeP
-            // 
-            this.UNeP.ContainerControl = this;
-            // 
-            // PWeP
-            // 
-            this.PWeP.ContainerControl = this;
-            // 
-            // CPWeP
-            // 
-            this.CPWeP.ContainerControl = this;
-            // 
-            // MeP
-            // 
-            this.MeP.ContainerControl = this;
-            // 
-            // RCeP
-            // 
-            this.RCeP.ContainerControl = this;
-            // 
-            // PeP
-            // 
-            this.PeP.ContainerControl = this;
-            // 
             // ChbMale
             // 
             this.ChbMale.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
@@ -622,6 +590,123 @@ namespace QuanLyKS
             this.btnHideConfirmPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.hiderpwBtn_MouseDown);
             this.btnHideConfirmPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.hiderpwBtn_MouseUp);
             // 
+            // fnPb
+            // 
+            this.fnPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.fnPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.fnPb.Image = ((System.Drawing.Image)(resources.GetObject("fnPb.Image")));
+            this.fnPb.ImageRotate = 0F;
+            this.fnPb.Location = new System.Drawing.Point(340, 115);
+            this.fnPb.Name = "fnPb";
+            this.fnPb.Size = new System.Drawing.Size(20, 20);
+            this.fnPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.fnPb.TabIndex = 53;
+            this.fnPb.TabStop = false;
+            this.fnPb.Visible = false;
+            // 
+            // invalidInfoTT
+            // 
+            this.invalidInfoTT.AllowLinksHandling = true;
+            this.invalidInfoTT.MaximumSize = new System.Drawing.Size(0, 0);
+            // 
+            // lnPb
+            // 
+            this.lnPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.lnPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.lnPb.Image = ((System.Drawing.Image)(resources.GetObject("lnPb.Image")));
+            this.lnPb.ImageRotate = 0F;
+            this.lnPb.Location = new System.Drawing.Point(339, 185);
+            this.lnPb.Name = "lnPb";
+            this.lnPb.Size = new System.Drawing.Size(20, 20);
+            this.lnPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.lnPb.TabIndex = 54;
+            this.lnPb.TabStop = false;
+            this.lnPb.Visible = false;
+            // 
+            // unPb
+            // 
+            this.unPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.unPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.unPb.Image = ((System.Drawing.Image)(resources.GetObject("unPb.Image")));
+            this.unPb.ImageRotate = 0F;
+            this.unPb.Location = new System.Drawing.Point(649, 115);
+            this.unPb.Name = "unPb";
+            this.unPb.Size = new System.Drawing.Size(20, 20);
+            this.unPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.unPb.TabIndex = 55;
+            this.unPb.TabStop = false;
+            this.unPb.Visible = false;
+            // 
+            // pwPb
+            // 
+            this.pwPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.pwPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.pwPb.Image = ((System.Drawing.Image)(resources.GetObject("pwPb.Image")));
+            this.pwPb.ImageRotate = 0F;
+            this.pwPb.Location = new System.Drawing.Point(649, 185);
+            this.pwPb.Name = "pwPb";
+            this.pwPb.Size = new System.Drawing.Size(20, 20);
+            this.pwPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pwPb.TabIndex = 56;
+            this.pwPb.TabStop = false;
+            this.pwPb.Visible = false;
+            // 
+            // mPb
+            // 
+            this.mPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.mPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.mPb.Image = ((System.Drawing.Image)(resources.GetObject("mPb.Image")));
+            this.mPb.ImageRotate = 0F;
+            this.mPb.Location = new System.Drawing.Point(649, 325);
+            this.mPb.Name = "mPb";
+            this.mPb.Size = new System.Drawing.Size(20, 20);
+            this.mPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mPb.TabIndex = 57;
+            this.mPb.TabStop = false;
+            this.mPb.Visible = false;
+            // 
+            // pPb
+            // 
+            this.pPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.pPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.pPb.Image = ((System.Drawing.Image)(resources.GetObject("pPb.Image")));
+            this.pPb.ImageRotate = 0F;
+            this.pPb.Location = new System.Drawing.Point(649, 395);
+            this.pPb.Name = "pPb";
+            this.pPb.Size = new System.Drawing.Size(20, 20);
+            this.pPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pPb.TabIndex = 58;
+            this.pPb.TabStop = false;
+            this.pPb.Visible = false;
+            // 
+            // rcPb
+            // 
+            this.rcPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.rcPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.rcPb.Image = ((System.Drawing.Image)(resources.GetObject("rcPb.Image")));
+            this.rcPb.ImageRotate = 0F;
+            this.rcPb.Location = new System.Drawing.Point(340, 395);
+            this.rcPb.Name = "rcPb";
+            this.rcPb.Size = new System.Drawing.Size(20, 20);
+            this.rcPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.rcPb.TabIndex = 59;
+            this.rcPb.TabStop = false;
+            this.rcPb.Visible = false;
+            // 
+            // cpwPb
+            // 
+            this.cpwPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cpwPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cpwPb.Image = ((System.Drawing.Image)(resources.GetObject("cpwPb.Image")));
+            this.cpwPb.ImageRotate = 0F;
+            this.cpwPb.Location = new System.Drawing.Point(649, 255);
+            this.cpwPb.Name = "cpwPb";
+            this.cpwPb.Size = new System.Drawing.Size(20, 20);
+            this.cpwPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cpwPb.TabIndex = 60;
+            this.cpwPb.TabStop = false;
+            this.cpwPb.Visible = false;
+            // 
             // SignUp
             // 
             this.AcceptButton = this.btnSignup;
@@ -630,6 +715,14 @@ namespace QuanLyKS
             this.BackgroundImage = global::QuanLyKS.Properties.Resources.Screenshot_2024_04_05_133738;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 575);
+            this.Controls.Add(this.cpwPb);
+            this.Controls.Add(this.rcPb);
+            this.Controls.Add(this.pPb);
+            this.Controls.Add(this.mPb);
+            this.Controls.Add(this.pwPb);
+            this.Controls.Add(this.unPb);
+            this.Controls.Add(this.lnPb);
+            this.Controls.Add(this.fnPb);
             this.Controls.Add(this.btnHideConfirmPass);
             this.Controls.Add(this.viewcpwBtn);
             this.Controls.Add(this.btnHidePass);
@@ -665,14 +758,14 @@ namespace QuanLyKS
             this.Text = "Logup";
             this.Load += new System.EventHandler(this.Logup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FNeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LNeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UNeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PWeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CPWeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RCeP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PeP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fnPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lnPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pwPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rcPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cpwPb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -702,19 +795,20 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
-        private System.Windows.Forms.ErrorProvider FNeP;
-        private System.Windows.Forms.ErrorProvider LNeP;
-        private System.Windows.Forms.ErrorProvider UNeP;
-        private System.Windows.Forms.ErrorProvider PWeP;
-        private System.Windows.Forms.ErrorProvider CPWeP;
-        private System.Windows.Forms.ErrorProvider MeP;
-        private System.Windows.Forms.ErrorProvider RCeP;
-        private System.Windows.Forms.ErrorProvider PeP;
         private Guna.UI2.WinForms.Guna2CheckBox ChbMale;
         private Guna.UI2.WinForms.Guna2CheckBox ChbFemale;
         private Guna.UI2.WinForms.Guna2Button btnHidePass;
         private Guna.UI2.WinForms.Guna2Button viewpwBtn;
         private Guna.UI2.WinForms.Guna2Button btnHideConfirmPass;
         private Guna.UI2.WinForms.Guna2Button viewcpwBtn;
+        private Guna.UI2.WinForms.Guna2PictureBox fnPb;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip invalidInfoTT;
+        private Guna.UI2.WinForms.Guna2PictureBox lnPb;
+        private Guna.UI2.WinForms.Guna2PictureBox unPb;
+        private Guna.UI2.WinForms.Guna2PictureBox pwPb;
+        private Guna.UI2.WinForms.Guna2PictureBox mPb;
+        private Guna.UI2.WinForms.Guna2PictureBox pPb;
+        private Guna.UI2.WinForms.Guna2PictureBox rcPb;
+        private Guna.UI2.WinForms.Guna2PictureBox cpwPb;
     }
 }

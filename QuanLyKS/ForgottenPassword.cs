@@ -14,9 +14,7 @@ using System.Windows.Forms;
 namespace QuanLyKS
 {
     public partial class ForgottenPassword : Form
-    {
-        Random random = new Random();
-        public static int otp =  
+    {  
         private LogIn lnF;
 
 
@@ -24,8 +22,6 @@ namespace QuanLyKS
         {
             InitializeComponent();
             lnF = ln;
-
-            mEp = new ErrorProvider();
         }
 
         private void continueBtn_Click(object sender, EventArgs e)
@@ -34,7 +30,7 @@ namespace QuanLyKS
             {
                 if (string.IsNullOrEmpty(txbMail.Text)) // kiểm tra txb rỗng
                 {
-                    mEp.SetError(txbMail, "Please enter your mail!");
+                    //mEp.SetError(txbMail, "Please enter your mail!");
                 }
                 else
                 {
@@ -60,11 +56,19 @@ namespace QuanLyKS
                     }
 
                 }
-
+                mPb.Visible = true;
+                invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
             }
             catch (FormatException ex)
             {
                 Console.WriteLine(ex.Message);
+                mPb.Visible = false;
+                var title = "This is a title";
+                var body ="Ro22ty như cc";
+                SendMail(title, body);
+                Vertification vc = new Vertification(this);
+                vc.Show();
+                this.Hide();
             }
         }
 
