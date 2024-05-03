@@ -36,8 +36,6 @@ namespace QuanLyKS
             viewpwBtn.Visible = false;
         }
 
-<<<<<<< HEAD
-=======
         public void RunCheckDataValid(bool flag, ErrorProvider eP, Control c, string e)
         {
             if (flag == false)
@@ -51,7 +49,6 @@ namespace QuanLyKS
             }
         }
 
->>>>>>> bb26ae0d49a9ad6b5e476c9f7bc2a0e7dffa657b
         private void Logup_Load(object sender, EventArgs e)
         {
             ChbMale.Checked = true;
@@ -126,86 +123,6 @@ namespace QuanLyKS
 
         private void signupBtn_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            if(string.IsNullOrEmpty(txbFistName.Text))
-            {
-                fnPb.Visible = true;
-                invalidInfoTT.SetToolTip(fnPb, "Please enter your firstname!");
-            }
-            else
-            {
-                fnPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbLastName.Text))
-            {
-                lnPb.Visible = true;
-                invalidInfoTT.SetToolTip(lnPb, "Please enter your lastname!");
-            }
-            else
-            {
-                lnPb.Visible = false;
-            }
-
-            if(string.IsNullOrEmpty(txbRegistration.Text))
-            {
-                rcPb.Visible = true;
-                invalidInfoTT.SetToolTip(rcPb, "Please enter your registration code!");
-            }
-            else
-            {
-                rcPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbUserName.Text))
-            {
-                unPb.Visible = true;
-                invalidInfoTT.SetToolTip(unPb, "Please enter your username!");
-            }
-            else
-            {
-                unPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbPassWord.Text))
-            {
-                pwPb.Visible = true;
-                invalidInfoTT.SetToolTip(pwPb, "Please enter your password!");
-            }
-            else
-            {
-                pwPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbConfirmPassword.Text))
-            {
-                cpwPb.Visible = true;
-                invalidInfoTT.SetToolTip(cpwPb, "Please confirm your password!");
-            }
-            else
-            {
-                cpwPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbMail.Text))
-            {
-                mPb.Visible = true;
-                invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
-            }
-            else
-            {
-                mPb.Visible = false;
-            }
-
-            if (string.IsNullOrEmpty(txbPhone.Text))
-            {
-                pPb.Visible = true;
-                invalidInfoTT.SetToolTip(pPb, "Please enter your phonenumber!");
-            }
-            else
-            {
-                pPb.Visible = false;
-=======
             try
             {
                 if (Checkbox() == true)// Nếu mọi thứ nhập vào ok thì...
@@ -217,111 +134,98 @@ namespace QuanLyKS
                     else
                         sex = "Nữ";
                     DateTime dateofbirth = DateOfBirth.Value;
-                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewAccount @SDT , @Mail , @Password , @Accounttype", new object[] {txbPhone.Text, txbMail.Text, hashpassword, "Khách hàng"});
-                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail", new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, "Việt Nam", txbPhone.Text, txbMail.Text });
+                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewAccount @SDT , @Mail , @Password , @Accounttype", new object[] { txbPhone.Text, txbMail.Text, hashpassword, "Khách hàng" });
+                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail" , new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, "Việt Nam", txbPhone.Text, txbMail.Text });
                     MessageBox.Show("Tạo tài khoản thành công.", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                     LogIn logIn = new LogIn();
                     logIn.Show();
-                    this.Hide(); 
+                    this.Hide();
                 }
-                //Hiệu ứng để trống textbox
                 #region
-                ErrorProvider[] ePs = { FNeP, LNeP, UNeP, PWeP, CPWeP, MeP, RCeP, PeP };
-                foreach (ErrorProvider ep in ePs)
-                {
-                    ep.Clear();
-                }
-
                 if (string.IsNullOrEmpty(txbFistName.Text))
                 {
-                    FNeP.SetError(txbFistName, "Please enter your firstname!");
+                    fnPb.Visible = true;
+                    invalidInfoTT.SetToolTip(fnPb, "Please enter your firstname!");
                 }
                 else
                 {
-                    FNeP.Clear();
+                    fnPb.Visible = false;
                 }
-
-
 
                 if (string.IsNullOrEmpty(txbLastName.Text))
                 {
-                    LNeP.SetError(txbLastName, "Please enter your lastname!");
+                    lnPb.Visible = true;
+                    invalidInfoTT.SetToolTip(lnPb, "Please enter your lastname!");
                 }
                 else
                 {
-                    LNeP.Clear();
+                    lnPb.Visible = false;
                 }
-
-
-
-                if (string.IsNullOrEmpty(txbUserName.Text))
-                {
-                    UNeP.SetError(txbUserName, "Please enter your username!");
-                }
-                else
-                {
-                    UNeP.Clear();
-                }
-
-
-
-                if (string.IsNullOrEmpty(txbPassWord.Text))
-                {
-                    PWeP.SetError(txbPassWord, "Please enter your password!");
-                }
-                else
-                {
-                    PWeP.Clear();
-                }
-
-
-
-                if (string.IsNullOrEmpty(txbConfirmPassword.Text))
-                {
-                    CPWeP.SetError(txbConfirmPassword, "Please confirm your password!");
-                }
-                else
-                {
-                    CPWeP.Clear();
-                }
-
-
-
-                if (string.IsNullOrEmpty(txbMail.Text))
-                {
-                    MeP.SetError(txbMail, "Please enter your mail!");
-                }
-                else
-                {
-                    MeP.Clear();
-                }
-
-
 
                 if (string.IsNullOrEmpty(txbRegistration.Text))
                 {
-                    RCeP.SetError(txbRegistration, "Please enter your registration code!");
+                    rcPb.Visible = true;
+                    invalidInfoTT.SetToolTip(rcPb, "Please enter your registration code!");
                 }
                 else
                 {
-                    RCeP.Clear();
+                    rcPb.Visible = false;
                 }
 
+                if (string.IsNullOrEmpty(txbUserName.Text))
+                {
+                    unPb.Visible = true;
+                    invalidInfoTT.SetToolTip(unPb, "Please enter your username!");
+                }
+                else
+                {
+                    unPb.Visible = false;
+                }
 
+                if (string.IsNullOrEmpty(txbPassWord.Text))
+                {
+                    pwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pwPb, "Please enter your password!");
+                }
+                else
+                {
+                    pwPb.Visible = false;
+                }
+
+                if (string.IsNullOrEmpty(txbConfirmPassword.Text))
+                {
+                    cpwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(cpwPb, "Please confirm your password!");
+                }
+                else
+                {
+                    cpwPb.Visible = false;
+                }
+
+                if (string.IsNullOrEmpty(txbMail.Text))
+                {
+                    mPb.Visible = true;
+                    invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
+                }
+                else
+                {
+                    mPb.Visible = false;
+                }
 
                 if (string.IsNullOrEmpty(txbPhone.Text))
                 {
-                    PeP.SetError(txbPhone, "Please enter your phone number!");
+                    pPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pPb, "Please enter your phonenumber!");
                 }
                 else
                 {
-                    PeP.Clear();
+                    pPb.Visible = false;
                 }
                 #endregion
             }
             catch (SqlException ex)
             {
-                if (ex.Number == 2627) 
+                if (ex.Number == 2627)
                 {
                     MessageBox.Show("Số điện thoại hoặc email đã tồn tại. Vui lòng nhập lại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -329,7 +233,6 @@ namespace QuanLyKS
                 {
                     MessageBox.Show("Lỗi: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
->>>>>>> bb26ae0d49a9ad6b5e476c9f7bc2a0e7dffa657b
             }
         }
 

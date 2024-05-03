@@ -13,11 +13,7 @@ namespace QuanLyKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new Admin());}
-=======
             Application.Run(new SignUp());        
         }
->>>>>>> bb26ae0d49a9ad6b5e476c9f7bc2a0e7dffa657b
     }
 }
