@@ -75,11 +75,12 @@ create table TaiKhoan
 (
 	SDT VARCHAR(30) UNIQUE NOT NULL,
 	Mail varchar(30) UNIQUE NOT NULL, -- đăng nhập bẳng mail hoặc sdt
-	MatKhau nvarchar(30) NOT NULL,
+	MatKhau nvarchar(70) NOT NULL,
 	LoaiTaiKhoan varchar(20) NOT NULL, -- quản lí, nhân viên hoặc khách
 	PRIMARY KEY(SDT,Mail)	
 )
 GO
+
 
 CREATE TABLE KhachInfoBill(
 	ID INT IDENTITY PRIMARY KEY,
@@ -88,3 +89,154 @@ CREATE TABLE KhachInfoBill(
 )
 GO
 
+CREATE TRIGGER Unique_CCCD_NhanVien
+ON dbo.NhanVien
+AFTER INSERT, UPDATE
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM Inserted AS i JOIN dbo.NhanVien AS n ON i.CCCD = n.CCCD WHERE i.IDNV <> n.IDNV)
+	BEGIN
+		RAISERROR('CCCD phải là duy nhất.', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+END
+GO
+
+CREATE TRIGGER Unique_CCCD_Khach
+ON dbo.Khach
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    IF EXISTS(SELECT 1 FROM Inserted AS i JOIN dbo.Khach AS k ON i.Mail = k.Mail WHERE i.IDKhach <> k.IDKhach)
+	BEGIN
+		RAISERROR('Mail phải là duy nhất', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+END
+GO
+
+CREATE TRIGGER Unique_MaPhong_Phong
+ON dbo.Phong
+AFTER INSERT, UPDATE
+AS
+BEGIN
+	IF EXISTS(SELECT 1 FROM Inserted AS i JOIN dbo.Phong AS p ON i.MaPhong = p.MaPhong WHERE i.MaPhong <> p.MaPhong)
+	BEGIN
+		RAISERROR('Mã phòng phải là duy nhất', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+END
+GO
+
+CREATE TRIGGER Check_NgayTra_DatTruoc
+ON dbo.DatTruoc
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    IF EXISTS(SELECT 1 FROM Inserted WHERE Inserted.NgayTra <= Inserted.NgayNhan)
+	BEGIN
+	    RAISERROR('Thời gian trả phòng phải lơn hơn thời gian đặt', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+END
+GO
+
+CREATE TRIGGER Update_Tongtien_BienLai
+ON dbo.BienLai
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    UPDATE dbo.BienLai
+	SET TongTien = CASE
+		WHEN NgayRa IS NOT NULL THEN
+			DATEDIFF(DAY, NgayVao, NgayRa) * TienPhong - discount + VAT
+		ELSE 0
+	END,
+	TrangThai = CASE WHEN NgayRa IS NOT NULL THEN 1 ELSE 0 END 
+END
+GO
+
+CREATE TRIGGER Unique_SDT_Mail_TaiKhoan
+ON dbo.TaiKhoan
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    IF EXISTS(SELECT 1 FROM Inserted AS i JOIN dbo.TaiKhoan AS t ON t.SDT = i.SDT WHERE t.SDT <> i.SDT)
+	BEGIN
+	    RAISERROR('Số điện thoại phải là duy nhất', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+	
+	IF EXISTS(SELECT 1 FROM Inserted AS i JOIN dbo.TaiKhoan AS t ON t.Mail = i.Mail WHERE t.Mail <> i.Mail)
+	BEGIN
+	    RAISERROR('Mail phải là duy nhất', 16, 1)
+		ROLLBACK TRANSACTION
+	END
+END
+GO
+
+
+
+CREATE PROCEDURE CreateNewAccount 
+	@SDT VARCHAR(30), @Mail VARCHAR(30), @Password NVARCHAR(30), @Accounttype NVARCHAR(20)
+AS
+BEGIN
+    INSERT INTO dbo.TaiKhoan
+    (
+        SDT,
+        Mail,
+        MatKhau,
+        LoaiTaiKhoan
+    )
+    VALUES
+    (   @SDT,  -- SDT - varchar(30)
+        @Mail,  -- Mail - varchar(30)
+        @Password, -- MatKhau - nvarchar(30)
+        @Accounttype -- LoaiTaiKhoan - nvarchar(20)
+        )
+END
+GO
+
+-- EXEC dbo.CreateNewAccount @SDT, @Mail, @Password, @Accounttype
+GO
+
+CREATE PROCEDURE CreateNewGuest
+@Guestname NVARCHAR(50),
+@Sex NVARCHAR(5),
+@DateOfBrith DATE,
+@CCCD VARCHAR(15),
+@Nationality NVARCHAR(50),
+@Phone VARCHAR(11),
+@Mail VARCHAR(50)
+AS
+BEGIN
+    INSERT INTO dbo.Khach
+    (
+        TenKhach,
+        GioiTinh,
+        NgaySinh,
+        CCCD,
+        QuocTich,
+        SDT,
+        Mail
+    )
+    VALUES
+    (   @Guestname, -- TenKhach - nvarchar(50)
+        @Sex, -- GioiTinh - nvarchar(5)
+        @DateOfBrith, -- NgaySinh - date
+        @CCCD,   -- CCCD - varchar(15)
+        @Nationality, -- QuocTich - nvarchar(50)
+        @Phone, -- SDT - varchar(11)
+        @Mail    -- Mail - varchar(50)
+    )
+END
+
+-- EXEC dbo.CreateNewGuest @Guestname, @Sex, @DateOfBrith, @CCCD, @Nationality, @Phone, @Mail
+EXEC dbo.CreateNewGuest @Guestname = N'',            -- nvarchar(50)
+                        @Sex = N'',                  -- nvarchar(5)
+                        @DateOfBrith = '2024-05-01', -- date
+                        @CCCD = '',                  -- varchar(15)
+                        @Nationality = N'',          -- nvarchar(50)
+                        @Phone = '',                 -- varchar(11)
+                        @Mail = ''                   -- varchar(50)
+GO

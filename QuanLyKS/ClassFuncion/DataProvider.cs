@@ -11,9 +11,9 @@ namespace QuanLyKS.ClassFuncion
 {
     public abstract class Execute
     {
-        public abstract DataTable ExecuteQuerry(string querry, object[] parameter = null);
-        public abstract int ExecuteNonQuerry(string querry, object[] parameter = null);
-        public abstract object ExecuteScalar(string querry, object[] parameter = null);
+        public abstract DataTable ExecuteQuerry(string querry, object[] parameter = null);// Thực hiện query và trả về kết quả query(trả về 1 datetable)
+        public abstract int ExecuteNonQuerry(string querry, object[] parameter = null);// Thực hiện querry và trả về số lượng thành công
+        public abstract object ExecuteScalar(string querry, object[] parameter = null);// Thực hiện query và trả về kết quả đầu tiên của kết quảs
     }
     public class DataProvider : Execute
     {
