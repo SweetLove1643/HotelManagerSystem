@@ -39,10 +39,12 @@ namespace QuanLyKS
         {
             if(string.IsNullOrEmpty(txbOTP.Text))
             {
-                vcEp.SetError(txbOTP, "Please enter the vertification code!");
+                vcPb.Visible = true;
+                invalidInfoTT.SetToolTip(vcPb, "Please enter the vertification code!");
             }
             else
             {
+                vcPb.Visible = false;
                 NewPassword np = new NewPassword(this);
                 np.Show();
                 this.Hide();
