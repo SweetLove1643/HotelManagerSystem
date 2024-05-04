@@ -29,7 +29,6 @@ namespace QuanLyKS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vertification));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
@@ -40,9 +39,10 @@ namespace QuanLyKS
             this.txbOTP = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
-            this.vcEp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.vcPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.invalidInfoTT = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vcEp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vcPb)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
@@ -178,9 +178,24 @@ namespace QuanLyKS
             this.btnContinue.Text = "Continue";
             this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
-            // vcEp
+            // vcPb
             // 
-            this.vcEp.ContainerControl = this;
+            this.vcPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.vcPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.vcPb.Image = ((System.Drawing.Image)(resources.GetObject("vcPb.Image")));
+            this.vcPb.ImageRotate = 0F;
+            this.vcPb.Location = new System.Drawing.Point(595, 165);
+            this.vcPb.Name = "vcPb";
+            this.vcPb.Size = new System.Drawing.Size(20, 20);
+            this.vcPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.vcPb.TabIndex = 57;
+            this.vcPb.TabStop = false;
+            this.vcPb.Visible = false;
+            // 
+            // invalidInfoTT
+            // 
+            this.invalidInfoTT.AllowLinksHandling = true;
+            this.invalidInfoTT.MaximumSize = new System.Drawing.Size(0, 0);
             // 
             // Vertification
             // 
@@ -190,6 +205,7 @@ namespace QuanLyKS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 310);
+            this.Controls.Add(this.vcPb);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbOTP);
@@ -204,7 +220,7 @@ namespace QuanLyKS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vertification";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vcEp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vcPb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -220,6 +236,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2TextBox txbOTP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnContinue;
-        private System.Windows.Forms.ErrorProvider vcEp;
+        private Guna.UI2.WinForms.Guna2PictureBox vcPb;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip invalidInfoTT;
     }
 }

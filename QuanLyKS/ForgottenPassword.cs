@@ -14,7 +14,7 @@ using System.Windows.Forms;
 namespace QuanLyKS
 {
     public partial class ForgottenPassword : Form
-    {  
+    {
         private LogIn lnF;
 
 
@@ -30,10 +30,12 @@ namespace QuanLyKS
             {
                 if (string.IsNullOrEmpty(txbMail.Text)) // kiểm tra txb rỗng
                 {
-                    //mEp.SetError(txbMail, "Please enter your mail!");
+                    mPb.Visible = true;
+                    invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
                 }
                 else
                 {
+                    mPb.Visible = false;
                     if (IsValidEmail(txbMail.Text)) // Kiểm tra định dạng email người dùng nhập
                     {
                         if (DataProvider.Instance.ExecuteNonQuerry("EXEC SeachEmail @Email ", new object[] { txbMail.Text }) != 0)// email tồn tại trong db thì...
@@ -53,11 +55,10 @@ namespace QuanLyKS
                     else
                     {
                         MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
 
+                    }
                 }
-                mPb.Visible = true;
-                invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
+
             }
             catch (FormatException ex)
             {
