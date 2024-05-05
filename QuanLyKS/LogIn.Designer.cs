@@ -90,7 +90,7 @@ namespace QuanLyKS
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.PasswordChar = '\0';
             this.txbUsername.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbUsername.PlaceholderText = "Username";
+            this.txbUsername.PlaceholderText = "Email / số điện thoại";
             this.txbUsername.SelectedText = "";
             this.txbUsername.Size = new System.Drawing.Size(470, 50);
             this.txbUsername.TabIndex = 4;
@@ -207,7 +207,7 @@ namespace QuanLyKS
             this.btnForgetPass.LinkColor = System.Drawing.Color.Gray;
             this.btnForgetPass.Location = new System.Drawing.Point(435, 326);
             this.btnForgetPass.Name = "btnForgetPass";
-            this.btnForgetPass.Size = new System.Drawing.Size(153, 17);
+            this.btnForgetPass.Size = new System.Drawing.Size(144, 16);
             this.btnForgetPass.TabIndex = 10;
             this.btnForgetPass.TabStop = true;
             this.btnForgetPass.Text = "Forgot your password?";
