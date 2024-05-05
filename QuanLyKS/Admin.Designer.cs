@@ -293,7 +293,7 @@ namespace QuanLyKS
             this.revenueBtn.Name = "revenueBtn";
             this.revenueBtn.Size = new System.Drawing.Size(231, 44);
             this.revenueBtn.TabIndex = 1;
-            this.revenueBtn.Text = "Revenue";
+            this.revenueBtn.Text = "Invoice";
             // 
             // guna2Panel8
             // 
