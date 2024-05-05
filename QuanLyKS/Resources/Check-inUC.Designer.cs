@@ -30,16 +30,12 @@ namespace QuanLyKS.Resources
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Check_inUC));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.DateOfBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -94,10 +90,6 @@ namespace QuanLyKS.Resources
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.guna2DateTimePicker1);
-            this.guna2Panel1.Controls.Add(this.DateOfBirth);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel15);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel14);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel13);
@@ -118,64 +110,6 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Size = new System.Drawing.Size(600, 490);
             this.guna2Panel1.TabIndex = 32;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(20, 395);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(150, 30);
-            this.guna2HtmlLabel2.TabIndex = 67;
-            this.guna2HtmlLabel2.Text = "Ngày trả phòng";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 325);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 30);
-            this.guna2HtmlLabel1.TabIndex = 66;
-            this.guna2HtmlLabel1.Text = "Ngày nhận phòng";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomFormat = "";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(190, 380);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(400, 50);
-            this.guna2DateTimePicker1.TabIndex = 65;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
-            // 
-            // DateOfBirth
-            // 
-            this.DateOfBirth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateOfBirth.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateOfBirth.Checked = true;
-            this.DateOfBirth.CustomFormat = "";
-            this.DateOfBirth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateOfBirth.Location = new System.Drawing.Point(190, 310);
-            this.DateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateOfBirth.Name = "DateOfBirth";
-            this.DateOfBirth.Size = new System.Drawing.Size(400, 50);
-            this.DateOfBirth.TabIndex = 64;
-            this.DateOfBirth.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
-            // 
             // guna2HtmlLabel15
             // 
             this.guna2HtmlLabel15.AutoSize = false;
@@ -185,7 +119,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             this.guna2HtmlLabel15.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel15.TabIndex = 63;
-            this.guna2HtmlLabel15.Text = "Mã phòng";
+            this.guna2HtmlLabel15.Text = "Mail";
             this.guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel14
@@ -197,7 +131,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel14.TabIndex = 62;
-            this.guna2HtmlLabel14.Text = "Số người";
+            this.guna2HtmlLabel14.Text = "Mã phòng";
             this.guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel13
@@ -209,7 +143,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel13.TabIndex = 61;
-            this.guna2HtmlLabel13.Text = "CCCD";
+            this.guna2HtmlLabel13.Text = "Số người";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel10
@@ -221,7 +155,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel10.TabIndex = 58;
-            this.guna2HtmlLabel10.Text = "Tên khách hàng";
+            this.guna2HtmlLabel10.Text = "CCCD";
             this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel9
@@ -233,7 +167,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel9.TabIndex = 57;
-            this.guna2HtmlLabel9.Text = "Mã khách hàng";
+            this.guna2HtmlLabel9.Text = "Tên khách hàng";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Panel7
@@ -441,27 +375,27 @@ namespace QuanLyKS.Resources
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.Gray;
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 50);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -531,9 +465,5 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox txbUserName;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker DateOfBirth;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }

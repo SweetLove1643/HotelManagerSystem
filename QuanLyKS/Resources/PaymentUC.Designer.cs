@@ -29,15 +29,13 @@ namespace QuanLyKS.Resources
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentUC));
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.DateOfBirth = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -75,9 +73,7 @@ namespace QuanLyKS.Resources
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Controls.Add(this.guna2DateTimePicker1);
             this.guna2Panel1.Controls.Add(this.DateOfBirth);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel15);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel14);
@@ -99,46 +95,17 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Size = new System.Drawing.Size(600, 490);
             this.guna2Panel1.TabIndex = 38;
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(20, 395);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(150, 30);
-            this.guna2HtmlLabel2.TabIndex = 67;
-            this.guna2HtmlLabel2.Text = "Ngày thanh toán";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 325);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 330);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel1.TabIndex = 66;
-            this.guna2HtmlLabel1.Text = "Ngày nhận phòng";
+            this.guna2HtmlLabel1.Text = "Phương thức";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.CustomFormat = "";
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(190, 380);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(400, 50);
-            this.guna2DateTimePicker1.TabIndex = 65;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
             // 
             // DateOfBirth
             // 
@@ -149,7 +116,7 @@ namespace QuanLyKS.Resources
             this.DateOfBirth.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.DateOfBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateOfBirth.Location = new System.Drawing.Point(190, 310);
+            this.DateOfBirth.Location = new System.Drawing.Point(190, 190);
             this.DateOfBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateOfBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateOfBirth.Name = "DateOfBirth";
@@ -162,11 +129,11 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel15.AutoSize = false;
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(20, 260);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(20, 270);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             this.guna2HtmlLabel15.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel15.TabIndex = 63;
-            this.guna2HtmlLabel15.Text = "Mã phòng";
+            this.guna2HtmlLabel15.Text = "Tổng tiền";
             this.guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel14
@@ -178,7 +145,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel14.TabIndex = 62;
-            this.guna2HtmlLabel14.Text = "Phương thức";
+            this.guna2HtmlLabel14.Text = "Ngày nhận phòng";
             this.guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel13
@@ -190,7 +157,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel13.TabIndex = 61;
-            this.guna2HtmlLabel13.Text = "Tổng tiền";
+            this.guna2HtmlLabel13.Text = "Mã phòng";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel10
@@ -220,7 +187,7 @@ namespace QuanLyKS.Resources
             // guna2Panel7
             // 
             this.guna2Panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel7.Location = new System.Drawing.Point(190, 290);
+            this.guna2Panel7.Location = new System.Drawing.Point(190, 300);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(400, 1);
             this.guna2Panel7.TabIndex = 45;
@@ -242,7 +209,7 @@ namespace QuanLyKS.Resources
             this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(190, 250);
+            this.guna2TextBox7.Location = new System.Drawing.Point(190, 260);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
@@ -255,7 +222,7 @@ namespace QuanLyKS.Resources
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel6.Location = new System.Drawing.Point(190, 230);
+            this.guna2Panel6.Location = new System.Drawing.Point(190, 360);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(400, 1);
             this.guna2Panel6.TabIndex = 45;
@@ -277,7 +244,7 @@ namespace QuanLyKS.Resources
             this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.Location = new System.Drawing.Point(190, 190);
+            this.guna2TextBox6.Location = new System.Drawing.Point(190, 320);
             this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox6.Name = "guna2TextBox6";
             this.guna2TextBox6.PasswordChar = '\0';
@@ -394,27 +361,27 @@ namespace QuanLyKS.Resources
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle18;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.Gray;
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 50);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -462,7 +429,7 @@ namespace QuanLyKS.Resources
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(200, 40);
             this.guna2Button2.TabIndex = 40;
-            this.guna2Button2.Text = "Xác nhận";
+            this.guna2Button2.Text = "Thanh toán";
             // 
             // guna2TextBox2
             // 
@@ -515,9 +482,7 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateOfBirth;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;

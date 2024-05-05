@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyKS
+namespace QuanLyKS.Resources
 {
-    public partial class User : Form
+    public partial class AdminInfo : UserControl
     {
-        public User()
+        public AdminInfo()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

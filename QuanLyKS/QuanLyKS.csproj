@@ -86,7 +86,7 @@
     <Compile Include="ClassObject\ReserveObject.cs" />
     <Compile Include="ClassObject\RoomObject.cs" />
     <Compile Include="Employee.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
@@ -144,6 +144,12 @@
     </Compile>
     <Compile Include="Resources\Invoice.Designer.cs">
       <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AdminInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Resources\AdminInfo.Designer.cs">
+      <DependentUpon>AdminInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Resources\RoomUC.cs">
       <SubType>UserControl</SubType>
@@ -203,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Invoice.resx">
       <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AdminInfo.resx">
+      <DependentUpon>AdminInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\RoomUC.resx">
       <DependentUpon>RoomUC.cs</DependentUpon>

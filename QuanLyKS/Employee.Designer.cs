@@ -3,12 +3,12 @@ namespace QuanLyKS
 {
     partial class Employee
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,17 +21,17 @@ namespace QuanLyKS
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.adminBtn = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
@@ -49,7 +49,9 @@ namespace QuanLyKS
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.logoutBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
             this.sidebar.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).BeginInit();
@@ -79,24 +81,7 @@ namespace QuanLyKS
             this.sidebar.MinimumSize = new System.Drawing.Size(70, 600);
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(240, 600);
-            this.sidebar.TabIndex = 1;
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
-            this.guna2Button8.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button8.Location = new System.Drawing.Point(1040, 10);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(50, 40);
-            this.guna2Button8.TabIndex = 27;
+            this.sidebar.TabIndex = 28;
             // 
             // guna2Panel4
             // 
@@ -119,6 +104,7 @@ namespace QuanLyKS
             this.adminBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.adminBtn.TabIndex = 2;
             this.adminBtn.TabStop = false;
+            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
             // guna2Button6
             // 
@@ -281,38 +267,65 @@ namespace QuanLyKS
             // 
             // guna2Panel7
             // 
-            this.guna2Panel7.Controls.Add(this.guna2Button7);
+            this.guna2Panel7.Controls.Add(this.logoutBtn);
             this.guna2Panel7.Location = new System.Drawing.Point(3, 540);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel7.TabIndex = 27;
             // 
-            // guna2Button7
+            // logoutBtn
             // 
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.Location = new System.Drawing.Point(3, 3);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(231, 44);
-            this.guna2Button7.TabIndex = 1;
-            this.guna2Button7.Text = "Log out";
+            this.logoutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logoutBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.logoutBtn.ForeColor = System.Drawing.Color.Black;
+            this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
+            this.logoutBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.logoutBtn.Location = new System.Drawing.Point(3, 3);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(231, 44);
+            this.logoutBtn.TabIndex = 1;
+            this.logoutBtn.Text = "Log out";
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
+            this.guna2Button8.ImageSize = new System.Drawing.Size(30, 30);
+            this.guna2Button8.Location = new System.Drawing.Point(1040, 10);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.Size = new System.Drawing.Size(50, 40);
+            this.guna2Button8.TabIndex = 29;
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.ClientSize = new System.Drawing.Size(1100, 600);
             this.Controls.Add(this.guna2Button8);
             this.Controls.Add(this.sidebar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Employee";
-            this.Size = new System.Drawing.Size(1100, 600);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Employee";
             this.sidebar.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).EndInit();
@@ -328,6 +341,7 @@ namespace QuanLyKS
 
         #endregion
 
+        private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2PictureBox adminBtn;
@@ -346,7 +360,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button logoutBtn;
+        private System.Windows.Forms.Timer sidebarTimer;
     }
 }
