@@ -151,6 +151,7 @@ namespace QuanLyKS
             this.txbOTP.SelectedText = "";
             this.txbOTP.Size = new System.Drawing.Size(480, 50);
             this.txbOTP.TabIndex = 41;
+            this.txbOTP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbOTP_KeyPress);
             // 
             // guna2Panel1
             // 

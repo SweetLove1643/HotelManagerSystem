@@ -134,8 +134,8 @@ namespace QuanLyKS
                     else
                         sex = "Nữ";
                     DateTime dateofbirth = DateOfBirth.Value;
-                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewAccount @SDT , @Mail , @Password , @Accounttype", new object[] { txbPhone.Text, txbMail.Text, hashpassword, "Khách hàng" });
-                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail" , new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, "Việt Nam", txbPhone.Text, txbMail.Text });
+                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewAccount @SDT , @Mail , @Password , @Accounttype ", new object[] { txbPhone.Text, txbMail.Text, hashpassword, "Khách hàng" });
+                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail " , new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, "Việt Nam", txbPhone.Text, txbMail.Text });
                     MessageBox.Show("Tạo tài khoản thành công.", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                     LogIn logIn = new LogIn();
                     logIn.Show();
