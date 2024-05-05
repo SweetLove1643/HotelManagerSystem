@@ -29,8 +29,8 @@ namespace QuanLyKS
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.picturePb = new Guna.UI2.WinForms.Guna2PictureBox();
             this.checkPn = new Guna.UI2.WinForms.Guna2Panel();
             this.check5 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
@@ -42,24 +42,28 @@ namespace QuanLyKS
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.nextBtn = new Guna.UI2.WinForms.Guna2Button();
             this.previousBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.accountContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.userBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.accountBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.bookingBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.logoutBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.accountTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picturePb)).BeginInit();
             this.checkPn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.accountContainer.SuspendLayout();
+            this.guna2Panel9.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(800, 12);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 32;
-            this.guna2Button3.Text = "guna2Button3";
             // 
             // picturePb
             // 
@@ -84,10 +88,10 @@ namespace QuanLyKS
             // 
             // check5
             // 
-            this.check5.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check5.CheckedState.BorderColor = System.Drawing.Color.LightCoral;
             this.check5.CheckedState.BorderThickness = 0;
-            this.check5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.check5.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.check5.CheckedState.FillColor = System.Drawing.Color.LightCoral;
+            this.check5.CheckedState.InnerColor = System.Drawing.Color.LightCoral;
             this.check5.Location = new System.Drawing.Point(170, 5);
             this.check5.Name = "check5";
             this.check5.Size = new System.Drawing.Size(20, 20);
@@ -97,13 +101,14 @@ namespace QuanLyKS
             this.check5.UncheckedState.BorderThickness = 2;
             this.check5.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.check5.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.check5.CheckedChanged += new System.EventHandler(this.check5_CheckedChanged);
             // 
             // check4
             // 
-            this.check4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check4.CheckedState.BorderColor = System.Drawing.Color.LightCoral;
             this.check4.CheckedState.BorderThickness = 0;
-            this.check4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.check4.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.check4.CheckedState.FillColor = System.Drawing.Color.LightCoral;
+            this.check4.CheckedState.InnerColor = System.Drawing.Color.LightCoral;
             this.check4.Location = new System.Drawing.Point(130, 5);
             this.check4.Name = "check4";
             this.check4.Size = new System.Drawing.Size(20, 20);
@@ -113,13 +118,14 @@ namespace QuanLyKS
             this.check4.UncheckedState.BorderThickness = 2;
             this.check4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.check4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.check4.CheckedChanged += new System.EventHandler(this.check5_CheckedChanged);
             // 
             // check3
             // 
-            this.check3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check3.CheckedState.BorderColor = System.Drawing.Color.LightCoral;
             this.check3.CheckedState.BorderThickness = 0;
-            this.check3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.check3.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.check3.CheckedState.FillColor = System.Drawing.Color.LightCoral;
+            this.check3.CheckedState.InnerColor = System.Drawing.Color.LightCoral;
             this.check3.Location = new System.Drawing.Point(90, 5);
             this.check3.Name = "check3";
             this.check3.Size = new System.Drawing.Size(20, 20);
@@ -129,13 +135,14 @@ namespace QuanLyKS
             this.check3.UncheckedState.BorderThickness = 2;
             this.check3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.check3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.check3.CheckedChanged += new System.EventHandler(this.check5_CheckedChanged);
             // 
             // check2
             // 
-            this.check2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check2.CheckedState.BorderColor = System.Drawing.Color.LightCoral;
             this.check2.CheckedState.BorderThickness = 0;
-            this.check2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.check2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.check2.CheckedState.FillColor = System.Drawing.Color.LightCoral;
+            this.check2.CheckedState.InnerColor = System.Drawing.Color.LightCoral;
             this.check2.Location = new System.Drawing.Point(50, 5);
             this.check2.Name = "check2";
             this.check2.Size = new System.Drawing.Size(20, 20);
@@ -145,13 +152,14 @@ namespace QuanLyKS
             this.check2.UncheckedState.BorderThickness = 2;
             this.check2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.check2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.check2.CheckedChanged += new System.EventHandler(this.check5_CheckedChanged);
             // 
             // check1
             // 
-            this.check1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.check1.CheckedState.BorderColor = System.Drawing.Color.LightCoral;
             this.check1.CheckedState.BorderThickness = 0;
-            this.check1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.check1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.check1.CheckedState.FillColor = System.Drawing.Color.LightCoral;
+            this.check1.CheckedState.InnerColor = System.Drawing.Color.LightCoral;
             this.check1.Location = new System.Drawing.Point(10, 5);
             this.check1.Name = "check1";
             this.check1.Size = new System.Drawing.Size(20, 20);
@@ -161,6 +169,7 @@ namespace QuanLyKS
             this.check1.UncheckedState.BorderThickness = 2;
             this.check1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
             this.check1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.check1.CheckedChanged += new System.EventHandler(this.check5_CheckedChanged);
             // 
             // guna2Button8
             // 
@@ -208,6 +217,7 @@ namespace QuanLyKS
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(100, 100);
             this.nextBtn.TabIndex = 1;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // previousBtn
             // 
@@ -224,6 +234,151 @@ namespace QuanLyKS
             this.previousBtn.Name = "previousBtn";
             this.previousBtn.Size = new System.Drawing.Size(100, 100);
             this.previousBtn.TabIndex = 0;
+            this.previousBtn.Click += new System.EventHandler(this.previousBtn_Click);
+            // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.picturePb;
+            this.guna2DragControl1.UseTransparentDrag = true;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // accountContainer
+            // 
+            this.accountContainer.Controls.Add(this.guna2Panel9);
+            this.accountContainer.Controls.Add(this.guna2Panel1);
+            this.accountContainer.Controls.Add(this.guna2Panel2);
+            this.accountContainer.Controls.Add(this.guna2Panel3);
+            this.accountContainer.Location = new System.Drawing.Point(800, 15);
+            this.accountContainer.MaximumSize = new System.Drawing.Size(200, 200);
+            this.accountContainer.MinimumSize = new System.Drawing.Size(200, 60);
+            this.accountContainer.Name = "accountContainer";
+            this.accountContainer.Size = new System.Drawing.Size(200, 60);
+            this.accountContainer.TabIndex = 2;
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.Controls.Add(this.userBtn);
+            this.guna2Panel9.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.Size = new System.Drawing.Size(197, 51);
+            this.guna2Panel9.TabIndex = 31;
+            // 
+            // userBtn
+            // 
+            this.userBtn.BorderRadius = 5;
+            this.userBtn.BorderThickness = 1;
+            this.userBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.userBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.userBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.userBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.userBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.userBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.userBtn.ForeColor = System.Drawing.Color.Black;
+            this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
+            this.userBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.userBtn.Location = new System.Drawing.Point(3, 3);
+            this.userBtn.Name = "userBtn";
+            this.userBtn.Size = new System.Drawing.Size(191, 44);
+            this.userBtn.TabIndex = 1;
+            this.userBtn.Text = "Vu Anh";
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.accountBtn);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 60);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(194, 42);
+            this.guna2Panel1.TabIndex = 32;
+            // 
+            // accountBtn
+            // 
+            this.accountBtn.BorderRadius = 5;
+            this.accountBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.accountBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.accountBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.accountBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.accountBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.accountBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.accountBtn.ForeColor = System.Drawing.Color.Black;
+            this.accountBtn.Image = ((System.Drawing.Image)(resources.GetObject("accountBtn.Image")));
+            this.accountBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.accountBtn.Location = new System.Drawing.Point(3, 3);
+            this.accountBtn.Name = "accountBtn";
+            this.accountBtn.Size = new System.Drawing.Size(188, 35);
+            this.accountBtn.TabIndex = 1;
+            this.accountBtn.Text = "Account";
+            this.accountBtn.Click += new System.EventHandler(this.accountBtn_Click);
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.bookingBtn);
+            this.guna2Panel2.Location = new System.Drawing.Point(3, 108);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(194, 42);
+            this.guna2Panel2.TabIndex = 33;
+            // 
+            // bookingBtn
+            // 
+            this.bookingBtn.BorderRadius = 5;
+            this.bookingBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bookingBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bookingBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bookingBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bookingBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.bookingBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bookingBtn.ForeColor = System.Drawing.Color.Black;
+            this.bookingBtn.Image = ((System.Drawing.Image)(resources.GetObject("bookingBtn.Image")));
+            this.bookingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bookingBtn.Location = new System.Drawing.Point(3, 3);
+            this.bookingBtn.Name = "bookingBtn";
+            this.bookingBtn.Size = new System.Drawing.Size(188, 35);
+            this.bookingBtn.TabIndex = 1;
+            this.bookingBtn.Text = "Booking";
+            this.bookingBtn.Click += new System.EventHandler(this.bookingBtn_Click);
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.logoutBtn);
+            this.guna2Panel3.Location = new System.Drawing.Point(3, 156);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(194, 42);
+            this.guna2Panel3.TabIndex = 34;
+            // 
+            // logoutBtn
+            // 
+            this.logoutBtn.BorderRadius = 5;
+            this.logoutBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.logoutBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.logoutBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.logoutBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.logoutBtn.ForeColor = System.Drawing.Color.Black;
+            this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
+            this.logoutBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.logoutBtn.Location = new System.Drawing.Point(3, 3);
+            this.logoutBtn.Name = "logoutBtn";
+            this.logoutBtn.Size = new System.Drawing.Size(188, 35);
+            this.logoutBtn.TabIndex = 1;
+            this.logoutBtn.Text = "Log out";
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
+            // 
+            // accountTimer
+            // 
+            this.accountTimer.Interval = 10;
+            this.accountTimer.Tick += new System.EventHandler(this.accountTimer_Tick);
             // 
             // User
             // 
@@ -231,7 +386,7 @@ namespace QuanLyKS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.accountContainer);
             this.Controls.Add(this.picturePb);
             this.Controls.Add(this.checkPn);
             this.Controls.Add(this.guna2Button8);
@@ -241,9 +396,15 @@ namespace QuanLyKS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User";
             this.Text = "User";
+            this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePb)).EndInit();
             this.checkPn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.accountContainer.ResumeLayout(false);
+            this.guna2Panel9.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -261,6 +422,18 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2CustomRadioButton check2;
         private Guna.UI2.WinForms.Guna2CustomRadioButton check1;
         private Guna.UI2.WinForms.Guna2PictureBox picturePb;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.FlowLayoutPanel accountContainer;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Button accountBtn;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Button bookingBtn;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Button logoutBtn;
+        private System.Windows.Forms.Timer accountTimer;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private Guna.UI2.WinForms.Guna2Button userBtn;
     }
 }
