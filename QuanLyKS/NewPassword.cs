@@ -97,7 +97,8 @@ namespace QuanLyKS
                 {
                     if (txbNewPassword.Text.Equals(txbConfirmNewPassword.Text))
                     {
-                        if(DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.ChangePassword @Email , @Newpassword ", new object[] {mail, txbNewPassword.Text}) != 0)
+                        string hasspass = Hashing.Instance.Hash384(txbNewPassword.Text);
+                        if(DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.ChangePassword @Email , @Newpassword ", new object[] {mail, hasspass}) != 0)
                         {
                             MessageBox.Show("Thay đổi mật khẩu thành công", "Messages", MessageBoxButtons.OK);
                             LogIn logIn = new LogIn();

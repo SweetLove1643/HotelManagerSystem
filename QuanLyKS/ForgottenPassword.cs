@@ -47,10 +47,6 @@ namespace QuanLyKS
                             vc.Show();
                             this.Hide();
                         }
-                        else
-                        {
-                            MessageBox.Show("Email này chưa liên kết với bất kì tài khoản", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
                     }
                     else
                     {
