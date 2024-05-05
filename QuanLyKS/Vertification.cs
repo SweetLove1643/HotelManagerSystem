@@ -13,13 +13,16 @@ namespace QuanLyKS
     public partial class Vertification : Form
     {
         private ForgottenPassword fpF;
-        public Vertification(ForgottenPassword fp)
+        private string otp = "";
+        public string mail = "";
+        public Vertification(ForgottenPassword fp, string otp)
         {
             InitializeComponent();
             fpF = fp;
-            if(fp != null)
+            this.otp = otp;
+            if (fp != null)
             {
-                string mail = fp.txbMail.Text;
+                mail = fp.txbMail.Text;
                 noteLb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
             }
         }
@@ -37,17 +40,40 @@ namespace QuanLyKS
 
         private void continueBtn_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txbOTP.Text))
+            try
             {
-                vcPb.Visible = true;
-                invalidInfoTT.SetToolTip(vcPb, "Please enter the vertification code!");
+                if (string.IsNullOrEmpty(txbOTP.Text))
+                {
+                    vcPb.Visible = true;
+                    invalidInfoTT.SetToolTip(vcPb, "Please enter the vertification code!");
+                }
+                else
+                {
+                    vcPb.Visible = false;
+                    if (otp.Equals(txbOTP.Text))
+                    {
+                        NewPassword fnp = new NewPassword(this);
+                        fnp.Show();
+                        this.Hide();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mã OTP không đúng, vui lòng nhập lại!", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
-            else
+            catch (FormatException ex)
             {
-                vcPb.Visible = false;
-                NewPassword np = new NewPassword(this);
-                np.Show();
-                this.Hide();
+                MessageBox.Show($"{ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void txbOTP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

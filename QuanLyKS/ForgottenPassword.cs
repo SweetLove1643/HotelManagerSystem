@@ -16,8 +16,6 @@ namespace QuanLyKS
     public partial class ForgottenPassword : Form
     {
         private LogIn lnF;
-
-
         public ForgottenPassword(LogIn ln)
         {
             InitializeComponent();
@@ -28,6 +26,8 @@ namespace QuanLyKS
         {
             try
             {
+                Random random = new Random();
+                int otp = random.Next(100000, 999999);
                 if (string.IsNullOrEmpty(txbMail.Text)) // kiểm tra txb rỗng
                 {
                     mPb.Visible = true;
@@ -41,9 +41,9 @@ namespace QuanLyKS
                         if (DataProvider.Instance.ExecuteNonQuerry("EXEC SeachEmail @Email ", new object[] { txbMail.Text }) != 0)// email tồn tại trong db thì...
                         {
                             var title = "Mã xác nhận OTP";
-                            var body = "Mã xác nhận OTP của bạn là";
+                            var body = "Mã xác nhận OTP của bạn là " + otp.ToString();
                             SendMail(title, body);
-                            Vertification vc = new Vertification(this);
+                            Vertification vc = new Vertification(this, otp.ToString());
                             vc.Show();
                             this.Hide();
                         }
@@ -87,7 +87,7 @@ namespace QuanLyKS
                 smtp.Send(message);
                 MessageBox.Show("OTP đã được gửi qua mail", "Messages", MessageBoxButtons.OK);
             }
-            catch (Exception ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show("err: " + ex.Message);
             }

@@ -201,7 +201,15 @@ AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE Mail = @Email
 END
-
--- varchar(30)
 GO
+
+CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(70)
+AS
+BEGIN
+    UPDATE dbo.TaiKhoan 
+	SET MatKhau = @Newpassword
+	WHERE Mail = @Email
+END
+
+
 
