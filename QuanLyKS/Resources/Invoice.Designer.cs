@@ -586,7 +586,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel2.TabIndex = 67;
-            this.guna2HtmlLabel2.Text = "Tên nhân viên";
+            this.guna2HtmlLabel2.Text = "Mã nhân viên";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel1
@@ -634,7 +634,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel13.TabIndex = 61;
-            this.guna2HtmlLabel13.Text = "Mã khách hàng";
+            this.guna2HtmlLabel13.Text = "Tiền cọc";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel10
@@ -646,7 +646,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel10.TabIndex = 58;
-            this.guna2HtmlLabel10.Text = "Tên khách hàng";
+            this.guna2HtmlLabel10.Text = "Trạng thái";
             this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel9
@@ -658,7 +658,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel9.TabIndex = 57;
-            this.guna2HtmlLabel9.Text = "Mã hóa đơn";
+            this.guna2HtmlLabel9.Text = "Mã khách hàng";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2Panel9
@@ -777,7 +777,7 @@ namespace QuanLyKS.Resources
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // RevenueUC
+            // Invoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -786,7 +786,7 @@ namespace QuanLyKS.Resources
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "RevenueUC";
+            this.Name = "Invoice";
             this.Size = new System.Drawing.Size(1020, 600);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
