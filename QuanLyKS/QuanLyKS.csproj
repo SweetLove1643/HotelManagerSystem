@@ -75,6 +75,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassFuncion\DataProvider.cs" />
     <Compile Include="ClassFuncion\GetAccountDB.cs" />
     <Compile Include="ClassFuncion\Hashing.cs" />
@@ -114,12 +120,6 @@
     </Compile>
     <Compile Include="Resources\AccountUC.Designer.cs">
       <DependentUpon>AccountUC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\BookingUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Resources\BookingUC.Designer.cs">
-      <DependentUpon>BookingUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Resources\Check-inUC.cs">
       <SubType>UserControl</SubType>
@@ -189,6 +189,12 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vertification.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
@@ -214,9 +223,6 @@
     <EmbeddedResource Include="Resources\AccountUC.resx">
       <DependentUpon>AccountUC.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\BookingUC.resx">
-      <DependentUpon>BookingUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Check-inUC.resx">
       <DependentUpon>Check-inUC.cs</DependentUpon>
@@ -260,6 +266,9 @@
     </Compile>
     <EmbeddedResource Include="User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vertification.resx">
       <DependentUpon>Vertification.cs</DependentUpon>

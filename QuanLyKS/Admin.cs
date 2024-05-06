@@ -155,5 +155,20 @@ namespace QuanLyKS
             AdminInfoUC adinfo_uc = new AdminInfoUC();
             AddUserControl(adinfo_uc);
         }
+
+        private void allAccBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeAccBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerAccBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

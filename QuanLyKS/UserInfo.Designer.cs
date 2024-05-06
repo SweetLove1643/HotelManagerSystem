@@ -1,14 +1,14 @@
 ﻿
-namespace QuanLyKS.Resources
+namespace QuanLyKS
 {
-    partial class UserInfoUC
+    partial class UserInfo
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -21,15 +21,15 @@ namespace QuanLyKS.Resources
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfoUC));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserInfo));
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
@@ -70,6 +70,8 @@ namespace QuanLyKS.Resources
             this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel11.SuspendLayout();
             this.guna2Panel10.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -85,10 +87,10 @@ namespace QuanLyKS.Resources
             this.guna2Panel11.Controls.Add(this.guna2TextBox3);
             this.guna2Panel11.Controls.Add(this.guna2Panel4);
             this.guna2Panel11.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel11.Location = new System.Drawing.Point(650, 170);
+            this.guna2Panel11.Location = new System.Drawing.Point(670, 168);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.Size = new System.Drawing.Size(330, 190);
-            this.guna2Panel11.TabIndex = 71;
+            this.guna2Panel11.TabIndex = 79;
             // 
             // guna2Panel13
             // 
@@ -120,10 +122,10 @@ namespace QuanLyKS.Resources
             this.guna2Panel10.BorderThickness = 1;
             this.guna2Panel10.Controls.Add(this.guna2Panel15);
             this.guna2Panel10.Controls.Add(this.guna2TextBox10);
-            this.guna2Panel10.Location = new System.Drawing.Point(650, 50);
+            this.guna2Panel10.Location = new System.Drawing.Point(670, 48);
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.Size = new System.Drawing.Size(330, 60);
-            this.guna2Panel10.TabIndex = 70;
+            this.guna2Panel10.TabIndex = 78;
             // 
             // guna2Panel15
             // 
@@ -138,10 +140,10 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(650, 130);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(670, 128);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(200, 35);
-            this.guna2HtmlLabel2.TabIndex = 69;
+            this.guna2HtmlLabel2.TabIndex = 77;
             this.guna2HtmlLabel2.Text = "Đổi mật khẩu";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -150,10 +152,10 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel17.AutoSize = false;
             this.guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel17.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(0, 10);
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(20, 8);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             this.guna2HtmlLabel17.Size = new System.Drawing.Size(250, 30);
-            this.guna2HtmlLabel17.TabIndex = 66;
+            this.guna2HtmlLabel17.TabIndex = 74;
             this.guna2HtmlLabel17.Text = "Thông tin tài khoản";
             this.guna2HtmlLabel17.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -185,10 +187,10 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Controls.Add(this.guna2TextBox1);
             this.guna2Panel1.Controls.Add(this.guna2Panel9);
             this.guna2Panel1.Controls.Add(this.txbUserName);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 50);
+            this.guna2Panel1.Location = new System.Drawing.Point(20, 48);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(600, 500);
-            this.guna2Panel1.TabIndex = 65;
+            this.guna2Panel1.TabIndex = 73;
             // 
             // guna2HtmlLabel16
             // 
@@ -574,10 +576,10 @@ namespace QuanLyKS.Resources
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(780, 370);
+            this.guna2Button3.Location = new System.Drawing.Point(800, 368);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(200, 40);
-            this.guna2Button3.TabIndex = 72;
+            this.guna2Button3.TabIndex = 80;
             this.guna2Button3.Text = "Đổi mật khẩu";
             // 
             // guna2TextBox4
@@ -705,12 +707,13 @@ namespace QuanLyKS.Resources
             this.confirmBtn.ForeColor = System.Drawing.Color.Black;
             this.confirmBtn.Image = ((System.Drawing.Image)(resources.GetObject("confirmBtn.Image")));
             this.confirmBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.confirmBtn.Location = new System.Drawing.Point(340, 555);
+            this.confirmBtn.Location = new System.Drawing.Point(420, 554);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(200, 40);
-            this.confirmBtn.TabIndex = 68;
+            this.confirmBtn.TabIndex = 76;
             this.confirmBtn.Text = "Xác nhận";
             this.confirmBtn.Visible = false;
+            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // updateBtn
             // 
@@ -725,18 +728,57 @@ namespace QuanLyKS.Resources
             this.updateBtn.ForeColor = System.Drawing.Color.Black;
             this.updateBtn.Image = ((System.Drawing.Image)(resources.GetObject("updateBtn.Image")));
             this.updateBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.updateBtn.Location = new System.Drawing.Point(60, 555);
+            this.updateBtn.Location = new System.Drawing.Point(420, 554);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(200, 40);
-            this.updateBtn.TabIndex = 67;
+            this.updateBtn.TabIndex = 75;
             this.updateBtn.Text = "Cập nhật";
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
-            // UserInfoUC
+            // exitBtn
+            // 
+            this.exitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.exitBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exitBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exitBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.exitBtn.ForeColor = System.Drawing.Color.White;
+            this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
+            this.exitBtn.ImageSize = new System.Drawing.Size(30, 30);
+            this.exitBtn.Location = new System.Drawing.Point(995, 5);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(50, 40);
+            this.exitBtn.TabIndex = 81;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnBack.Location = new System.Drawing.Point(1005, 555);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(40, 40);
+            this.btnBack.TabIndex = 82;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // UserInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Panel11);
             this.Controls.Add(this.guna2Panel10);
@@ -745,8 +787,10 @@ namespace QuanLyKS.Resources
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.guna2Panel1);
-            this.Name = "UserInfoUC";
-            this.Size = new System.Drawing.Size(1020, 600);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "UserInfo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "UserInfo";
             this.guna2Panel11.ResumeLayout(false);
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
@@ -796,5 +840,7 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2TextBox txbUserName;
+        private Guna.UI2.WinForms.Guna2Button exitBtn;
+        private Guna.UI2.WinForms.Guna2Button btnBack;
     }
 }

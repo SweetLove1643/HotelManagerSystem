@@ -13,6 +13,7 @@ namespace QuanLyKS
     public partial class User : Form
     {
         bool accountCollapse;
+
         public User()
         {
             InitializeComponent();
@@ -164,12 +165,16 @@ namespace QuanLyKS
 
         private void bookingBtn_Click(object sender, EventArgs e)
         {
-
+            Booking bk = new Booking();
+            bk.Show();
+            this.Hide();
         }
 
         private void accountBtn_Click(object sender, EventArgs e)
         {
-
+            UserInfo ui = new UserInfo();
+            ui.Show();
+            this.Hide();
         }
     }
 }

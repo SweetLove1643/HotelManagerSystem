@@ -256,6 +256,7 @@ namespace QuanLyKS
             // 
             // accountContainer
             // 
+            this.accountContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.accountContainer.Controls.Add(this.guna2Panel9);
             this.accountContainer.Controls.Add(this.guna2Panel1);
             this.accountContainer.Controls.Add(this.guna2Panel2);
@@ -278,7 +279,6 @@ namespace QuanLyKS
             // userBtn
             // 
             this.userBtn.BorderRadius = 5;
-            this.userBtn.BorderThickness = 1;
             this.userBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.userBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.userBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -396,6 +396,7 @@ namespace QuanLyKS
             this.Controls.Add(this.previousBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "User";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User";
             this.Load += new System.EventHandler(this.User_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picturePb)).EndInit();
