@@ -67,6 +67,7 @@ namespace QuanLyKS
             // 
             // picturePb
             // 
+            this.picturePb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picturePb.ImageRotate = 0F;
             this.picturePb.Location = new System.Drawing.Point(100, 80);
             this.picturePb.Name = "picturePb";

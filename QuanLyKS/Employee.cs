@@ -56,5 +56,9 @@ namespace QuanLyKS
         {
             Application.Exit();
         }
+
+        private void Employee_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -63,7 +63,10 @@ namespace QuanLyKS
 
         private void Admin_Load(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
 
+            accountTimer.Start();
+            blankTimer.Start();
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -102,7 +105,6 @@ namespace QuanLyKS
             accountTimer.Start();
             blankTimer.Start();
 
-
             AccountUC ac_uc = new AccountUC();
             AddUserControl(ac_uc);
         }
@@ -116,26 +118,42 @@ namespace QuanLyKS
 
         private void employeeBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+
             EmployeeUC em_uc = new EmployeeUC();
             AddUserControl(em_uc);
         }
 
         private void customerBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+
             CustomerUC cu_uc = new CustomerUC();
             AddUserControl(cu_uc);
         }
 
         private void InvoiceBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+
             InvoiceUC in_uc = new InvoiceUC();
             AddUserControl(in_uc);
         }
 
         private void roomBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+
             RoomUC ro_uc = new RoomUC();
             AddUserControl(ro_uc);
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+
+            AdminInfoUC adinfo_uc = new AdminInfoUC();
+            AddUserControl(adinfo_uc);
         }
     }
 }

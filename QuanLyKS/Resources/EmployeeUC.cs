@@ -16,5 +16,22 @@ namespace QuanLyKS.Resources
         {
             InitializeComponent();
         }
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            addBtn.Visible = false;
+            updateBtn.Visible = false;
+            deleteBtn.Visible = false;
+            confirmBtn.Visible = true;
+        }
+
+        private void confirmBtn_Click(object sender, EventArgs e)
+        {
+            addBtn.Visible = true;
+            updateBtn.Visible = true;
+            deleteBtn.Visible = true;
+            confirmBtn.Visible = false;
+        }
+
+
     }
 }

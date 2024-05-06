@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKS.Resources
 {
-    public partial class AdminInfo : UserControl
+    public partial class EmployeeInfoUC : UserControl
     {
-        public AdminInfo()
+        public EmployeeInfoUC()
         {
             InitializeComponent();
         }

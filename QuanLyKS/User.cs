@@ -118,6 +118,8 @@ namespace QuanLyKS
         {
             picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
             check1.Checked = true;
+
+            accountTimer.Start();
         }
 
         private void check5_CheckedChanged(object sender, EventArgs e)

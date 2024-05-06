@@ -80,7 +80,7 @@ namespace QuanLyKS
             this.sidebar.MaximumSize = new System.Drawing.Size(240, 600);
             this.sidebar.MinimumSize = new System.Drawing.Size(70, 600);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(240, 600);
+            this.sidebar.Size = new System.Drawing.Size(70, 600);
             this.sidebar.TabIndex = 28;
             // 
             // guna2Panel4
@@ -326,6 +326,7 @@ namespace QuanLyKS
             this.Name = "Employee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.Employee_Load);
             this.sidebar.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).EndInit();
