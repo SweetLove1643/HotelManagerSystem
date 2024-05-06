@@ -576,9 +576,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel12.AutoSize = false;
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(20, 205);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(20, 190);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel12.Size = new System.Drawing.Size(150, 50);
             this.guna2HtmlLabel12.TabIndex = 60;
             this.guna2HtmlLabel12.Text = "Ngày sinh";
             this.guna2HtmlLabel12.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;

@@ -44,9 +44,9 @@ namespace QuanLyKS
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.employeeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cusomerBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.customerBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.revenueBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.InvoiceBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.roomBtn = new Guna.UI2.WinForms.Guna2Button();
             this.blankContainer = new Guna.UI2.WinForms.Guna2Panel();
@@ -57,6 +57,7 @@ namespace QuanLyKS
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.accountTimer = new System.Windows.Forms.Timer(this.components);
             this.blankTimer = new System.Windows.Forms.Timer(this.components);
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.sidebar.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminBtn)).BeginInit();
@@ -90,7 +91,7 @@ namespace QuanLyKS
             this.sidebar.MaximumSize = new System.Drawing.Size(240, 600);
             this.sidebar.MinimumSize = new System.Drawing.Size(70, 600);
             this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(240, 600);
+            this.sidebar.Size = new System.Drawing.Size(70, 600);
             this.sidebar.TabIndex = 0;
             // 
             // guna2Panel4
@@ -136,9 +137,9 @@ namespace QuanLyKS
             // 
             // accountContainer
             // 
+            this.accountContainer.Controls.Add(this.accountBtn);
             this.accountContainer.Controls.Add(this.guna2Button4);
             this.accountContainer.Controls.Add(this.guna2Button3);
-            this.accountContainer.Controls.Add(this.accountBtn);
             this.accountContainer.Controls.Add(this.guna2Button1);
             this.accountContainer.Location = new System.Drawing.Point(3, 71);
             this.accountContainer.MaximumSize = new System.Drawing.Size(237, 154);
@@ -244,56 +245,59 @@ namespace QuanLyKS
             this.employeeBtn.Size = new System.Drawing.Size(231, 44);
             this.employeeBtn.TabIndex = 1;
             this.employeeBtn.Text = "Employee";
+            this.employeeBtn.Click += new System.EventHandler(this.employeeBtn_Click);
             // 
             // guna2Panel10
             // 
-            this.guna2Panel10.Controls.Add(this.cusomerBtn);
+            this.guna2Panel10.Controls.Add(this.customerBtn);
             this.guna2Panel10.Location = new System.Drawing.Point(3, 180);
             this.guna2Panel10.Name = "guna2Panel10";
             this.guna2Panel10.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel10.TabIndex = 5;
             // 
-            // cusomerBtn
+            // customerBtn
             // 
-            this.cusomerBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.cusomerBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.cusomerBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.cusomerBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.cusomerBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.cusomerBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cusomerBtn.ForeColor = System.Drawing.Color.Black;
-            this.cusomerBtn.Image = ((System.Drawing.Image)(resources.GetObject("cusomerBtn.Image")));
-            this.cusomerBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.cusomerBtn.Location = new System.Drawing.Point(3, 3);
-            this.cusomerBtn.Name = "cusomerBtn";
-            this.cusomerBtn.Size = new System.Drawing.Size(231, 44);
-            this.cusomerBtn.TabIndex = 1;
-            this.cusomerBtn.Text = "Customer";
+            this.customerBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.customerBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.customerBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.customerBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.customerBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.customerBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.customerBtn.ForeColor = System.Drawing.Color.Black;
+            this.customerBtn.Image = ((System.Drawing.Image)(resources.GetObject("customerBtn.Image")));
+            this.customerBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.customerBtn.Location = new System.Drawing.Point(3, 3);
+            this.customerBtn.Name = "customerBtn";
+            this.customerBtn.Size = new System.Drawing.Size(231, 44);
+            this.customerBtn.TabIndex = 1;
+            this.customerBtn.Text = "Customer";
+            this.customerBtn.Click += new System.EventHandler(this.customerBtn_Click);
             // 
             // guna2Panel9
             // 
-            this.guna2Panel9.Controls.Add(this.revenueBtn);
+            this.guna2Panel9.Controls.Add(this.InvoiceBtn);
             this.guna2Panel9.Location = new System.Drawing.Point(3, 236);
             this.guna2Panel9.Name = "guna2Panel9";
             this.guna2Panel9.Size = new System.Drawing.Size(237, 50);
             this.guna2Panel9.TabIndex = 4;
             // 
-            // revenueBtn
+            // InvoiceBtn
             // 
-            this.revenueBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.revenueBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.revenueBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.revenueBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.revenueBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.revenueBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.revenueBtn.ForeColor = System.Drawing.Color.Black;
-            this.revenueBtn.Image = ((System.Drawing.Image)(resources.GetObject("revenueBtn.Image")));
-            this.revenueBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.revenueBtn.Location = new System.Drawing.Point(3, 3);
-            this.revenueBtn.Name = "revenueBtn";
-            this.revenueBtn.Size = new System.Drawing.Size(231, 44);
-            this.revenueBtn.TabIndex = 1;
-            this.revenueBtn.Text = "Invoice";
+            this.InvoiceBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.InvoiceBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.InvoiceBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.InvoiceBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.InvoiceBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.InvoiceBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.InvoiceBtn.ForeColor = System.Drawing.Color.Black;
+            this.InvoiceBtn.Image = ((System.Drawing.Image)(resources.GetObject("InvoiceBtn.Image")));
+            this.InvoiceBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.InvoiceBtn.Location = new System.Drawing.Point(3, 3);
+            this.InvoiceBtn.Name = "InvoiceBtn";
+            this.InvoiceBtn.Size = new System.Drawing.Size(231, 44);
+            this.InvoiceBtn.TabIndex = 1;
+            this.InvoiceBtn.Text = "Invoice";
+            this.InvoiceBtn.Click += new System.EventHandler(this.InvoiceBtn_Click);
             // 
             // guna2Panel8
             // 
@@ -319,6 +323,7 @@ namespace QuanLyKS
             this.roomBtn.Size = new System.Drawing.Size(231, 44);
             this.roomBtn.TabIndex = 1;
             this.roomBtn.Text = "Room";
+            this.roomBtn.Click += new System.EventHandler(this.roomBtn_Click);
             // 
             // blankContainer
             // 
@@ -397,14 +402,22 @@ namespace QuanLyKS
             // 
             this.blankTimer.Interval = 10;
             // 
+            // panelContainer
+            // 
+            this.panelContainer.Location = new System.Drawing.Point(76, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1025, 600);
+            this.panelContainer.TabIndex = 27;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.ClientSize = new System.Drawing.Size(1100, 600);
-            this.Controls.Add(this.sidebar);
             this.Controls.Add(this.guna2Button8);
+            this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.panelContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -434,9 +447,9 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Button roomBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private Guna.UI2.WinForms.Guna2Button revenueBtn;
+        private Guna.UI2.WinForms.Guna2Button InvoiceBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
-        private Guna.UI2.WinForms.Guna2Button cusomerBtn;
+        private Guna.UI2.WinForms.Guna2Button customerBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button employeeBtn;
         private Guna.UI2.WinForms.Guna2Panel accountContainer;
@@ -450,5 +463,6 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Timer accountTimer;
         private System.Windows.Forms.Timer blankTimer;
+        private System.Windows.Forms.Panel panelContainer;
     }
 }

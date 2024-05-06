@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyKS.Resources
 {
-    public partial class Invoice : UserControl
+    public partial class InvoiceUC : UserControl
     {
-        public Invoice()
+        public InvoiceUC()
         {
             InitializeComponent();
         }

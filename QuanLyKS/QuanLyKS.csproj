@@ -139,11 +139,11 @@
     <Compile Include="Resources\PaymentUC.Designer.cs">
       <DependentUpon>PaymentUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Invoice.cs">
+    <Compile Include="Resources\InvoiceUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Resources\Invoice.Designer.cs">
-      <DependentUpon>Invoice.cs</DependentUpon>
+    <Compile Include="Resources\InvoiceUC.Designer.cs">
+      <DependentUpon>InvoiceUC.cs</DependentUpon>
     </Compile>
     <Compile Include="Resources\AdminInfo.cs">
       <SubType>UserControl</SubType>
@@ -207,8 +207,8 @@
     <EmbeddedResource Include="Resources\PaymentUC.resx">
       <DependentUpon>PaymentUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Invoice.resx">
-      <DependentUpon>Invoice.cs</DependentUpon>
+    <EmbeddedResource Include="Resources\InvoiceUC.resx">
+      <DependentUpon>InvoiceUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\AdminInfo.resx">
       <DependentUpon>AdminInfo.cs</DependentUpon>

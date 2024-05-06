@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKS.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,13 @@ namespace QuanLyKS
             InitializeComponent();
         }
 
-        
+        private void AddUserControl(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            panelContainer.Controls.Clear();
+            panelContainer.Controls.Add(uc);
+            uc.BringToFront();
+        }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
@@ -94,6 +101,10 @@ namespace QuanLyKS
         {
             accountTimer.Start();
             blankTimer.Start();
+
+
+            AccountUC ac_uc = new AccountUC();
+            AddUserControl(ac_uc);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -101,6 +112,30 @@ namespace QuanLyKS
             LogIn login = new LogIn();
             login.Show();
             this.Hide();
+        }
+
+        private void employeeBtn_Click(object sender, EventArgs e)
+        {
+            EmployeeUC em_uc = new EmployeeUC();
+            AddUserControl(em_uc);
+        }
+
+        private void customerBtn_Click(object sender, EventArgs e)
+        {
+            CustomerUC cu_uc = new CustomerUC();
+            AddUserControl(cu_uc);
+        }
+
+        private void InvoiceBtn_Click(object sender, EventArgs e)
+        {
+            InvoiceUC in_uc = new InvoiceUC();
+            AddUserControl(in_uc);
+        }
+
+        private void roomBtn_Click(object sender, EventArgs e)
+        {
+            RoomUC ro_uc = new RoomUC();
+            AddUserControl(ro_uc);
         }
     }
 }
