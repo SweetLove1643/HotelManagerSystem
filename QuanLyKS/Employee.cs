@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKS.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,6 +60,26 @@ namespace QuanLyKS
 
         private void Employee_Load(object sender, EventArgs e)
         {
+        }
+
+        private void btnCheckIn_Click(object sender, EventArgs e)
+        {
+            Check_inUC ch_uc = new Check_inUC();
+            AddUserControl(ch_uc);
+
+        }
+        private void AddUserControl(UserControl uc)
+        {
+            uc.Dock = DockStyle.Fill;
+            PanelContainer.Controls.Clear();
+            PanelContainer.Controls.Add(uc);
+            uc.BringToFront();
+        }
+
+        private void btnPayment_Click(object sender, EventArgs e)
+        {
+            PaymentUC pa_uc = new PaymentUC();
+            AddUserControl(pa_uc);
         }
     }
 }
