@@ -13,11 +13,17 @@ namespace QuanLyKS
     public partial class User : Form
     {
         bool accountCollapse;
-
         public User()
         {
             InitializeComponent();
         }
+        private Booking bF;
+        public User(Booking bk)
+        {
+            InitializeComponent();
+            bF = bk;
+        }
+
 
         private int Number = 1;
 
@@ -165,9 +171,18 @@ namespace QuanLyKS
 
         private void bookingBtn_Click(object sender, EventArgs e)
         {
-            Booking bk = new Booking();
-            bk.Show();
-            this.Hide();
+            if (bF != null)
+            {
+                bF.Show();
+                this.Hide();
+            }
+            else
+            {
+                Booking bk = new Booking();
+                bk.Show();
+                this.Hide();
+            }
+
         }
 
         private void accountBtn_Click(object sender, EventArgs e)
