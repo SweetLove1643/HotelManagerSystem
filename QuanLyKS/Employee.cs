@@ -60,10 +60,13 @@ namespace QuanLyKS
 
         private void Employee_Load(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
         }
 
         private void btnCheckIn_Click(object sender, EventArgs e)
         {
+
+            sidebarTimer.Start();
             Check_inUC ch_uc = new Check_inUC();
             AddUserControl(ch_uc);
 
@@ -78,8 +81,17 @@ namespace QuanLyKS
 
         private void btnPayment_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+
             PaymentUC pa_uc = new PaymentUC();
             AddUserControl(pa_uc);
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+            EmployeeInfoUC em_uc = new EmployeeInfoUC();
+            AddUserControl(em_uc);
         }
     }
 }

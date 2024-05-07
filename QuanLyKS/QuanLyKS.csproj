@@ -169,12 +169,6 @@
     <Compile Include="Resources\RoomUC.Designer.cs">
       <DependentUpon>RoomUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\UserInfoUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Resources\UserInfoUC.Designer.cs">
-      <DependentUpon>UserInfoUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,9 +241,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\RoomUC.resx">
       <DependentUpon>RoomUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\UserInfoUC.resx">
-      <DependentUpon>UserInfoUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

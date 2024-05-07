@@ -57,9 +57,6 @@ namespace QuanLyKS.Resources
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox10 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -71,7 +68,6 @@ namespace QuanLyKS.Resources
             this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel10.SuspendLayout();
             this.guna2Panel11.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -496,59 +492,12 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(650, 130);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(650, 165);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(200, 35);
             this.guna2HtmlLabel2.TabIndex = 61;
             this.guna2HtmlLabel2.Text = "Đổi mật khẩu";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2Panel10
-            // 
-            this.guna2Panel10.BorderColor = System.Drawing.Color.Gray;
-            this.guna2Panel10.BorderThickness = 1;
-            this.guna2Panel10.Controls.Add(this.guna2Panel15);
-            this.guna2Panel10.Controls.Add(this.guna2TextBox10);
-            this.guna2Panel10.Location = new System.Drawing.Point(650, 50);
-            this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(330, 60);
-            this.guna2Panel10.TabIndex = 62;
-            // 
-            // guna2Panel15
-            // 
-            this.guna2Panel15.BackColor = System.Drawing.Color.White;
-            this.guna2Panel15.Location = new System.Drawing.Point(20, 50);
-            this.guna2Panel15.Name = "guna2Panel15";
-            this.guna2Panel15.Size = new System.Drawing.Size(290, 1);
-            this.guna2Panel15.TabIndex = 65;
-            // 
-            // guna2TextBox10
-            // 
-            this.guna2TextBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2TextBox10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2TextBox10.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2TextBox10.BorderThickness = 0;
-            this.guna2TextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox10.DefaultText = "";
-            this.guna2TextBox10.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2TextBox10.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox10.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox10.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox10.IconLeft")));
-            this.guna2TextBox10.Location = new System.Drawing.Point(20, 10);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox10.Name = "guna2TextBox10";
-            this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox10.PlaceholderText = "Username";
-            this.guna2TextBox10.SelectedText = "";
-            this.guna2TextBox10.Size = new System.Drawing.Size(290, 40);
-            this.guna2TextBox10.TabIndex = 66;
             // 
             // guna2Panel11
             // 
@@ -560,7 +509,7 @@ namespace QuanLyKS.Resources
             this.guna2Panel11.Controls.Add(this.guna2TextBox3);
             this.guna2Panel11.Controls.Add(this.guna2Panel4);
             this.guna2Panel11.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel11.Location = new System.Drawing.Point(650, 170);
+            this.guna2Panel11.Location = new System.Drawing.Point(650, 205);
             this.guna2Panel11.Name = "guna2Panel11";
             this.guna2Panel11.Size = new System.Drawing.Size(330, 190);
             this.guna2Panel11.TabIndex = 63;
@@ -686,7 +635,7 @@ namespace QuanLyKS.Resources
             this.guna2Button3.ForeColor = System.Drawing.Color.Black;
             this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.Location = new System.Drawing.Point(780, 370);
+            this.guna2Button3.Location = new System.Drawing.Point(780, 405);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(200, 40);
             this.guna2Button3.TabIndex = 64;
@@ -740,7 +689,6 @@ namespace QuanLyKS.Resources
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Panel11);
-            this.Controls.Add(this.guna2Panel10);
             this.Controls.Add(this.guna2HtmlLabel2);
             this.Controls.Add(this.confirmBtn);
             this.Controls.Add(this.updateBtn);
@@ -749,7 +697,6 @@ namespace QuanLyKS.Resources
             this.Name = "AdminInfoUC";
             this.Size = new System.Drawing.Size(1020, 600);
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel11.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -785,11 +732,8 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox txbUserName;
         private Guna.UI2.WinForms.Guna2Button confirmBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox10;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel15;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel12;

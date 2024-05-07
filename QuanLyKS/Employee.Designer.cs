@@ -124,6 +124,7 @@ namespace QuanLyKS
             this.guna2Button6.Size = new System.Drawing.Size(145, 45);
             this.guna2Button6.TabIndex = 26;
             this.guna2Button6.Text = "Vũ Anh";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Panel3
             // 
@@ -194,9 +195,14 @@ namespace QuanLyKS
             this.cusomerBtn.FillColor = System.Drawing.Color.LightCoral;
             this.cusomerBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cusomerBtn.ForeColor = System.Drawing.Color.Black;
+            this.cusomerBtn.HoverState.BorderColor = System.Drawing.Color.LightCoral;
+            this.cusomerBtn.HoverState.CustomBorderColor = System.Drawing.Color.LightCoral;
+            this.cusomerBtn.HoverState.FillColor = System.Drawing.Color.LightCoral;
+            this.cusomerBtn.HoverState.ForeColor = System.Drawing.Color.LightCoral;
             this.cusomerBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.cusomerBtn.Location = new System.Drawing.Point(3, 3);
             this.cusomerBtn.Name = "cusomerBtn";
+            this.cusomerBtn.PressedColor = System.Drawing.Color.LightCoral;
             this.cusomerBtn.Size = new System.Drawing.Size(231, 44);
             this.cusomerBtn.TabIndex = 1;
             // 
@@ -217,9 +223,13 @@ namespace QuanLyKS
             this.revenueBtn.FillColor = System.Drawing.Color.LightCoral;
             this.revenueBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.revenueBtn.ForeColor = System.Drawing.Color.Black;
+            this.revenueBtn.HoverState.BorderColor = System.Drawing.Color.LightCoral;
+            this.revenueBtn.HoverState.CustomBorderColor = System.Drawing.Color.LightCoral;
+            this.revenueBtn.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.revenueBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.revenueBtn.Location = new System.Drawing.Point(3, 3);
             this.revenueBtn.Name = "revenueBtn";
+            this.revenueBtn.PressedColor = System.Drawing.Color.LightCoral;
             this.revenueBtn.Size = new System.Drawing.Size(231, 44);
             this.revenueBtn.TabIndex = 1;
             // 
@@ -240,9 +250,13 @@ namespace QuanLyKS
             this.roomBtn.FillColor = System.Drawing.Color.LightCoral;
             this.roomBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.roomBtn.ForeColor = System.Drawing.Color.Black;
+            this.roomBtn.HoverState.BorderColor = System.Drawing.Color.LightCoral;
+            this.roomBtn.HoverState.CustomBorderColor = System.Drawing.Color.LightCoral;
+            this.roomBtn.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.roomBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.roomBtn.Location = new System.Drawing.Point(3, 3);
             this.roomBtn.Name = "roomBtn";
+            this.roomBtn.PressedColor = System.Drawing.Color.LightCoral;
             this.roomBtn.Size = new System.Drawing.Size(231, 44);
             this.roomBtn.TabIndex = 1;
             // 
@@ -304,10 +318,14 @@ namespace QuanLyKS
             this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.guna2Button8.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.guna2Button8.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.guna2Button8.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button8.Image")));
             this.guna2Button8.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button8.Location = new System.Drawing.Point(1040, 10);
             this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.guna2Button8.Size = new System.Drawing.Size(50, 40);
             this.guna2Button8.TabIndex = 29;
             this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);

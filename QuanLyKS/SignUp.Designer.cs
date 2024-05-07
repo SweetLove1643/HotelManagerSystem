@@ -200,7 +200,7 @@ namespace QuanLyKS
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.PasswordChar = '\0';
             this.txbUserName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbUserName.PlaceholderText = "Username";
+            this.txbUserName.PlaceholderText = "Quốc tịch";
             this.txbUserName.SelectedText = "";
             this.txbUserName.Size = new System.Drawing.Size(290, 50);
             this.txbUserName.TabIndex = 17;
