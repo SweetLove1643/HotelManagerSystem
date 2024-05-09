@@ -127,5 +127,10 @@ namespace QuanLyKS
             fp.Show();
             this.Hide();
         }
+
+        private void btnHidePass_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
