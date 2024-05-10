@@ -12,8 +12,8 @@ namespace QuanLyKS
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Booking());        
+            Application.SetCompatibleTextRenderingDefault(false);     
+            Application.Run(new User());
         }
     }
 }
