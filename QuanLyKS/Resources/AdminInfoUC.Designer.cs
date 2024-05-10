@@ -654,7 +654,7 @@ namespace QuanLyKS.Resources
             this.confirmBtn.ForeColor = System.Drawing.Color.Black;
             this.confirmBtn.Image = ((System.Drawing.Image)(resources.GetObject("confirmBtn.Image")));
             this.confirmBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.confirmBtn.Location = new System.Drawing.Point(340, 555);
+            this.confirmBtn.Location = new System.Drawing.Point(400, 555);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(200, 40);
             this.confirmBtn.TabIndex = 22;
@@ -675,7 +675,7 @@ namespace QuanLyKS.Resources
             this.updateBtn.ForeColor = System.Drawing.Color.Black;
             this.updateBtn.Image = ((System.Drawing.Image)(resources.GetObject("updateBtn.Image")));
             this.updateBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.updateBtn.Location = new System.Drawing.Point(60, 555);
+            this.updateBtn.Location = new System.Drawing.Point(400, 555);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(200, 40);
             this.updateBtn.TabIndex = 21;
@@ -690,10 +690,10 @@ namespace QuanLyKS.Resources
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Panel11);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.confirmBtn);
             this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.confirmBtn);
             this.Name = "AdminInfoUC";
             this.Size = new System.Drawing.Size(1020, 600);
             this.guna2Panel1.ResumeLayout(false);

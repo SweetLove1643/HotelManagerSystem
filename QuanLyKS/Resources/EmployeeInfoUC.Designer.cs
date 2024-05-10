@@ -654,7 +654,7 @@ namespace QuanLyKS.Resources
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(340, 555);
+            this.guna2Button1.Location = new System.Drawing.Point(400, 555);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(200, 40);
             this.guna2Button1.TabIndex = 68;
@@ -674,7 +674,7 @@ namespace QuanLyKS.Resources
             this.guna2Button2.ForeColor = System.Drawing.Color.Black;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button2.Location = new System.Drawing.Point(60, 555);
+            this.guna2Button2.Location = new System.Drawing.Point(400, 555);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(200, 40);
             this.guna2Button2.TabIndex = 67;
@@ -688,10 +688,10 @@ namespace QuanLyKS.Resources
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Panel11);
             this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.guna2Button1);
             this.Name = "EmployeeInfoUC";
             this.Size = new System.Drawing.Size(1020, 600);
             this.guna2Panel11.ResumeLayout(false);
