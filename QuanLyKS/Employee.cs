@@ -100,7 +100,6 @@ namespace QuanLyKS
         private void btnPayment_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
-
             PaymentUC pa_uc = new PaymentUC();
             AddUserControl(pa_uc);
         }

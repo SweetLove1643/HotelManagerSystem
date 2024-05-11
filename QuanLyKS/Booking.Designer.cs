@@ -43,7 +43,6 @@ namespace QuanLyKS
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbRoomcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.bookingBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
             this.DateCheckout = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -89,9 +88,9 @@ namespace QuanLyKS
             this.guna2HtmlLabel14.AutoSize = false;
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 195);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 210);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 40);
             this.guna2HtmlLabel14.TabIndex = 62;
             this.guna2HtmlLabel14.Text = "Tiền cọc";
             this.guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -101,9 +100,9 @@ namespace QuanLyKS
             this.guna2HtmlLabel13.AutoSize = false;
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(20, 135);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(20, 145);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel13.TabIndex = 61;
             this.guna2HtmlLabel13.Text = "Ngày trả";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -113,7 +112,7 @@ namespace QuanLyKS
             this.guna2HtmlLabel10.AutoSize = false;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(20, 70);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(20, 75);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel10.TabIndex = 58;
@@ -135,7 +134,7 @@ namespace QuanLyKS
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel6.Location = new System.Drawing.Point(190, 230);
+            this.guna2Panel6.Location = new System.Drawing.Point(190, 250);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(400, 1);
             this.guna2Panel6.TabIndex = 45;
@@ -232,23 +231,11 @@ namespace QuanLyKS
             this.bookingBtn.ForeColor = System.Drawing.Color.Black;
             this.bookingBtn.Image = ((System.Drawing.Image)(resources.GetObject("bookingBtn.Image")));
             this.bookingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bookingBtn.Location = new System.Drawing.Point(700, 320);
+            this.bookingBtn.Location = new System.Drawing.Point(700, 325);
             this.bookingBtn.Name = "bookingBtn";
             this.bookingBtn.Size = new System.Drawing.Size(200, 40);
             this.bookingBtn.TabIndex = 37;
             this.bookingBtn.Text = "Đặt phòng";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 10);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(250, 30);
-            this.guna2HtmlLabel1.TabIndex = 38;
-            this.guna2HtmlLabel1.Text = "Danh sách phòng";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnBack
             // 
@@ -262,7 +249,7 @@ namespace QuanLyKS
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Location = new System.Drawing.Point(5, 335);
+            this.btnBack.Location = new System.Drawing.Point(5, 330);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(40, 40);
             this.btnBack.TabIndex = 83;
@@ -345,7 +332,6 @@ namespace QuanLyKS
             this.Controls.Add(this.dtgvroom);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.bookingBtn);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.guna2Panel1);

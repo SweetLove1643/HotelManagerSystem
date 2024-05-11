@@ -720,7 +720,7 @@ namespace QuanLyKS
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
             this.btnBack.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnBack.Location = new System.Drawing.Point(1005, 555);
+            this.btnBack.Location = new System.Drawing.Point(5, 555);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(40, 40);
             this.btnBack.TabIndex = 82;
