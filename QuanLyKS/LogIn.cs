@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyKS.ClassFuncion;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,23 +7,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.WebSockets;
 using System.Windows.Forms;
 
 namespace QuanLyKS
 {
     public partial class LogIn : Form
     {
-        private string username = "hovuanh";
-        private string password = "3006";
-
         public LogIn()
         {
             InitializeComponent();
-            btnLogin.Click += loginBtn_Click;
-            btnHidePass.MouseDown += hideBtn_MouseDown;
-            btnHidePass.MouseUp += hideBtn_MouseUp;
-            txbPassword.Enter += passwordTb_Enter;
-            txbPassword.Leave += passwordTb_Leave;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -32,6 +26,8 @@ namespace QuanLyKS
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
             warningIcon.Visible = false;
             usnblank.Visible = false;
             pwblank.Visible = false;
@@ -48,7 +44,7 @@ namespace QuanLyKS
                 pwblank.Visible = true;
                 return;
             }
-            if (txbUsername.Text != username || txbPassword.Text!=password)
+                if ((DataProvider.Instance.ExecuteQuerry("EXEC CheckAccountAndPassword @username , @password ", new object[] { txbUsername.Text, Hashing.Instance.Hash384(txbPassword.Text) })).Rows.Count == 0)
             {
                 warningIcon.Visible = true;
                 invalidup.Visible = true;
@@ -56,7 +52,36 @@ namespace QuanLyKS
             }
             else
             {
-                this.Close();
+                    int temp = (int)DataProvider.Instance.ExecuteScalar("SELECT dbo.CheckAccount( @username , @password )", new object[] { txbUsername.Text, Hashing.Instance.Hash384(txbPassword.Text) });
+                    switch (temp)
+                    {
+                        case 1:
+                            {
+                            Admin ad = new Admin(txbUsername.Text);
+                            this.Hide();
+                            ad.ShowDialog();
+                            break;
+                            }
+                        case 0:
+                            {
+                            Employee emp = new Employee(txbUsername.Text);
+                            this.Hide();
+                            emp.ShowDialog();
+                            break;
+                            }
+                        default:
+                            {
+                            User us = new User(txbUsername.Text);
+                            this.Hide();
+                            us.ShowDialog();
+                            break;
+                    }
+                }
+            }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -72,7 +97,7 @@ namespace QuanLyKS
 
         private void passwordTb_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode==Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 btnLogin.PerformClick();
                 e.Handled = true;

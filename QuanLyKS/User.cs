@@ -26,7 +26,6 @@ namespace QuanLyKS
 
 
         private int Number = 1;
-
         private void NextImage()
         {
             timer1.Start();
@@ -173,14 +172,14 @@ namespace QuanLyKS
         {
             if (bF != null)
             {
-                bF.Show();
                 this.Hide();
+                bF.ShowDialog();
             }
             else
             {
                 Booking bk = new Booking();
-                bk.Show();
                 this.Hide();
+                bk.ShowDialog();
             }
 
         }
@@ -188,8 +187,8 @@ namespace QuanLyKS
         private void accountBtn_Click(object sender, EventArgs e)
         {
             UserInfo ui = new UserInfo();
-            ui.Show();
             this.Hide();
+            ui.ShowDialog();
         }
     }
 }
