@@ -23,6 +23,7 @@ namespace QuanLyKS.ClassObject
         private double totalmoney;
         private string payment;
         private int status;
+        private string name;
 
         public int Idreceipt { get => idreceipt; set => idreceipt = value; }
         public int Idguest { get => idguest; set => idguest = value; }
@@ -37,9 +38,10 @@ namespace QuanLyKS.ClassObject
         public double Totalmoney { get => totalmoney; set => totalmoney = value; }
         public string Payment { get => payment; set => payment = value; }
         public int Status { get => status; set => status = value; }
-        
+        public string Name { get => name; set => name = value; }
+
         public ReceiptObject() { }
-        public ReceiptObject(int Idreceipt, int Idguest, string Roomcode, int Idpersonnel, double Deposit, DateTime Checkin, DateTime Checkout, double Roommoney, double Discount, double VAT, double Totalmoney, string Payment, int Status)
+        public ReceiptObject(int Idreceipt, int Idguest, string Roomcode, int Idpersonnel, double Deposit, DateTime Checkin, DateTime Checkout, double Roommoney, double Discount, double VAT, double Totalmoney, string Payment, int Status, string Name)
         {
             this.Idreceipt = Idreceipt;
             this.Idguest = Idguest;
@@ -54,6 +56,7 @@ namespace QuanLyKS.ClassObject
             this.Totalmoney = Totalmoney;
             this.Payment = Payment;
             this.Status = Status;
+            this.Name = Name;
 
         }
         public ReceiptObject(DataRow row)
@@ -71,6 +74,7 @@ namespace QuanLyKS.ClassObject
             this.Totalmoney = (double)row["TongTien"];
             this.Payment = (string)row["TenPhuongThuc"];
             this.Status = (int)row["TrangThai"];
+            this.Name = (string)row["TenKhach"];
         }
     }
 }

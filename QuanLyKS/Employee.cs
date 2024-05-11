@@ -1,4 +1,5 @@
-﻿using QuanLyKS.Resources;
+﻿using QuanLyKS.ClassFuncion;
+using QuanLyKS.Resources;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,25 @@ namespace QuanLyKS
     public partial class Employee : Form
     {
         bool sidebarExpand;
+        private string username;
+        private string idnv;
+
+        public string Username { get => username; set => username = value; }
+        public string Idnv { get => idnv; set => idnv = value; }
+
         public Employee()
         {
             InitializeComponent();
+        }
+        public Employee(string Username)
+        {
+            InitializeComponent();
+            this.Username = Username;
+            DataTable data = DataProvider.Instance.ExecuteQuerry($"SELECT IDNV FROM dbo.NhanVien WHERE SDT = '{Username}' OR Mail = '{Username}'");
+            if(data != null )
+            {
+                this.Idnv = data.Rows[0]["IDNV"].ToString();
+            }
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
@@ -49,8 +66,8 @@ namespace QuanLyKS
         private void logoutBtn_Click(object sender, EventArgs e)
         {
             LogIn login = new LogIn();
-            login.Show();
             this.Hide();
+            login.ShowDialog();
         }
 
         private void guna2Button8_Click(object sender, EventArgs e)
@@ -69,6 +86,7 @@ namespace QuanLyKS
             sidebarTimer.Start();
             Check_inUC ch_uc = new Check_inUC();
             AddUserControl(ch_uc);
+            ch_uc.Idnv = this.Idnv;
 
         }
         private void AddUserControl(UserControl uc)
@@ -90,7 +108,7 @@ namespace QuanLyKS
         private void guna2Button6_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
-            EmployeeInfoUC em_uc = new EmployeeInfoUC();
+            EmployeeInfoUC em_uc = new EmployeeInfoUC(Username);
             AddUserControl(em_uc);
         }
     }

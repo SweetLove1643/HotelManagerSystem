@@ -135,7 +135,7 @@ namespace QuanLyKS
                         sex = "Nữ";
                     DateTime dateofbirth = DateOfBirth.Value;
                     DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewAccount @SDT , @Mail , @Password , @Accounttype ", new object[] { txbPhone.Text, txbMail.Text, hashpassword, "Khách hàng" });
-                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail " , new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, "Việt Nam", txbPhone.Text, txbMail.Text });
+                    DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateNewGuest @Guestname , @Sex , @DateOfBrith , @CCCD , @Nationality , @Phone , @Mail " , new object[] { txbFistName.Text + txbLastName.Text, sex, dateofbirth.ToString("yyyy/MM/dd"), txbRegistration.Text, txbNationality.Text , txbPhone.Text, txbMail.Text });
                     MessageBox.Show("Tạo tài khoản thành công.", "Message", MessageBoxButtons.OK, MessageBoxIcon.None);
                     LogIn logIn = new LogIn();
                     logIn.Show();
@@ -172,7 +172,7 @@ namespace QuanLyKS
                     rcPb.Visible = false;
                 }
 
-                if (string.IsNullOrEmpty(txbUserName.Text))
+                if (string.IsNullOrEmpty(txbNationality.Text))
                 {
                     unPb.Visible = true;
                     invalidInfoTT.SetToolTip(unPb, "Please enter your username!");
@@ -242,7 +242,7 @@ namespace QuanLyKS
                 return false;
             if (string.IsNullOrEmpty(txbLastName.Text))
                 return false;
-            if (string.IsNullOrEmpty(txbUserName.Text))
+            if (string.IsNullOrEmpty(txbNationality.Text))
                 return false;
             if (string.IsNullOrEmpty(txbPassWord.Text))
                 return false;

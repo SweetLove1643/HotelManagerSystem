@@ -17,6 +17,7 @@ namespace QuanLyKS.ClassObject
         private string phone;
         private string cccd;
         private string mail;
+        private string nationaly;
         public int Idnv { get => idnv; set => idnv = value; }
         public string Name { get => name; set => name = value; }
         public string Sex { get => sex; set => sex = value; }
@@ -25,9 +26,11 @@ namespace QuanLyKS.ClassObject
         public string Phone { get => phone; set => phone = value; }
         public string Cccd { get => cccd; set => cccd = value; }
         public string Mail { get => mail; set => mail = value; }
+        public string Nationaly { get => nationaly; set => nationaly = value; }
+
         public PersonnelObject() { }
 
-        public PersonnelObject(int Idnv, string Name, string Sex, DateTime Date, string Position, string Phone, string Cccd, string Mail)
+        public PersonnelObject(int Idnv, string Name, string Sex, DateTime Date, string Position, string Phone, string Cccd, string Mail, string Nationaly)
         {
             this.Idnv = Idnv;
             this.Name = Name;
@@ -37,6 +40,7 @@ namespace QuanLyKS.ClassObject
             this.Phone = Phone;
             this.Cccd = Cccd;
             this.Mail = Mail;
+            this.Nationaly = Nationaly;
         }
         public PersonnelObject(DataRow row)
         {
@@ -48,6 +52,7 @@ namespace QuanLyKS.ClassObject
             this.Phone = (string)row["SDT"];
             this.Cccd = (string)row["CCCD"];
             this.Mail = (string)row["Mail"];
+            this.Nationaly = (string)row["QuocTich"];
         }
     }
 }

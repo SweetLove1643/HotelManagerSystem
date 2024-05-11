@@ -74,7 +74,7 @@ namespace QuanLyKS
             this.txbUsername.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.txbUsername.BorderThickness = 0;
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUsername.DefaultText = "";
+            this.txbUsername.DefaultText = "0947119702";
             this.txbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -104,7 +104,7 @@ namespace QuanLyKS
             this.txbPassword.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.txbPassword.BorderThickness = 0;
             this.txbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPassword.DefaultText = "";
+            this.txbPassword.DefaultText = "Quan028@";
             this.txbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

@@ -35,7 +35,7 @@ namespace QuanLyKS
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.adminBtn = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnProperties = new Guna.UI2.WinForms.Guna2Button();
             this.accountContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.accountBtn = new Guna.UI2.WinForms.Guna2Button();
             this.customerAccBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -97,7 +97,7 @@ namespace QuanLyKS
             // guna2Panel4
             // 
             this.guna2Panel4.Controls.Add(this.adminBtn);
-            this.guna2Panel4.Controls.Add(this.guna2Button6);
+            this.guna2Panel4.Controls.Add(this.btnProperties);
             this.guna2Panel4.Location = new System.Drawing.Point(3, 3);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(234, 62);
@@ -117,24 +117,24 @@ namespace QuanLyKS
             this.adminBtn.TabStop = false;
             this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
-            // guna2Button6
+            // btnProperties
             // 
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.guna2Button6.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button6.HoverState.BorderColor = System.Drawing.Color.LightCoral;
-            this.guna2Button6.HoverState.CustomBorderColor = System.Drawing.Color.LightCoral;
-            this.guna2Button6.HoverState.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button6.Location = new System.Drawing.Point(60, 9);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(145, 45);
-            this.guna2Button6.TabIndex = 26;
-            this.guna2Button6.Text = "Vũ Anh";
-            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
+            this.btnProperties.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnProperties.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnProperties.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnProperties.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnProperties.FillColor = System.Drawing.Color.LightCoral;
+            this.btnProperties.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.btnProperties.ForeColor = System.Drawing.Color.Black;
+            this.btnProperties.HoverState.BorderColor = System.Drawing.Color.LightCoral;
+            this.btnProperties.HoverState.CustomBorderColor = System.Drawing.Color.LightCoral;
+            this.btnProperties.HoverState.FillColor = System.Drawing.Color.LightCoral;
+            this.btnProperties.Location = new System.Drawing.Point(60, 9);
+            this.btnProperties.Name = "btnProperties";
+            this.btnProperties.Size = new System.Drawing.Size(145, 45);
+            this.btnProperties.TabIndex = 26;
+            this.btnProperties.Text = "Vũ Anh";
+            this.btnProperties.Click += new System.EventHandler(this.btnProperties_Click);
             // 
             // accountContainer
             // 
@@ -462,7 +462,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Panel accountContainer;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
         private Guna.UI2.WinForms.Guna2PictureBox adminBtn;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnProperties;
         private System.Windows.Forms.FlowLayoutPanel sidebar;
         private Guna.UI2.WinForms.Guna2Button accountBtn;
         private Guna.UI2.WinForms.Guna2Button customerAccBtn;

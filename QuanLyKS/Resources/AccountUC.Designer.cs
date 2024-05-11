@@ -34,10 +34,12 @@ namespace QuanLyKS.Resources
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountUC));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnCapquyen = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTuocquyen = new Guna.UI2.WinForms.Guna2Button();
+            this.dtgvAccount = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2DataGridView1
@@ -93,86 +95,114 @@ namespace QuanLyKS.Resources
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2TextBox2
+            // txbSeach
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.BorderRadius = 17;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.FocusedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.guna2TextBox2.FocusedState.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBox2.IconRight")));
-            this.guna2TextBox2.Location = new System.Drawing.Point(44, 10);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.PlaceholderText = "Search . . .";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 40);
-            this.guna2TextBox2.TabIndex = 7;
+            this.txbSeach.BorderColor = System.Drawing.Color.Gray;
+            this.txbSeach.BorderRadius = 17;
+            this.txbSeach.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSeach.DefaultText = "";
+            this.txbSeach.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSeach.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSeach.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSeach.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSeach.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbSeach.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txbSeach.FocusedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbSeach.FocusedState.ForeColor = System.Drawing.Color.Black;
+            this.txbSeach.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbSeach.ForeColor = System.Drawing.Color.Black;
+            this.txbSeach.HoverState.BorderColor = System.Drawing.Color.Gray;
+            this.txbSeach.IconRight = ((System.Drawing.Image)(resources.GetObject("txbSeach.IconRight")));
+            this.txbSeach.Location = new System.Drawing.Point(44, 10);
+            this.txbSeach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbSeach.Name = "txbSeach";
+            this.txbSeach.PasswordChar = '\0';
+            this.txbSeach.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbSeach.PlaceholderText = "Search . . .";
+            this.txbSeach.SelectedText = "";
+            this.txbSeach.Size = new System.Drawing.Size(200, 40);
+            this.txbSeach.TabIndex = 7;
+            this.txbSeach.TextChanged += new System.EventHandler(this.txbSeach_TextChanged);
             // 
-            // guna2Button1
+            // btnCapquyen
             // 
-            this.guna2Button1.BorderRadius = 15;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(328, 10);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(200, 40);
-            this.guna2Button1.TabIndex = 8;
-            this.guna2Button1.Text = "Cấp quyền";
+            this.btnCapquyen.BorderRadius = 15;
+            this.btnCapquyen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapquyen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapquyen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCapquyen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCapquyen.Enabled = false;
+            this.btnCapquyen.FillColor = System.Drawing.Color.LightCoral;
+            this.btnCapquyen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCapquyen.ForeColor = System.Drawing.Color.Black;
+            this.btnCapquyen.Location = new System.Drawing.Point(328, 10);
+            this.btnCapquyen.Name = "btnCapquyen";
+            this.btnCapquyen.Size = new System.Drawing.Size(200, 40);
+            this.btnCapquyen.TabIndex = 8;
+            this.btnCapquyen.Text = "Cấp quyền";
+            this.btnCapquyen.Click += new System.EventHandler(this.btnCapquyen_Click);
             // 
-            // guna2Button2
+            // btnTuocquyen
             // 
-            this.guna2Button2.BorderRadius = 15;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.LightCoral;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(575, 10);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(200, 40);
-            this.guna2Button2.TabIndex = 9;
-            this.guna2Button2.Text = "Tước quyền";
+            this.btnTuocquyen.BorderRadius = 15;
+            this.btnTuocquyen.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTuocquyen.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTuocquyen.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTuocquyen.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTuocquyen.Enabled = false;
+            this.btnTuocquyen.FillColor = System.Drawing.Color.LightCoral;
+            this.btnTuocquyen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnTuocquyen.ForeColor = System.Drawing.Color.Black;
+            this.btnTuocquyen.Location = new System.Drawing.Point(575, 10);
+            this.btnTuocquyen.Name = "btnTuocquyen";
+            this.btnTuocquyen.Size = new System.Drawing.Size(200, 40);
+            this.btnTuocquyen.TabIndex = 9;
+            this.btnTuocquyen.Text = "Tước quyền";
+            this.btnTuocquyen.Click += new System.EventHandler(this.btnTuocquyen_Click);
+            // 
+            // dtgvAccount
+            // 
+            this.dtgvAccount.AllowUserToAddRows = false;
+            this.dtgvAccount.AllowUserToDeleteRows = false;
+            this.dtgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvAccount.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dtgvAccount.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.dtgvAccount.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvAccount.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dtgvAccount.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dtgvAccount.Location = new System.Drawing.Point(0, 118);
+            this.dtgvAccount.Name = "dtgvAccount";
+            this.dtgvAccount.ReadOnly = true;
+            this.dtgvAccount.RowHeadersWidth = 51;
+            this.dtgvAccount.RowTemplate.Height = 24;
+            this.dtgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgvAccount.Size = new System.Drawing.Size(1020, 482);
+            this.dtgvAccount.TabIndex = 10;
+            this.dtgvAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAccount_CellClick);
             // 
             // AccountUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.dtgvAccount);
+            this.Controls.Add(this.btnTuocquyen);
+            this.Controls.Add(this.btnCapquyen);
+            this.Controls.Add(this.txbSeach);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "AccountUC";
             this.Size = new System.Drawing.Size(1020, 600);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvAccount)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox txbSeach;
+        private Guna.UI2.WinForms.Guna2Button btnCapquyen;
+        private Guna.UI2.WinForms.Guna2Button btnTuocquyen;
+        private System.Windows.Forms.DataGridView dtgvAccount;
     }
 }

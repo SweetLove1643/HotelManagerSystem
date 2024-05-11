@@ -13,40 +13,64 @@ namespace QuanLyKS
     public partial class User : Form
     {
         bool accountCollapse;
+        private string username;
+        private Booking bF;
+        public string Username { get => username; set => username = value; }
+        public Booking BF { get => bF; set => bF = value; }
+
         public User()
         {
             InitializeComponent();
         }
-        private Booking bF;
-        public User(Booking bk)
+        public User(string Username)
         {
             InitializeComponent();
-            bF = bk;
+            this.Username = Username;
+        }
+        public User(Booking bk, string Username)
+        {
+            InitializeComponent();
+            BF = bk;
+            this.Username = Username;
         }
 
 
         private int Number = 1;
         private void NextImage()
         {
-            timer1.Start();
-            Number++;
-            if (Number > 5)
+            try
             {
-                Number = 1;
+                timer1.Start();
+                Number++;
+                if (Number > 5)
+                {
+                    Number = 1;
+                }
+                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                Checked();
             }
-            picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
-            Checked();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void PreviousImage()
         {
-            timer1.Start();
-            Number--;
-            if (Number < 1)
+            try
             {
-                Number = 5;
+                timer1.Start();
+                Number--;
+                if (Number < 1)
+                {
+                    Number = 5;
+                }
+                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                Checked();
             }
-            picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
-            Checked();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void guna2Button8_Click(object sender, EventArgs e)
         {
@@ -54,7 +78,7 @@ namespace QuanLyKS
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
+       {
             NextImage();
         }
 
@@ -72,60 +96,81 @@ namespace QuanLyKS
 
         private void Checked()
         {
-            if (Number == 1)
+            try
             {
-                check1.Checked = true;
+                if (Number == 1)
+                {
+                    check1.Checked = true;
+                }
+                else if (Number == 2)
+                {
+                    check2.Checked = true;
+                }
+                else if (Number == 3)
+                {
+                    check3.Checked = true;
+                }
+                else if (Number == 4)
+                {
+                    check4.Checked = true;
+                }
+                else if (Number == 5)
+                {
+                    check5.Checked = true;
+                }
             }
-            else if (Number == 2)
+            catch (Exception ex)
             {
-                check2.Checked = true;
-            }
-            else if (Number == 3)
-            {
-                check3.Checked = true;
-            }
-            else if (Number == 4)
-            {
-                check4.Checked = true;
-            }
-            else if (Number == 5)
-            {
-                check5.Checked = true;
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void ChangedChecked()
         {
-            timer1.Start();
-            if (check1.Checked == true)
+            try
             {
-                Number = 1;
+                timer1.Start();
+                if (check1.Checked == true)
+                {
+                    Number = 1;
+                }
+                else if (check2.Checked == true)
+                {
+                    Number = 2;
+                }
+                else if (check3.Checked == true)
+                {
+                    Number = 3;
+                }
+                else if (check4.Checked == true)
+                {
+                    Number = 4;
+                }
+                else if (check5.Checked == true)
+                {
+                    Number = 5;
+                }
+                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
             }
-            else if (check2.Checked == true)
+            catch (Exception ex)
             {
-                Number = 2;
+                MessageBox.Show(ex.Message);
             }
-            else if (check3.Checked == true)
-            {
-                Number = 3;
-            }
-            else if (check4.Checked == true)
-            {
-                Number = 4;
-            }
-            else if (check5.Checked == true)
-            {
-                Number = 5;
-            }
-            picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
         }
 
         private void User_Load(object sender, EventArgs e)
         {
-            picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
-            check1.Checked = true;
+            try
+            {
+                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                check1.Checked = true;
 
-            accountTimer.Start();
+                accountTimer.Start();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void check5_CheckedChanged(object sender, EventArgs e)
@@ -136,23 +181,30 @@ namespace QuanLyKS
 
         private void accountTimer_Tick(object sender, EventArgs e)
         {
-            if (accountCollapse)
+            try
             {
-                accountContainer.Height += 10;
-                if (accountContainer.Height == accountContainer.MaximumSize.Height)
+                if (accountCollapse)
                 {
-                    accountCollapse = false;
-                    accountTimer.Stop();
+                    accountContainer.Height += 10;
+                    if (accountContainer.Height == accountContainer.MaximumSize.Height)
+                    {
+                        accountCollapse = false;
+                        accountTimer.Stop();
+                    }
+                }
+                else
+                {
+                    accountContainer.Height -= 10;
+                    if (accountContainer.Height == accountContainer.MinimumSize.Height)
+                    {
+                        accountCollapse = true;
+                        accountTimer.Stop();
+                    }
                 }
             }
-            else
+            catch (FormatException ex)
             {
-                accountContainer.Height -= 10;
-                if (accountContainer.Height == accountContainer.MinimumSize.Height)
-                {
-                    accountCollapse = true;
-                    accountTimer.Stop();
-                }
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -170,23 +222,29 @@ namespace QuanLyKS
 
         private void bookingBtn_Click(object sender, EventArgs e)
         {
-            if (bF != null)
+            try
             {
-                this.Hide();
-                bF.ShowDialog();
+                if (BF != null)
+                {
+                    this.Hide();
+                    BF.Show();
+                }
+                else
+                {
+                    Booking bk = new Booking();
+                    this.Hide();
+                    bk.ShowDialog();
+                }
             }
-            else
+            catch (FormatException ex)
             {
-                Booking bk = new Booking();
-                this.Hide();
-                bk.ShowDialog();
+                MessageBox.Show(ex.Message);
             }
-
         }
 
         private void accountBtn_Click(object sender, EventArgs e)
         {
-            UserInfo ui = new UserInfo();
+            btnconfirm ui = new btnconfirm(Username);
             this.Hide();
             ui.ShowDialog();
         }

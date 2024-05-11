@@ -28,56 +28,56 @@ namespace QuanLyKS
         {
             try
             {
-            warningIcon.Visible = false;
-            usnblank.Visible = false;
-            pwblank.Visible = false;
-            invalidup.Visible = false;
-            if (string.IsNullOrEmpty(txbUsername.Text))
-            {
-                warningIcon.Visible = true;
-                usnblank.Visible = true;
-                return;
-            }
-            else if (string.IsNullOrEmpty(txbPassword.Text))
-            {
-                warningIcon.Visible = true;
-                pwblank.Visible = true;
-                return;
-            }
+                warningIcon.Visible = false;
+                usnblank.Visible = false;
+                pwblank.Visible = false;
+                invalidup.Visible = false;
+                if (string.IsNullOrEmpty(txbUsername.Text))
+                {
+                    warningIcon.Visible = true;
+                    usnblank.Visible = true;
+                    return;
+                }
+                else if (string.IsNullOrEmpty(txbPassword.Text))
+                {
+                    warningIcon.Visible = true;
+                    pwblank.Visible = true;
+                    return;
+                }
                 if ((DataProvider.Instance.ExecuteQuerry("EXEC CheckAccountAndPassword @username , @password ", new object[] { txbUsername.Text, Hashing.Instance.Hash384(txbPassword.Text) })).Rows.Count == 0)
-            {
-                warningIcon.Visible = true;
-                invalidup.Visible = true;
-                return;
-            }
-            else
-            {
+                {
+                    warningIcon.Visible = true;
+                    invalidup.Visible = true;
+                    return;
+                }
+                else
+                {
                     int temp = (int)DataProvider.Instance.ExecuteScalar("SELECT dbo.CheckAccount( @username , @password )", new object[] { txbUsername.Text, Hashing.Instance.Hash384(txbPassword.Text) });
                     switch (temp)
                     {
                         case 1:
                             {
-                            Admin ad = new Admin(txbUsername.Text);
-                            this.Hide();
-                            ad.ShowDialog();
-                            break;
+                                Admin ad = new Admin(txbUsername.Text);
+                                this.Hide();
+                                ad.ShowDialog();
+                                break;
                             }
                         case 0:
                             {
-                            Employee emp = new Employee(txbUsername.Text);
-                            this.Hide();
-                            emp.ShowDialog();
-                            break;
+                                Employee emp = new Employee(txbUsername.Text);
+                                this.Hide();
+                                emp.ShowDialog();
+                                break;
                             }
                         default:
                             {
-                            User us = new User(txbUsername.Text);
-                            this.Hide();
-                            us.ShowDialog();
-                            break;
+                                User us = new User(txbUsername.Text);
+                                this.Hide();
+                                us.ShowDialog();
+                                break;
+                            }
                     }
                 }
-            }
             }
             catch (FormatException ex)
             {
@@ -138,7 +138,7 @@ namespace QuanLyKS
             txbPassword.UseSystemPasswordChar = false;
             txbPassword.PasswordChar = '\0';
         }
-        
+
         private void hideBtn_MouseUp(object sender, MouseEventArgs e)
         {
             btnHidePass.Visible = true;

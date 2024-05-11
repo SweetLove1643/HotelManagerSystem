@@ -96,7 +96,7 @@ namespace QuanLyKS
                 MailAddress mailAddress = new MailAddress(email);
                 return true;
             }
-            catch (FormatException ex)
+            catch
             {
                 return false;
             }

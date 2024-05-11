@@ -16,9 +16,25 @@ namespace QuanLyKS
     {
         bool sidebarExpand;
         bool accountCollapse;
+        private string username;
+        public string Username { get => username; set => username = value; }
+
+        AccountUC ac_uc = new AccountUC();
+        EmployeeUC em_uc = new EmployeeUC();
+        InvoiceUC in_uc = new InvoiceUC();
+        CustomerUC cu_uc = new CustomerUC();
+        RoomUC ro_uc = new RoomUC();
+        AdminInfoUC adinfo_uc = new AdminInfoUC();
+
+
         public Admin()
         {
             InitializeComponent();
+        }
+        public Admin(string Username)
+        {
+            InitializeComponent();
+            this.Username = Username;
         }
 
         private void AddUserControl(UserControl uc)
@@ -31,10 +47,10 @@ namespace QuanLyKS
 
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
-            if(sidebarExpand)
+            if (sidebarExpand)
             {
                 sidebar.Width -= 10;
-                if(sidebar.Width==sidebar.MinimumSize.Width)
+                if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = false;
                     sidebarTimer.Stop();
@@ -76,11 +92,11 @@ namespace QuanLyKS
 
         private void accountContainer_Tick(object sender, EventArgs e)
         {
-            if(accountCollapse)
+            if (accountCollapse)
             {
                 accountContainer.Height += 10;
                 blankContainer.Height -= 10;
-                if(accountContainer.Height==accountContainer.MaximumSize.Height && blankContainer.Height==blankContainer.MinimumSize.Height)
+                if (accountContainer.Height == accountContainer.MaximumSize.Height && blankContainer.Height == blankContainer.MinimumSize.Height)
                 {
                     accountCollapse = false;
                     accountTimer.Stop();
@@ -91,7 +107,7 @@ namespace QuanLyKS
             {
                 accountContainer.Height -= 10;
                 blankContainer.Height += 10;
-                if(accountContainer.Height==accountContainer.MinimumSize.Height && blankContainer.Height==blankContainer.MaximumSize.Height)
+                if (accountContainer.Height == accountContainer.MinimumSize.Height && blankContainer.Height == blankContainer.MaximumSize.Height)
                 {
                     accountCollapse = true;
                     accountTimer.Stop();
@@ -105,70 +121,71 @@ namespace QuanLyKS
             accountTimer.Start();
             blankTimer.Start();
 
-            AccountUC ac_uc = new AccountUC();
             AddUserControl(ac_uc);
+            ac_uc.LoadFormAccount();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             LogIn login = new LogIn();
-            login.Show();
             this.Hide();
+            login.ShowDialog();
         }
 
         private void employeeBtn_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
 
-            EmployeeUC em_uc = new EmployeeUC();
             AddUserControl(em_uc);
+            em_uc.LoadFormEmployyes();
         }
 
         private void customerBtn_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
 
-            CustomerUC cu_uc = new CustomerUC();
             AddUserControl(cu_uc);
+            cu_uc.LoadFormCustomer();
         }
 
         private void InvoiceBtn_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
 
-            InvoiceUC in_uc = new InvoiceUC();
             AddUserControl(in_uc);
+            in_uc.LoadFormInvoice();
         }
 
         private void roomBtn_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
 
-            RoomUC ro_uc = new RoomUC();
             AddUserControl(ro_uc);
+            ro_uc.LoadFormRoom();
         }
-
-        private void guna2Button6_Click(object sender, EventArgs e)
+        private void btnProperties_Click(object sender, EventArgs e)
         {
             sidebarTimer.Start();
 
-            AdminInfoUC adinfo_uc = new AdminInfoUC();
+            adinfo_uc.Username = this.Username;
             AddUserControl(adinfo_uc);
+            adinfo_uc.LoadFormProperties();
         }
-
         private void allAccBtn_Click(object sender, EventArgs e)
         {
-
+            ac_uc.LoadFormAccount();
         }
 
         private void employeeAccBtn_Click(object sender, EventArgs e)
         {
-
+            ac_uc.FillEmployyes();
         }
 
         private void customerAccBtn_Click(object sender, EventArgs e)
         {
-
+            ac_uc.FillCustomer();
         }
+
+
     }
 }

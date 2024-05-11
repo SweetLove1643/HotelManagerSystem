@@ -36,7 +36,7 @@ namespace QuanLyKS
             this.txbLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txbUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbNationality = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnSignup = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -177,33 +177,33 @@ namespace QuanLyKS
             this.guna2Panel2.Size = new System.Drawing.Size(290, 1);
             this.guna2Panel2.TabIndex = 16;
             // 
-            // txbUserName
+            // txbNationality
             // 
-            this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbUserName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbUserName.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.txbUserName.BorderThickness = 0;
-            this.txbUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUserName.DefaultText = "";
-            this.txbUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbUserName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbUserName.ForeColor = System.Drawing.Color.Black;
-            this.txbUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbUserName.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbUserName.IconLeft")));
-            this.txbUserName.Location = new System.Drawing.Point(360, 100);
-            this.txbUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbUserName.Name = "txbUserName";
-            this.txbUserName.PasswordChar = '\0';
-            this.txbUserName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbUserName.PlaceholderText = "Quốc tịch";
-            this.txbUserName.SelectedText = "";
-            this.txbUserName.Size = new System.Drawing.Size(290, 50);
-            this.txbUserName.TabIndex = 17;
+            this.txbNationality.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNationality.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNationality.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbNationality.BorderThickness = 0;
+            this.txbNationality.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbNationality.DefaultText = "";
+            this.txbNationality.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbNationality.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbNationality.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbNationality.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbNationality.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbNationality.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbNationality.ForeColor = System.Drawing.Color.Black;
+            this.txbNationality.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbNationality.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbNationality.IconLeft")));
+            this.txbNationality.Location = new System.Drawing.Point(360, 100);
+            this.txbNationality.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbNationality.Name = "txbNationality";
+            this.txbNationality.PasswordChar = '\0';
+            this.txbNationality.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbNationality.PlaceholderText = "Quốc tịch";
+            this.txbNationality.SelectedText = "";
+            this.txbNationality.Size = new System.Drawing.Size(290, 50);
+            this.txbNationality.TabIndex = 17;
             // 
             // guna2Panel3
             // 
@@ -745,7 +745,7 @@ namespace QuanLyKS
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.txbUserName);
+            this.Controls.Add(this.txbNationality);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbLastName);
@@ -778,7 +778,7 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2TextBox txbLastName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox txbUserName;
+        private Guna.UI2.WinForms.Guna2TextBox txbNationality;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2Button btnSignup;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
