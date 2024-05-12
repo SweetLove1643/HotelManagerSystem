@@ -29,7 +29,6 @@ namespace QuanLyKS
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPassword));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
@@ -45,11 +44,12 @@ namespace QuanLyKS
             this.btnHideConfirmNewPassword = new Guna.UI2.WinForms.Guna2Button();
             this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-            this.npEp = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cnpEp = new System.Windows.Forms.ErrorProvider(this.components);
+            this.npwPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.cnpwPb = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.invalidInfoTT = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.npEp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cnpEp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npwPb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnpwPb)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
@@ -88,18 +88,18 @@ namespace QuanLyKS
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(150, 20);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(200, 20);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(425, 55);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(350, 55);
             this.guna2HtmlLabel1.TabIndex = 39;
-            this.guna2HtmlLabel1.Text = "Forgot your password?";
+            this.guna2HtmlLabel1.Text = "Quên mật khẩu?";
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Gray;
-            this.guna2Panel2.Location = new System.Drawing.Point(215, 85);
+            this.guna2Panel2.Location = new System.Drawing.Point(220, 85);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(285, 1);
+            this.guna2Panel2.Size = new System.Drawing.Size(260, 1);
             this.guna2Panel2.TabIndex = 40;
             // 
             // txbNewPassword
@@ -125,7 +125,7 @@ namespace QuanLyKS
             this.txbNewPassword.Name = "txbNewPassword";
             this.txbNewPassword.PasswordChar = '●';
             this.txbNewPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbNewPassword.PlaceholderText = "New password";
+            this.txbNewPassword.PlaceholderText = "Mật khẩu mới";
             this.txbNewPassword.SelectedText = "";
             this.txbNewPassword.Size = new System.Drawing.Size(480, 50);
             this.txbNewPassword.TabIndex = 42;
@@ -164,7 +164,7 @@ namespace QuanLyKS
             this.txbConfirmNewPassword.Name = "txbConfirmNewPassword";
             this.txbConfirmNewPassword.PasswordChar = '●';
             this.txbConfirmNewPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbConfirmNewPassword.PlaceholderText = "Confirm your new password";
+            this.txbConfirmNewPassword.PlaceholderText = "Xác nhận mật khẩu mới";
             this.txbConfirmNewPassword.SelectedText = "";
             this.txbConfirmNewPassword.Size = new System.Drawing.Size(480, 50);
             this.txbConfirmNewPassword.TabIndex = 44;
@@ -277,7 +277,7 @@ namespace QuanLyKS
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(180, 45);
             this.btnContinue.TabIndex = 54;
-            this.btnContinue.Text = "Continue";
+            this.btnContinue.Text = "Tiếp tục";
             this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
             // btnBack
@@ -298,13 +298,38 @@ namespace QuanLyKS
             this.btnBack.TabIndex = 55;
             this.btnBack.Click += new System.EventHandler(this.backBtn_Click);
             // 
-            // npEp
+            // npwPb
             // 
-            this.npEp.ContainerControl = this;
+            this.npwPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.npwPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.npwPb.Image = ((System.Drawing.Image)(resources.GetObject("npwPb.Image")));
+            this.npwPb.ImageRotate = 0F;
+            this.npwPb.Location = new System.Drawing.Point(595, 130);
+            this.npwPb.Name = "npwPb";
+            this.npwPb.Size = new System.Drawing.Size(20, 20);
+            this.npwPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.npwPb.TabIndex = 58;
+            this.npwPb.TabStop = false;
+            this.npwPb.Visible = false;
             // 
-            // cnpEp
+            // cnpwPb
             // 
-            this.cnpEp.ContainerControl = this;
+            this.cnpwPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cnpwPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cnpwPb.Image = ((System.Drawing.Image)(resources.GetObject("cnpwPb.Image")));
+            this.cnpwPb.ImageRotate = 0F;
+            this.cnpwPb.Location = new System.Drawing.Point(595, 200);
+            this.cnpwPb.Name = "cnpwPb";
+            this.cnpwPb.Size = new System.Drawing.Size(20, 20);
+            this.cnpwPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cnpwPb.TabIndex = 59;
+            this.cnpwPb.TabStop = false;
+            this.cnpwPb.Visible = false;
+            // 
+            // invalidInfoTT
+            // 
+            this.invalidInfoTT.AllowLinksHandling = true;
+            this.invalidInfoTT.MaximumSize = new System.Drawing.Size(0, 0);
             // 
             // NewPassword
             // 
@@ -314,6 +339,8 @@ namespace QuanLyKS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 350);
+            this.Controls.Add(this.cnpwPb);
+            this.Controls.Add(this.npwPb);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnHideConfirmNewPassword);
@@ -333,8 +360,8 @@ namespace QuanLyKS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewPassword";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.npEp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cnpEp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npwPb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cnpwPb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -355,7 +382,8 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Button btnHideConfirmNewPassword;
         private Guna.UI2.WinForms.Guna2Button btnContinue;
         private Guna.UI2.WinForms.Guna2Button btnBack;
-        private System.Windows.Forms.ErrorProvider npEp;
-        private System.Windows.Forms.ErrorProvider cnpEp;
+        private Guna.UI2.WinForms.Guna2PictureBox npwPb;
+        private Guna.UI2.WinForms.Guna2PictureBox cnpwPb;
+        private Guna.UI2.WinForms.Guna2HtmlToolTip invalidInfoTT;
     }
 }

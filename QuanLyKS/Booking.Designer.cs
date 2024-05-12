@@ -32,6 +32,8 @@ namespace QuanLyKS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.DateCheckin = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.DateCheckout = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,8 +47,6 @@ namespace QuanLyKS
             this.bookingBtn = new Guna.UI2.WinForms.Guna2Button();
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.DateCheckout = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.DateCheckin = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dtgvroom = new System.Windows.Forms.DataGridView();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvroom)).BeginInit();
@@ -83,12 +83,46 @@ namespace QuanLyKS
             this.guna2Panel1.Size = new System.Drawing.Size(523, 255);
             this.guna2Panel1.TabIndex = 33;
             // 
+            // DateCheckin
+            // 
+            this.DateCheckin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckin.Checked = true;
+            this.DateCheckin.CustomFormat = "";
+            this.DateCheckin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckin.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateCheckin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateCheckin.Location = new System.Drawing.Point(190, 61);
+            this.DateCheckin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateCheckin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateCheckin.Name = "DateCheckin";
+            this.DateCheckin.Size = new System.Drawing.Size(330, 50);
+            this.DateCheckin.TabIndex = 64;
+            this.DateCheckin.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
+            // 
+            // DateCheckout
+            // 
+            this.DateCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckout.Checked = true;
+            this.DateCheckout.CustomFormat = "";
+            this.DateCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.DateCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DateCheckout.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.DateCheckout.Location = new System.Drawing.Point(190, 121);
+            this.DateCheckout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.DateCheckout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.DateCheckout.Name = "DateCheckout";
+            this.DateCheckout.Size = new System.Drawing.Size(330, 50);
+            this.DateCheckout.TabIndex = 63;
+            this.DateCheckout.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
+            // 
             // guna2HtmlLabel14
             // 
             this.guna2HtmlLabel14.AutoSize = false;
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 210);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 190);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 40);
             this.guna2HtmlLabel14.TabIndex = 62;
@@ -134,9 +168,9 @@ namespace QuanLyKS
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel6.Location = new System.Drawing.Point(190, 250);
+            this.guna2Panel6.Location = new System.Drawing.Point(190, 230);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(400, 1);
+            this.guna2Panel6.Size = new System.Drawing.Size(330, 1);
             this.guna2Panel6.TabIndex = 45;
             // 
             // txbTiencoc
@@ -272,40 +306,6 @@ namespace QuanLyKS
             this.exitBtn.Size = new System.Drawing.Size(50, 40);
             this.exitBtn.TabIndex = 84;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
-            // DateCheckout
-            // 
-            this.DateCheckout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckout.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckout.Checked = true;
-            this.DateCheckout.CustomFormat = "";
-            this.DateCheckout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckout.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateCheckout.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateCheckout.Location = new System.Drawing.Point(190, 121);
-            this.DateCheckout.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateCheckout.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateCheckout.Name = "DateCheckout";
-            this.DateCheckout.Size = new System.Drawing.Size(330, 50);
-            this.DateCheckout.TabIndex = 63;
-            this.DateCheckout.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
-            // 
-            // DateCheckin
-            // 
-            this.DateCheckin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckin.Checked = true;
-            this.DateCheckin.CustomFormat = "";
-            this.DateCheckin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.DateCheckin.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.DateCheckin.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.DateCheckin.Location = new System.Drawing.Point(190, 61);
-            this.DateCheckin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.DateCheckin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.DateCheckin.Name = "DateCheckin";
-            this.DateCheckin.Size = new System.Drawing.Size(330, 50);
-            this.DateCheckin.TabIndex = 64;
-            this.DateCheckin.Value = new System.DateTime(2024, 4, 11, 22, 17, 42, 292);
             // 
             // dtgvroom
             // 

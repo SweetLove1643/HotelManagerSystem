@@ -99,18 +99,18 @@ namespace QuanLyKS
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(150, 20);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(200, 20);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(425, 55);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(350, 55);
             this.guna2HtmlLabel1.TabIndex = 38;
-            this.guna2HtmlLabel1.Text = "Forgot your password?";
+            this.guna2HtmlLabel1.Text = "Quên mật khẩu?";
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Gray;
-            this.guna2Panel2.Location = new System.Drawing.Point(215, 85);
+            this.guna2Panel2.Location = new System.Drawing.Point(220, 85);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(285, 1);
+            this.guna2Panel2.Size = new System.Drawing.Size(260, 1);
             this.guna2Panel2.TabIndex = 39;
             // 
             // noteLb
@@ -147,7 +147,7 @@ namespace QuanLyKS
             this.txbOTP.Name = "txbOTP";
             this.txbOTP.PasswordChar = '\0';
             this.txbOTP.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbOTP.PlaceholderText = "Vertification code";
+            this.txbOTP.PlaceholderText = "Mã xác nhận OTP";
             this.txbOTP.SelectedText = "";
             this.txbOTP.Size = new System.Drawing.Size(480, 50);
             this.txbOTP.TabIndex = 41;
@@ -176,7 +176,7 @@ namespace QuanLyKS
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(180, 45);
             this.btnContinue.TabIndex = 43;
-            this.btnContinue.Text = "Continue";
+            this.btnContinue.Text = "Tiếp tục";
             this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
             // vcPb

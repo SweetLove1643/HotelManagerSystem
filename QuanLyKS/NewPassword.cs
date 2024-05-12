@@ -93,6 +93,24 @@ namespace QuanLyKS
         {
             try
             {
+                /*if (string.IsNullOrEmpty(txbNewPassword.Text))
+                {
+                    npwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(npwPb, "Vui lòng nhập mật khẩu mới của bạn!");
+                }
+                else
+                {
+                    npwPb.Visible = false;
+                }
+                if (string.IsNullOrEmpty(txbConfirmNewPassword.Text))
+                {
+                    cnpwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(cnpwPb, "Vui lòng xác nhận lại mật khẩu mới của bạn!");
+                }
+                else
+                {
+                    cnpwPb.Visible = false;
+                }*/
                 if (IsValidPassword(txbNewPassword.Text))
                 {
                     if (txbNewPassword.Text.Equals(txbConfirmNewPassword.Text))

@@ -23,7 +23,8 @@ namespace QuanLyKS
             if (fp != null)
             {
                 mail = fp.txbMail.Text;
-                noteLb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
+                //noteLb.Text = $"We have just sent the vertification code to <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Please check your mail and enter the vertification code.";
+                noteLb.Text = $"Chúng tôi đã gửi mã xác nhận OTP đến <span style=\" color: black; text-decoration: underline;\">{mail}</span>. Vui lòng kiểm tra mail của bạn và nhập mã xác nhận OTP.";
             }
         }
 
@@ -45,7 +46,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbOTP.Text))
                 {
                     vcPb.Visible = true;
-                    invalidInfoTT.SetToolTip(vcPb, "Please enter the vertification code!");
+                    invalidInfoTT.SetToolTip(vcPb, "Vui lòng nhập mã xác nhận OTP!");
                 }
                 else
                 {
@@ -59,7 +60,9 @@ namespace QuanLyKS
                     }
                     else
                     {
-                        MessageBox.Show("Mã OTP không đúng, vui lòng nhập lại!", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        vcPb.Visible = true;
+                        invalidInfoTT.SetToolTip(vcPb, "Mã xác nhân OTP chưa đúng!");
+                        //MessageBox.Show("Mã OTP không đúng, vui lòng nhập lại!", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
             }

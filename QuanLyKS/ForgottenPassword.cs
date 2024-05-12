@@ -51,7 +51,7 @@ namespace QuanLyKS
                     else
                     {
                         mPb.Visible = true;
-                        invalidInfoTT.SetToolTip(mPb, "Vui lòng nhập đúng mẫu của mail!  VD:abc@gmail.com");
+                        invalidInfoTT.SetToolTip(mPb, "Vui lòng nhập đúng định dạng của mail!  VD:abc@gmail.com");
                         //MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
