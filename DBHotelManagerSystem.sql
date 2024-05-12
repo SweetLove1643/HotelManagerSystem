@@ -366,6 +366,37 @@ BEGIN
 END
 GO
 
+CREATE PROC Update_Info_KhachHang @IDKH INT, @Name NVARCHAR(50), @Sex NVARCHAR(5), @Dateofbirth DATE, @Phone VARCHAR(11), @CCCD VARCHAR(15), @Mail VARCHAR(50), @Nationality VARCHAR(50)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT 1 FROM dbo.Khach WHERE CCCD = @CCCD AND @IDKH <> @IDKH)
+    BEGIN
+        -- CCCD không trùng lặp, tiến hành cập nhật thông tin nhân viên
+        UPDATE dbo.Khach
+        SET TenKhach = @Name, 
+            GioiTinh = @Sex, 
+            NgaySinh = @Dateofbirth, 
+            SDT = @Phone, 
+            CCCD = @CCCD, 
+            Mail = @Mail,
+			QuocTich = @Nationality
+        WHERE IDKhach = @IDKH;
+    END
+    ELSE
+    BEGIN
+        -- CCCD trùng lặp, thông báo lỗi
+        UPDATE dbo.Khach 
+        SET TenKhach = @Name, 
+            GioiTinh = @Sex, 
+            NgaySinh = @Dateofbirth, 
+            SDT = @Phone, 
+            Mail = @Mail,
+			QuocTich = @Nationality
+        WHERE IDKhach = @IDKH;
+    END
+END
+GO
+
 CREATE PROC CreateNewReceipt @Name NVARCHAR(40), @Roomcode VARCHAR(20), @IDNV INT,@Roomprice MONEY, @Discount MONEY, @VAT MONEY
 AS
 BEGIN
@@ -401,6 +432,77 @@ BEGIN
 	    )    
 END
 GO
+
+CREATE PROC Select_Booking @Date1 DATE, @Date2 DATE
+AS
+BEGIN
+		SELECT MaPhong AS 'Mã phòng', LoaiPhong AS 'Loại phòng',Mota AS 'Mô tả', Gia AS 'Giá', SucChua AS 'Sức chứa'
+	FROM dbo.Phong AS P
+	LEFT JOIN dbo.DatTruoc AS DT ON P.MaPhong = DT.MaPhong
+	WHERE (DT.MaPhong IS NULL OR NOT (DT.NgayNhan BETWEEN @Date1 AND @Date2 OR DT.NgayTra BETWEEN @Date1 AND @Date2)
+)
+END
+GO
+
+CREATE PROC CreateBooking @IDGuest INT, @Roomcode VARCHAR(20), @Checkin DATE, @Checkout DATE, @Coc MONEY
+AS
+BEGIN
+	INSERT INTO dbo.DatTruoc
+	(
+		IDKhach,
+		MaPhong,
+		NgayNhan,
+		NgayTra,
+		TienCoc
+	)
+	VALUES
+	(   @IDGuest,      -- IDKhach - int
+		@Roomcode,      -- MaPhong - varchar(20)
+		@Checkin, -- NgayNhan - date
+		@Checkout, -- NgayTra - date
+		@Coc       -- TienCoc - money
+		)
+	INSERT INTO dbo.BienLai
+	(
+	    IDKhach,
+	    MaPhong,
+	    IDNV,
+	    TienCoc,
+	    NgayVao,
+	    NgayRa,
+	    TienPhong,
+	    TrangThai,
+	    discount,
+	    VAT,
+	    TongTien,
+	    TenPhuongThuc,
+	    TenKhach
+	)
+	VALUES
+	(   @IDGuest,      -- IDKhach - int
+	    @Roomcode,      -- MaPhong - varchar(20)
+	    NULL,      -- IDNV - int
+	    @Coc,   -- TienCoc - money
+	    @Checkin, -- NgayVao - datetime
+	    NULL,      -- NgayRa - datetime
+	    NULL,      -- TienPhong - money
+	    0,         -- TrangThai - int
+	    DEFAULT,   -- discount - money
+	    DEFAULT,   -- VAT - money
+	    DEFAULT,   -- TongTien - money
+	    NULL,      -- TenPhuongThuc - nvarchar(20)
+	    NULL       -- TenKhach - nvarchar(40)
+	    )
+END
+ 
+
+EXEC dbo.CreateBooking @IDGuest = 0,             -- int
+                       @Roomcode = '',           -- varchar(20)
+                       @Checkin = '2024-05-12',  -- date
+                       @Checkout = '2024-05-12', -- date
+                       @Coc = NULL               -- money
+
+ 
 
 
 
