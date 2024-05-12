@@ -74,7 +74,7 @@ namespace QuanLyKS
             this.txbUsername.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.txbUsername.BorderThickness = 0;
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUsername.DefaultText = "0947119702";
+            this.txbUsername.DefaultText = "";
             this.txbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -90,7 +90,7 @@ namespace QuanLyKS
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.PasswordChar = '\0';
             this.txbUsername.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbUsername.PlaceholderText = "Email / số điện thoại";
+            this.txbUsername.PlaceholderText = "Tên tài khoản";
             this.txbUsername.SelectedText = "";
             this.txbUsername.Size = new System.Drawing.Size(470, 50);
             this.txbUsername.TabIndex = 4;
@@ -104,7 +104,7 @@ namespace QuanLyKS
             this.txbPassword.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.txbPassword.BorderThickness = 0;
             this.txbPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPassword.DefaultText = "Quan028@";
+            this.txbPassword.DefaultText = "";
             this.txbPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txbPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txbPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -120,7 +120,7 @@ namespace QuanLyKS
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.PasswordChar = '●';
             this.txbPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbPassword.PlaceholderText = "Password";
+            this.txbPassword.PlaceholderText = "Mật khẩu";
             this.txbPassword.SelectedText = "";
             this.txbPassword.Size = new System.Drawing.Size(470, 50);
             this.txbPassword.TabIndex = 5;
@@ -160,13 +160,13 @@ namespace QuanLyKS
             this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogin.FillColor = System.Drawing.Color.LightCoral;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Black;
             this.btnLogin.Location = new System.Drawing.Point(270, 380);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 45);
             this.btnLogin.TabIndex = 9;
-            this.btnLogin.Text = "Log in";
+            this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // btnExit
@@ -194,9 +194,9 @@ namespace QuanLyKS
             this.invalidup.ForeColor = System.Drawing.Color.Crimson;
             this.invalidup.Location = new System.Drawing.Point(140, 330);
             this.invalidup.Name = "invalidup";
-            this.invalidup.Size = new System.Drawing.Size(190, 20);
+            this.invalidup.Size = new System.Drawing.Size(250, 20);
             this.invalidup.TabIndex = 12;
-            this.invalidup.Text = "Invalid username or password";
+            this.invalidup.Text = "Sai tên tài khoản hoặc mật khẩu";
             this.invalidup.Visible = false;
             // 
             // btnForgetPass
@@ -205,12 +205,12 @@ namespace QuanLyKS
             this.btnForgetPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.btnForgetPass.ForeColor = System.Drawing.Color.Gray;
             this.btnForgetPass.LinkColor = System.Drawing.Color.Gray;
-            this.btnForgetPass.Location = new System.Drawing.Point(435, 326);
+            this.btnForgetPass.Location = new System.Drawing.Point(467, 326);
             this.btnForgetPass.Name = "btnForgetPass";
-            this.btnForgetPass.Size = new System.Drawing.Size(153, 17);
+            this.btnForgetPass.Size = new System.Drawing.Size(113, 17);
             this.btnForgetPass.TabIndex = 10;
             this.btnForgetPass.TabStop = true;
-            this.btnForgetPass.Text = "Forgot your password?";
+            this.btnForgetPass.Text = "Quên mật khẩu?";
             this.btnForgetPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotLink_LinkClicked);
             // 
             // btnSignUp
@@ -229,7 +229,7 @@ namespace QuanLyKS
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(180, 26);
             this.btnSignUp.TabIndex = 13;
-            this.btnSignUp.Text = "Sign up";
+            this.btnSignUp.Text = "Đăng ký";
             this.btnSignUp.Click += new System.EventHandler(this.logupBt_Click);
             // 
             // usnblank
@@ -239,9 +239,9 @@ namespace QuanLyKS
             this.usnblank.ForeColor = System.Drawing.Color.Crimson;
             this.usnblank.Location = new System.Drawing.Point(140, 330);
             this.usnblank.Name = "usnblank";
-            this.usnblank.Size = new System.Drawing.Size(190, 20);
+            this.usnblank.Size = new System.Drawing.Size(250, 20);
             this.usnblank.TabIndex = 14;
-            this.usnblank.Text = "Please enter your username";
+            this.usnblank.Text = "Vui lòng nhập tên tài khoản";
             this.usnblank.Visible = false;
             // 
             // pwblank
@@ -251,9 +251,9 @@ namespace QuanLyKS
             this.pwblank.ForeColor = System.Drawing.Color.Crimson;
             this.pwblank.Location = new System.Drawing.Point(140, 330);
             this.pwblank.Name = "pwblank";
-            this.pwblank.Size = new System.Drawing.Size(190, 20);
+            this.pwblank.Size = new System.Drawing.Size(250, 20);
             this.pwblank.TabIndex = 15;
-            this.pwblank.Text = "Please enter your password";
+            this.pwblank.Text = "Vui lòng nhập mật khẩu";
             this.pwblank.Visible = false;
             // 
             // viewBtn
