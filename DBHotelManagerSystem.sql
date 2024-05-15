@@ -185,7 +185,7 @@ END
 GO
 
 
-CREATE PROCEDURE CreateNewAccount 
+CREATE PROCEDURE CreateNewAccount -- tạo tài khoản mới
 	@SDT VARCHAR(30), @Mail VARCHAR(30), @Password NVARCHAR(150), @Accounttype NVARCHAR(20)
 AS
 BEGIN
@@ -205,7 +205,7 @@ BEGIN
 END
 GO
 
-CREATE PROCEDURE CreateNewGuest
+CREATE PROCEDURE CreateNewGuest --tạo khách
 @Guestname NVARCHAR(50),
 @Sex NVARCHAR(5),
 @DateOfBrith DATE,
@@ -237,7 +237,7 @@ BEGIN
 END
 GO
 
-CREATE PROC CreateNewPersonnel
+CREATE PROC CreateNewPersonnel -- thêm nhân viên
 @Name NVARCHAR(50),
 @Sex NVARCHAR(5),
 @DateofBrith Date,
@@ -272,14 +272,14 @@ BEGIN
 END
 GO
 
-CREATE PROC SeachEmail @Email VARCHAR(30) 
+CREATE PROC SeachEmail @Email VARCHAR(30) -- kiểm tra account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE Mail = @Email
 END
 GO
 
-CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(150)
+CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(150) -- đổi pass
 AS
 BEGIN
     UPDATE dbo.TaiKhoan 
@@ -288,7 +288,7 @@ BEGIN
 END
 GO
 
-CREATE FUNCTION CheckAccount (@username VARCHAR(30), @password NVARCHAR(150))
+CREATE FUNCTION CheckAccount (@username VARCHAR(30), @password NVARCHAR(150)) -- check quyền
 RETURNS INT
 AS
 BEGIN
@@ -305,7 +305,7 @@ BEGIN
 END
 GO
 
-CREATE PROC CheckAccountAndPassword @username VARCHAR(30), @password VARCHAR(150)
+CREATE PROC CheckAccountAndPassword @username VARCHAR(30), @password VARCHAR(150) -- check account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE (SDT = @username OR Mail = @username) AND MatKhau = @password
@@ -402,6 +402,71 @@ BEGIN
 END
 GO
 
+<<<<<<< HEAD
+=======
+CREATE PROC Select_Booking @Date1 DATE, @Date2 DATE
+AS
+BEGIN
+		SELECT P.MaPhong AS 'Mã phòng', LoaiPhong AS 'Loại phòng',Mota AS 'Mô tả', Gia AS 'Giá', SucChua AS 'Sức chứa'
+	FROM dbo.Phong AS P
+	LEFT JOIN dbo.DatTruoc AS DT ON P.MaPhong = DT.MaPhong
+	WHERE (DT.MaPhong IS NULL OR NOT (DT.NgayNhan BETWEEN @Date1 AND @Date2 OR DT.NgayTra BETWEEN @Date1 AND @Date2)
+)
+END
+GO
+
+CREATE PROC CreateBooking @IDGuest INT, @Roomcode VARCHAR(20), @Checkin DATE, @Checkout DATE, @Coc MONEY
+AS
+BEGIN
+	INSERT INTO dbo.DatTruoc
+	(
+		IDKhach,
+		MaPhong,
+		NgayNhan,
+		NgayTra,
+		TienCoc
+	)
+	VALUES
+	(   @IDGuest,      -- IDKhach - int
+		@Roomcode,      -- MaPhong - varchar(20)
+		@Checkin, -- NgayNhan - date
+		@Checkout, -- NgayTra - date
+		@Coc       -- TienCoc - money
+		)
+	INSERT INTO dbo.BienLai
+	(
+	    IDKhach,
+	    MaPhong,
+	    IDNV,
+	    TienCoc,
+	    NgayVao,
+	    NgayRa,
+	    TienPhong,
+	    TrangThai,
+	    discount,
+	    VAT,
+	    TongTien,
+	    TenPhuongThuc,
+	    TenKhach
+	)
+	VALUES
+	(   @IDGuest,      -- IDKhach - int
+	    @Roomcode,      -- MaPhong - varchar(20)
+	    NULL,      -- IDNV - int
+	    @Coc,   -- TienCoc - money
+	    @Checkin, -- NgayVao - datetime
+	    NULL,      -- NgayRa - datetime
+	    NULL,      -- TienPhong - money
+	    0,         -- TrangThai - int
+	    DEFAULT,   -- discount - money
+	    DEFAULT,   -- VAT - money
+	    DEFAULT,   -- TongTien - money
+	    NULL,      -- TenPhuongThuc - nvarchar(20)
+	    NULL       -- TenKhach - nvarchar(40)
+	    )
+END
+ 
+>>>>>>> 35c6b3f94881d5c42f14093171bed8a29b18f685
 
 
 
