@@ -85,11 +85,11 @@ namespace QuanLyKS
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(270, 20);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(260, 20);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(170, 60);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(185, 60);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Sign up";
+            this.guna2HtmlLabel1.Text = "Đăng ký";
             // 
             // btnExit
             // 
@@ -755,7 +755,6 @@ namespace QuanLyKS
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Logup";
             this.Load += new System.EventHandler(this.Logup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fnPb)).EndInit();

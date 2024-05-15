@@ -142,8 +142,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbLastName.Text))
                 {
                     lnPb.Visible = true;
-                    invalidInfoTT.SetToolTip(lnPb, "Vui lòng nhập tên của bạn" +
-                        "!");
+                    invalidInfoTT.SetToolTip(lnPb, "Vui lòng nhập tên của bạn!");
                 }
                 else
                 {
@@ -215,6 +214,8 @@ namespace QuanLyKS
             {
                 if (ex.Number == 2627)
                 {
+                    /*pPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pPb, "Số điện thoại hoặc email đã tồn tại. Vui lòng nhập lại.");*/
                     MessageBox.Show("Số điện thoại hoặc email đã tồn tại. Vui lòng nhập lại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
@@ -250,6 +251,8 @@ namespace QuanLyKS
             {
                 if (txbConfirmPassword.Text != txbPassWord.Text)
                 {
+                    /*cpwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(cpwPb, "Nhập lại mật khẩu chưa đúng. Vui lòng nhập lại.");*/
                     MessageBox.Show("Nhập lại mật khẩu chưa đúng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
@@ -260,6 +263,8 @@ namespace QuanLyKS
             {
                 if (IsValidEmail(txbMail.Text) == false)
                 {
+                    /*mPb.Visible = true;
+                    invalidInfoTT.SetToolTip(mPb, "Email chưa đúng định dạng. Vui lòng nhập lại.");*/
                     MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
@@ -271,6 +276,8 @@ namespace QuanLyKS
             {
                 if (IsValidPhoneNumber(txbPhone.Text) == false)
                 {
+                    /*pPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pPb, "Số điện thoại chưa đúng định dạng. Vui lòng nhập lại.");*/
                     MessageBox.Show("Số điện thoại chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
