@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace QuanLyKS
 {
@@ -46,7 +47,7 @@ namespace QuanLyKS
                 {
                     Number = 1;
                 }
-                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                picturePb.ImageLocation = string.Format(@"C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
                 Checked();
             }
             catch (Exception ex)
@@ -64,7 +65,7 @@ namespace QuanLyKS
                 {
                     Number = 5;
                 }
-                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                picturePb.ImageLocation = string.Format(@"C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
                 Checked();
             }
             catch (Exception ex)
@@ -150,7 +151,7 @@ namespace QuanLyKS
                 {
                     Number = 5;
                 }
-                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                picturePb.ImageLocation = string.Format(@"C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
             }
             catch (Exception ex)
             {
@@ -162,7 +163,7 @@ namespace QuanLyKS
         {
             try
             {
-                picturePb.ImageLocation = string.Format(@"C:\Lap trinh tren Windows\HotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
+                picturePb.ImageLocation = string.Format(@"C:\Users\Admin\Documents\Visual studio\LapTrinhWindowns\ProjectHotelManagerSystem\QuanLyKS\Images\" + Number + ".jpg");
                 check1.Checked = true;
 
                 accountTimer.Start();

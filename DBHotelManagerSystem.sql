@@ -185,7 +185,7 @@ END
 GO
 
 
-CREATE PROCEDURE CreateNewAccount 
+CREATE PROCEDURE CreateNewAccount -- tạo tài khoản mới
 	@SDT VARCHAR(30), @Mail VARCHAR(30), @Password NVARCHAR(150), @Accounttype NVARCHAR(20)
 AS
 BEGIN
@@ -205,7 +205,7 @@ BEGIN
 END
 GO
 
-CREATE PROCEDURE CreateNewGuest
+CREATE PROCEDURE CreateNewGuest --tạo khách
 @Guestname NVARCHAR(50),
 @Sex NVARCHAR(5),
 @DateOfBrith DATE,
@@ -237,7 +237,7 @@ BEGIN
 END
 GO
 
-CREATE PROC CreateNewPersonnel
+CREATE PROC CreateNewPersonnel -- thêm nhân viên
 @Name NVARCHAR(50),
 @Sex NVARCHAR(5),
 @DateofBrith Date,
@@ -272,14 +272,14 @@ BEGIN
 END
 GO
 
-CREATE PROC SeachEmail @Email VARCHAR(30) 
+CREATE PROC SeachEmail @Email VARCHAR(30) -- kiểm tra account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE Mail = @Email
 END
 GO
 
-CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(150)
+CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(150) -- đổi pass
 AS
 BEGIN
     UPDATE dbo.TaiKhoan 
@@ -288,7 +288,7 @@ BEGIN
 END
 GO
 
-CREATE FUNCTION CheckAccount (@username VARCHAR(30), @password NVARCHAR(150))
+CREATE FUNCTION CheckAccount (@username VARCHAR(30), @password NVARCHAR(150)) -- check quyền
 RETURNS INT
 AS
 BEGIN
@@ -305,7 +305,7 @@ BEGIN
 END
 GO
 
-CREATE PROC CheckAccountAndPassword @username VARCHAR(30), @password VARCHAR(150)
+CREATE PROC CheckAccountAndPassword @username VARCHAR(30), @password VARCHAR(150) -- check account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE (SDT = @username OR Mail = @username) AND MatKhau = @password
@@ -436,7 +436,7 @@ GO
 CREATE PROC Select_Booking @Date1 DATE, @Date2 DATE
 AS
 BEGIN
-		SELECT MaPhong AS 'Mã phòng', LoaiPhong AS 'Loại phòng',Mota AS 'Mô tả', Gia AS 'Giá', SucChua AS 'Sức chứa'
+		SELECT P.MaPhong AS 'Mã phòng', LoaiPhong AS 'Loại phòng',Mota AS 'Mô tả', Gia AS 'Giá', SucChua AS 'Sức chứa'
 	FROM dbo.Phong AS P
 	LEFT JOIN dbo.DatTruoc AS DT ON P.MaPhong = DT.MaPhong
 	WHERE (DT.MaPhong IS NULL OR NOT (DT.NgayNhan BETWEEN @Date1 AND @Date2 OR DT.NgayTra BETWEEN @Date1 AND @Date2)
@@ -495,15 +495,6 @@ BEGIN
 	    )
 END
  
-
-EXEC dbo.CreateBooking @IDGuest = 0,             -- int
-                       @Roomcode = '',           -- varchar(20)
-                       @Checkin = '2024-05-12',  -- date
-                       @Checkout = '2024-05-12', -- date
-                       @Coc = NULL               -- money
-
- 
-
 
 
 
