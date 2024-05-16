@@ -152,7 +152,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbRegistration.Text))
                 {
                     rcPb.Visible = true;
-                    invalidInfoTT.SetToolTip(rcPb, "Vui lòng nhập mã CCD của bạn!");
+                    invalidInfoTT.SetToolTip(rcPb, "Vui lòng nhập mã CCCD của bạn!");
                 }
                 else
                 {
