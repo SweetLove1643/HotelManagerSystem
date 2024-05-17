@@ -295,17 +295,6 @@ namespace QuanLyKS
             // 
             // npwPb
             // 
-            /*this.npwPb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.npwPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.npwPb.Image = ((System.Drawing.Image)(resources.GetObject("npwPb.Image")));
-            this.npwPb.ImageRotate = 0F;
-            this.npwPb.Location = new System.Drawing.Point(595, 130);
-            this.npwPb.Name = "npwPb";
-            this.npwPb.Size = new System.Drawing.Size(20, 20);
-            this.npwPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.npwPb.TabIndex = 58;
-            this.npwPb.TabStop = false;
-            this.npwPb.Visible = false;*/
             // 
             // cnpwPb
             // 
@@ -323,7 +312,6 @@ namespace QuanLyKS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(700, 350);
-            //this.Controls.Add(this.npwPb);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnContinue);
             this.Controls.Add(this.btnHideConfirmNewPassword);
@@ -343,7 +331,6 @@ namespace QuanLyKS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewPassword";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.npwPb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -364,7 +351,5 @@ namespace QuanLyKS
         private Guna.UI2.WinForms.Guna2Button btnHideConfirmNewPassword;
         private Guna.UI2.WinForms.Guna2Button btnContinue;
         private Guna.UI2.WinForms.Guna2Button btnBack;
-        private Guna.UI2.WinForms.Guna2PictureBox npwPb;
-        private Guna.UI2.WinForms.Guna2HtmlToolTip invalidInfoTT;
     }
 }
