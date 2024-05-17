@@ -408,12 +408,12 @@ namespace QuanLyKS.Resources
             this.dtgvPayment.AllowUserToAddRows = false;
             this.dtgvPayment.AllowUserToDeleteRows = false;
             this.dtgvPayment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvPayment.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dtgvPayment.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgvPayment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvPayment.Location = new System.Drawing.Point(13, 50);
             this.dtgvPayment.Name = "dtgvPayment";
             this.dtgvPayment.ReadOnly = true;
+            this.dtgvPayment.RowHeadersVisible = false;
             this.dtgvPayment.RowHeadersWidth = 51;
             this.dtgvPayment.RowTemplate.Height = 24;
             this.dtgvPayment.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

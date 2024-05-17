@@ -1,4 +1,5 @@
-﻿using QuanLyKS.ClassFuncion;
+﻿using Guna.UI2.WinForms;
+using QuanLyKS.ClassFuncion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -176,6 +177,40 @@ namespace QuanLyKS.Resources
                 }
             }
             catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txbprice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                {
+                    e.Handled = true;
+                }
+                if((e.KeyChar == '.') && (sender as Guna2TextBox).Text.IndexOf('.') > -1)
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txbsucchua_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(!char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch(FormatException ex)
             {
                 MessageBox.Show(ex.Message);
             }

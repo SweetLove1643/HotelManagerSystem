@@ -522,6 +522,7 @@ namespace QuanLyKS.Resources
             this.txbCCCD.SelectedText = "";
             this.txbCCCD.Size = new System.Drawing.Size(400, 40);
             this.txbCCCD.TabIndex = 44;
+            this.txbCCCD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // guna2Panel5
             // 
@@ -557,6 +558,7 @@ namespace QuanLyKS.Resources
             this.txbPhone.SelectedText = "";
             this.txbPhone.Size = new System.Drawing.Size(400, 40);
             this.txbPhone.TabIndex = 44;
+            this.txbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // guna2Panel2
             // 

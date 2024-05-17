@@ -70,7 +70,6 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.addBtn = new Guna.UI2.WinForms.Guna2Button();
             this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvEmployyes = new System.Windows.Forms.DataGridView();
@@ -317,6 +316,7 @@ namespace QuanLyKS.Resources
             this.txbPhone.SelectedText = "";
             this.txbPhone.Size = new System.Drawing.Size(400, 40);
             this.txbPhone.TabIndex = 44;
+            this.txbPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // guna2Panel5
             // 
@@ -352,6 +352,7 @@ namespace QuanLyKS.Resources
             this.txbCCCD.SelectedText = "";
             this.txbCCCD.Size = new System.Drawing.Size(400, 40);
             this.txbCCCD.TabIndex = 44;
+            this.txbCCCD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhone_KeyPress);
             // 
             // guna2Panel6
             // 
@@ -452,6 +453,7 @@ namespace QuanLyKS.Resources
             this.ChbMale.UncheckedState.BorderThickness = 1;
             this.ChbMale.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.ChbMale.UseVisualStyleBackColor = false;
+            this.ChbMale.CheckedChanged += new System.EventHandler(this.ChbMale_CheckedChanged);
             // 
             // ChbFemale
             // 
@@ -472,6 +474,7 @@ namespace QuanLyKS.Resources
             this.ChbFemale.UncheckedState.BorderThickness = 1;
             this.ChbFemale.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.ChbFemale.UseVisualStyleBackColor = false;
+            this.ChbFemale.CheckedChanged += new System.EventHandler(this.ChbFemale_CheckedChanged);
             // 
             // guna2Panel3
             // 
@@ -650,7 +653,7 @@ namespace QuanLyKS.Resources
             this.deleteBtn.ForeColor = System.Drawing.Color.Black;
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.deleteBtn.Location = new System.Drawing.Point(700, 550);
+            this.deleteBtn.Location = new System.Drawing.Point(647, 550);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(200, 40);
             this.deleteBtn.TabIndex = 15;
@@ -671,33 +674,13 @@ namespace QuanLyKS.Resources
             this.updateBtn.ForeColor = System.Drawing.Color.Black;
             this.updateBtn.Image = ((System.Drawing.Image)(resources.GetObject("updateBtn.Image")));
             this.updateBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.updateBtn.Location = new System.Drawing.Point(410, 550);
+            this.updateBtn.Location = new System.Drawing.Point(157, 550);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(200, 40);
             this.updateBtn.TabIndex = 14;
             this.updateBtn.Text = "Cập nhật";
             this.updateBtn.Visible = false;
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
-            // 
-            // addBtn
-            // 
-            this.addBtn.BorderRadius = 10;
-            this.addBtn.BorderThickness = 1;
-            this.addBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.ForeColor = System.Drawing.Color.Black;
-            this.addBtn.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.Image")));
-            this.addBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.addBtn.Location = new System.Drawing.Point(100, 550);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(200, 40);
-            this.addBtn.TabIndex = 13;
-            this.addBtn.Text = "Thêm";
-            this.addBtn.Visible = false;
             // 
             // txbSeach
             // 
@@ -741,7 +724,7 @@ namespace QuanLyKS.Resources
             this.confirmBtn.ForeColor = System.Drawing.Color.Black;
             this.confirmBtn.Image = ((System.Drawing.Image)(resources.GetObject("confirmBtn.Image")));
             this.confirmBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.confirmBtn.Location = new System.Drawing.Point(410, 550);
+            this.confirmBtn.Location = new System.Drawing.Point(157, 550);
             this.confirmBtn.Name = "confirmBtn";
             this.confirmBtn.Size = new System.Drawing.Size(200, 40);
             this.confirmBtn.TabIndex = 16;
@@ -754,12 +737,12 @@ namespace QuanLyKS.Resources
             this.dtgvEmployyes.AllowUserToAddRows = false;
             this.dtgvEmployyes.AllowUserToDeleteRows = false;
             this.dtgvEmployyes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvEmployyes.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgvEmployyes.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtgvEmployyes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvEmployyes.Location = new System.Drawing.Point(13, 60);
             this.dtgvEmployyes.Name = "dtgvEmployyes";
             this.dtgvEmployyes.ReadOnly = true;
+            this.dtgvEmployyes.RowHeadersVisible = false;
             this.dtgvEmployyes.RowHeadersWidth = 51;
             this.dtgvEmployyes.RowTemplate.Height = 24;
             this.dtgvEmployyes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -774,7 +757,6 @@ namespace QuanLyKS.Resources
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.Controls.Add(this.dtgvEmployyes);
             this.Controls.Add(this.deleteBtn);
-            this.Controls.Add(this.addBtn);
             this.Controls.Add(this.guna2HtmlLabel17);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbSeach);
@@ -828,7 +810,6 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
-        private Guna.UI2.WinForms.Guna2Button addBtn;
         private Guna.UI2.WinForms.Guna2Button updateBtn;
         private Guna.UI2.WinForms.Guna2Button deleteBtn;
         private Guna.UI2.WinForms.Guna2Button confirmBtn;

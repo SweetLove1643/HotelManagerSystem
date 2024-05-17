@@ -6,7 +6,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -41,7 +43,6 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                addBtn.Visible = false;
                 updateBtn.Visible = false;
                 deleteBtn.Visible = false;
                 confirmBtn.Visible = true;
@@ -56,15 +57,29 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                addBtn.Visible = true;
-                updateBtn.Visible = true;
-                deleteBtn.Visible = true;
-                confirmBtn.Visible = false;
-                string sex = "Nam";
-                if (ChbFemale.Checked == true)
-                    sex = "Nữ";
-                DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.NhanVien SET TenNV = N'{txbName.Text}', GioiTinh = '{sex}', NgaySinh = '{DateOfBirth.Value.ToString("yyyy/MM/dd")}', SDT = '{txbPhone.Text}', CCCD = '{txbCCCD.Text}', Mail = '{txbMail.Text}'");
-                LoadFormEmployyes();
+                if (IsValidPhoneNumber(txbPhone.Text))
+                {
+                    if (IsValidEmail(txbMail.Text))
+                    {
+                        updateBtn.Visible = true;
+                        deleteBtn.Visible = true;
+                        confirmBtn.Visible = false;
+                        string sex = "Nam";
+                        if (ChbFemale.Checked == true)
+                            sex = "Nữ";
+                        DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.NhanVien SET TenNV = N'{txbName.Text}', GioiTinh = '{sex}', NgaySinh = '{DateOfBirth.Value.ToString("yyyy/MM/dd")}', SDT = '{txbPhone.Text}', CCCD = '{txbCCCD.Text}', Mail = '{txbMail.Text}' WHERE IDNV = {txbManhanvien.Text}");
+                        MessageBox.Show("Cập nhập thành công", "Messages", MessageBoxButtons.OK);
+                        LoadFormEmployyes();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (SqlException ex)
             {
@@ -74,7 +89,6 @@ namespace QuanLyKS.Resources
 
         private void dtgvEmployyes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            addBtn.Visible = true;
             updateBtn.Visible = true;
             deleteBtn.Visible = true;
             LoadBidings();
@@ -144,10 +158,80 @@ namespace QuanLyKS.Resources
                 DataProvider.Instance.ExecuteNonQuerry($"DELETE FROM dbo.NhanVien WHERE IDNV = {txbManhanvien.Text}");
                 DataProvider.Instance.ExecuteNonQuerry($"DELETE FROM dbo.TaiKhoan WHERE SDT = {phone}");
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void ChbMale_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ChbMale.Checked == true)
+                {
+                    ChbFemale.Checked = false;
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void ChbFemale_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ChbFemale.Checked == true)
+                {
+                    ChbMale.Checked = false;
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
+        }// Kiểm tra định dạng Email
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            try
+            {
+                string pattern = @"^(?:(?:\+|0{0,2})84|0)?[1-9]\d{8}$";
+                return Regex.IsMatch(phoneNumber, pattern);
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }// Kiểm tra định dạng số điện thoại
     }
 }

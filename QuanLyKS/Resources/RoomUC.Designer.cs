@@ -33,6 +33,7 @@ namespace QuanLyKS.Resources
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txbroomtype = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbmota = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,13 +50,12 @@ namespace QuanLyKS.Resources
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbroomcode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
             this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.addBtn = new Guna.UI2.WinForms.Guna2Button();
             this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvroom = new System.Windows.Forms.DataGridView();
-            this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txbroomtype = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvroom)).BeginInit();
             this.SuspendLayout();
@@ -116,6 +116,26 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(600, 490);
             this.guna2Panel1.TabIndex = 25;
+            // 
+            // txbroomtype
+            // 
+            this.txbroomtype.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbroomtype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbroomtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txbroomtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txbroomtype.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbroomtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbroomtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbroomtype.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbroomtype.ForeColor = System.Drawing.Color.Black;
+            this.txbroomtype.ItemHeight = 30;
+            this.txbroomtype.Items.AddRange(new object[] {
+            "VIP",
+            "Thường"});
+            this.txbroomtype.Location = new System.Drawing.Point(190, 75);
+            this.txbroomtype.Name = "txbroomtype";
+            this.txbroomtype.Size = new System.Drawing.Size(400, 36);
+            this.txbroomtype.TabIndex = 68;
             // 
             // guna2HtmlLabel1
             // 
@@ -266,6 +286,7 @@ namespace QuanLyKS.Resources
             this.txbprice.SelectedText = "";
             this.txbprice.Size = new System.Drawing.Size(400, 40);
             this.txbprice.TabIndex = 44;
+            this.txbprice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbprice_KeyPress);
             // 
             // guna2Panel5
             // 
@@ -301,6 +322,7 @@ namespace QuanLyKS.Resources
             this.txbsucchua.SelectedText = "";
             this.txbsucchua.Size = new System.Drawing.Size(400, 40);
             this.txbsucchua.TabIndex = 44;
+            this.txbsucchua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbsucchua_KeyPress);
             // 
             // guna2Panel2
             // 
@@ -344,6 +366,27 @@ namespace QuanLyKS.Resources
             this.txbroomcode.SelectedText = "";
             this.txbroomcode.Size = new System.Drawing.Size(400, 40);
             this.txbroomcode.TabIndex = 18;
+            // 
+            // cbStatus
+            // 
+            this.cbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cbStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbStatus.ForeColor = System.Drawing.Color.Black;
+            this.cbStatus.ItemHeight = 30;
+            this.cbStatus.Items.AddRange(new object[] {
+            "Đang sửa chữa",
+            "Đang cho thuê",
+            "Trống"});
+            this.cbStatus.Location = new System.Drawing.Point(190, 255);
+            this.cbStatus.Name = "cbStatus";
+            this.cbStatus.Size = new System.Drawing.Size(400, 36);
+            this.cbStatus.TabIndex = 67;
             // 
             // txbSeach
             // 
@@ -438,60 +481,21 @@ namespace QuanLyKS.Resources
             // 
             this.dtgvroom.AllowUserToAddRows = false;
             this.dtgvroom.AllowUserToDeleteRows = false;
+            this.dtgvroom.AllowUserToResizeColumns = false;
+            this.dtgvroom.AllowUserToResizeRows = false;
             this.dtgvroom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvroom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgvroom.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dtgvroom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvroom.Location = new System.Drawing.Point(13, 50);
             this.dtgvroom.Name = "dtgvroom";
             this.dtgvroom.ReadOnly = true;
+            this.dtgvroom.RowHeadersVisible = false;
             this.dtgvroom.RowHeadersWidth = 51;
             this.dtgvroom.RowTemplate.Height = 24;
             this.dtgvroom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvroom.Size = new System.Drawing.Size(387, 490);
             this.dtgvroom.TabIndex = 31;
             this.dtgvroom.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvroom_CellClick);
-            // 
-            // cbStatus
-            // 
-            this.cbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cbStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbStatus.ForeColor = System.Drawing.Color.Black;
-            this.cbStatus.ItemHeight = 30;
-            this.cbStatus.Items.AddRange(new object[] {
-            "Đang sửa chữa",
-            "Đang cho thuê",
-            "Trống"});
-            this.cbStatus.Location = new System.Drawing.Point(190, 255);
-            this.cbStatus.Name = "cbStatus";
-            this.cbStatus.Size = new System.Drawing.Size(400, 36);
-            this.cbStatus.TabIndex = 67;
-            // 
-            // txbroomtype
-            // 
-            this.txbroomtype.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbroomtype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbroomtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txbroomtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txbroomtype.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbroomtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbroomtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbroomtype.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txbroomtype.ForeColor = System.Drawing.Color.Black;
-            this.txbroomtype.ItemHeight = 30;
-            this.txbroomtype.Items.AddRange(new object[] {
-            "VIP",
-            "Thường"});
-            this.txbroomtype.Location = new System.Drawing.Point(190, 75);
-            this.txbroomtype.Name = "txbroomtype";
-            this.txbroomtype.Size = new System.Drawing.Size(400, 36);
-            this.txbroomtype.TabIndex = 68;
             // 
             // RoomUC
             // 

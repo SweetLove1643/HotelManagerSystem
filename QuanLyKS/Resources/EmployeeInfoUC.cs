@@ -13,6 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Xml.Linq;
 using System.Data.SqlClient;
 using System.Text.RegularExpressions;
+using System.Net.Mail;
 
 namespace QuanLyKS.Resources
 {
@@ -82,21 +83,34 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                btnupdate.Visible = true;
-                btncomfirm.Visible = false;
-
-                string sex = "Nam";
-                if (ChbFemale.Checked == true)
-                    sex = "Nữ";
-                if (DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.Update_Info_NhanVien @IDNV , @Name , @Sex , @Dateofbirth , @Phone , @CCCD , @Mail ", new object[] { txbManhanvien.Text, txbName.Text, sex, DateOfBirth.Value.ToString("yyyy/MM/dd"), txbPhone.Text, txbCCCD.Text, txbMail.Text }) != 0)
+                if (IsValidPhoneNumber(txbPhone.Text))
                 {
-                    MessageBox.Show("Cập nhập thành công.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    if (IsValidEmail(txbMail.Text))
+                    {
+                        btnupdate.Visible = true;
+                        btncomfirm.Visible = false;
+
+                        string sex = "Nam";
+                        if (ChbFemale.Checked == true)
+                            sex = "Nữ";
+                        if (DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.Update_Info_NhanVien @IDNV , @Name , @Sex , @Dateofbirth , @Phone , @CCCD , @Mail ", new object[] { txbManhanvien.Text, txbName.Text, sex, DateOfBirth.Value.ToString("yyyy/MM/dd"), txbPhone.Text, txbCCCD.Text, txbMail.Text }) != 0)
+                        {
+                            MessageBox.Show("Cập nhập thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.None);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Cập nhập thất bại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Cập nhập thất bại.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
             }
             catch (SqlException ex)
             {
@@ -161,6 +175,46 @@ namespace QuanLyKS.Resources
             {
                 Console.WriteLine("Error: " + ex.Message);
                 return false;
+            }
+        }
+        private bool IsValidPhoneNumber(string phoneNumber)
+        {
+            try
+            {
+                string pattern = @"^(?:(?:\+|0{0,2})84|0)?[1-9]\d{8}$";
+                return Regex.IsMatch(phoneNumber, pattern);
+            }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+                return false;
+            }
+        }// Kiểm tra định dạng số điện thoại
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
+        }// Kiểm tra định dạng Email
+
+        private void txbPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            }
+            catch(FormatException ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

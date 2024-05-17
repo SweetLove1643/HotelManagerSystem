@@ -123,7 +123,7 @@
   <metadata name="guna2Panel13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="guna2TextBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="guna2Panel13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -348,7 +348,7 @@
   <data name="txbNewpass.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB2wSURBVHhe7d0J
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB2wSURBVHhe7d0J
         +P77XOfxw5F9z3o6yZJKw5CGqKasoWiyRJriiomSnFLS1Rkxo0WWKbpSWkw50pCKNhRjiZNtVCQ5w7Em
         Dm32OMy83i5Ux/s4//P/fO77d9/35/G4rud1dYn/+n2/f9//7/4uJwAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -481,7 +481,7 @@
   <data name="txbOldpass.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB2wSURBVHhe7d0J
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAB2wSURBVHhe7d0J
         +P77XOfxw5F9z3o6yZJKw5CGqKasoWiyRJriiomSnFLS1Rkxo0WWKbpSWkw50pCKNhRjiZNtVCQ5w7Em
         Dm32OMy83i5Ux/s4//P/fO77d9/35/G4rud1dYn/+n2/f9//7/4uJwAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -614,7 +614,7 @@
   <data name="btnChangepass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1AAADdQB75G6FQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEK2SURBVHhe7d0L
+        0wAADdMBvdUcagAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEK2SURBVHhe7d0L
         sG1Vfef7dXi/w0NAHhJBaJCENC1CRUxaQC01amMSwRZjWkgjgRCjTVXLq5ML2tqaNiiFESI+Gm8RG7S8
         ohIUNEbtoBKN8dEGwr2KeOPjosQgDwXJ/f0OYx/Gmed/ztl77bXW/I85v/+qTxX89+s/xxzjP+bZe605
         J//yL/8CIDnF9rK//Gs5QU6S35UL5BL5H/I++ZB8VD4pN8sX5KvyD3KHfFfulnvlocL/7Zw/5s/x5/pr
@@ -905,7 +905,7 @@
   <data name="btncomfirm.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1AAADdQB75G6FQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEK2SURBVHhe7d0L
+        0wAADdMBvdUcagAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAEK2SURBVHhe7d0L
         sG1Vfef7dXi/w0NAHhJBaJCENC1CRUxaQC01amMSwRZjWkgjgRCjTVXLq5ML2tqaNiiFESI+Gm8RG7S8
         ohIUNEbtoBKN8dEGwr2KeOPjosQgDwXJ/f0OYx/Gmed/ztl77bXW/I85v/+qTxX89+s/xxzjP+bZe605
         J//yL/8CIDnF9rK//Gs5QU6S35UL5BL5H/I++ZB8VD4pN8sX5KvyD3KHfFfulnvlocL/7Zw/5s/x5/pr
@@ -1196,7 +1196,7 @@
   <data name="btnupdate.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACgQSURBVHhe7d0J
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACgQSURBVHhe7d0J
         2PflmPDxSisqW2kzohAzXkmykxdhbEOvQtRkzVayMyPZoiH70ki0UAp5xUSLJcsksuRt30RJKO2K1Lzf
         Uz2qp/N5upf/fd/XeV3fz3F8j2MOZqbu+3fdv+t/Xf/fsowkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
         SZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk

@@ -516,7 +516,6 @@ namespace QuanLyKS.Resources
             this.dtgvCustomer.AllowUserToAddRows = false;
             this.dtgvCustomer.AllowUserToDeleteRows = false;
             this.dtgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvCustomer.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dtgvCustomer.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvCustomer.Location = new System.Drawing.Point(14, 50);
