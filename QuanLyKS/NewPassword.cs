@@ -93,10 +93,17 @@ namespace QuanLyKS
         {
             try
             {
+                if (string.IsNullOrEmpty(txbConfirmNewPassword.Text))
+                {
+                    cnpwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(cnpwPb, "Vui lòng xác nhận lại mật khẩu!");
+                }
                 if (IsValidPassword(txbNewPassword.Text))
                 {
+                    npwPb.Visible = false;
                     if (txbNewPassword.Text.Equals(txbConfirmNewPassword.Text))
                     {
+                        cnpwPb.Visible = false;
                         string hasspass = Hashing.Instance.Hash384(txbNewPassword.Text);
                         if (DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.ChangePassword @Email , @Newpassword ", new object[] { mail, hasspass }) != 0)
                         {
@@ -108,12 +115,24 @@ namespace QuanLyKS
                     }
                     else
                     {
-                        MessageBox.Show("Nhập lại mật khẩu chưa đúng!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        cnpwPb.Visible = true;
+                        invalidInfoTT.SetToolTip(cnpwPb, "Xác nhận lại mật khẩu chưa đúng chưa đúng!");
+                        //MessageBox.Show("Nhập lại mật khẩu chưa đúng!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng nhật mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    if (string.IsNullOrEmpty(txbNewPassword.Text))
+                    {
+                        npwPb.Visible = true;
+                        invalidInfoTT.SetToolTip(npwPb, "Vui lòng nhập lại mật khẩu mới!");
+                    }
+                    else
+                    {
+                        npwPb.Visible = true;
+                        invalidInfoTT.SetToolTip(npwPb, "Vui lòng nhập mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt!");
+                        //MessageBox.Show("Vui lòng nhật mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
             }
             catch (FormatException ex)
