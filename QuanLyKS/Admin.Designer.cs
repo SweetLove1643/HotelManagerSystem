@@ -138,10 +138,10 @@ namespace QuanLyKS
             // 
             // accountContainer
             // 
-            this.accountContainer.Controls.Add(this.accountBtn);
             this.accountContainer.Controls.Add(this.customerAccBtn);
             this.accountContainer.Controls.Add(this.employeeAccBtn);
             this.accountContainer.Controls.Add(this.allAccBtn);
+            this.accountContainer.Controls.Add(this.accountBtn);
             this.accountContainer.Location = new System.Drawing.Point(3, 71);
             this.accountContainer.MaximumSize = new System.Drawing.Size(237, 154);
             this.accountContainer.MinimumSize = new System.Drawing.Size(237, 47);
@@ -183,7 +183,7 @@ namespace QuanLyKS
             this.customerAccBtn.Name = "customerAccBtn";
             this.customerAccBtn.Size = new System.Drawing.Size(231, 35);
             this.customerAccBtn.TabIndex = 28;
-            this.customerAccBtn.Text = "Customer";
+            this.customerAccBtn.Text = "Khách hàng";
             this.customerAccBtn.Click += new System.EventHandler(this.customerAccBtn_Click);
             // 
             // employeeAccBtn
@@ -202,7 +202,7 @@ namespace QuanLyKS
             this.employeeAccBtn.Name = "employeeAccBtn";
             this.employeeAccBtn.Size = new System.Drawing.Size(231, 35);
             this.employeeAccBtn.TabIndex = 27;
-            this.employeeAccBtn.Text = "Employee";
+            this.employeeAccBtn.Text = "Nhân viên";
             this.employeeAccBtn.Click += new System.EventHandler(this.employeeAccBtn_Click);
             // 
             // allAccBtn
@@ -221,7 +221,7 @@ namespace QuanLyKS
             this.allAccBtn.Name = "allAccBtn";
             this.allAccBtn.Size = new System.Drawing.Size(231, 35);
             this.allAccBtn.TabIndex = 2;
-            this.allAccBtn.Text = "All";
+            this.allAccBtn.Text = "Tất cả";
             this.allAccBtn.Click += new System.EventHandler(this.allAccBtn_Click);
             // 
             // guna2Panel2

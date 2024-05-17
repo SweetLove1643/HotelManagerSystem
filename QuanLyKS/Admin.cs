@@ -39,10 +39,17 @@ namespace QuanLyKS
 
         private void AddUserControl(UserControl uc)
         {
-            uc.Dock = DockStyle.Fill;
-            panelContainer.Controls.Clear();
-            panelContainer.Controls.Add(uc);
-            uc.BringToFront();
+            try
+            {
+                uc.Dock = DockStyle.Fill;
+                panelContainer.Controls.Clear();
+                panelContainer.Controls.Add(uc);
+                uc.BringToFront();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

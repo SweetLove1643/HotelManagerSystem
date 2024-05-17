@@ -25,12 +25,12 @@ namespace QuanLyKS.Resources
         {
             InitializeComponent();
             LoadFormAccount();
-
         }
         public void LoadFormAccount()
         {
             try
             {
+                var tlhd = dtgvAccount.TopLeftHeaderCell;
                 DataTable data = DataProvider.Instance.ExecuteQuerry("SELECT SDT AS 'Số điện thoại', Mail AS 'Mail', LoaiTaiKhoan AS 'Loại tài khoản' FROM dbo.TaiKhoan WHERE LoaiTaiKhoan = N'Nhân viên' OR LoaiTaiKhoan = N'Khách hàng'");
                 dtgvAccount.DataSource = data;
             }
