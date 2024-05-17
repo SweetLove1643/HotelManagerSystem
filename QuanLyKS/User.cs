@@ -232,7 +232,7 @@ namespace QuanLyKS
                 }
                 else
                 {
-                    Booking bk = new Booking(Username);
+                    Booking bk = new Booking();
                     this.Hide();
                     bk.ShowDialog();
                 }

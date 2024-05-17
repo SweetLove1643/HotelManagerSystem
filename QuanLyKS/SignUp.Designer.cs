@@ -85,11 +85,11 @@ namespace QuanLyKS
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
             this.guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(270, 20);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(260, 20);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(170, 60);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(185, 60);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Sign up";
+            this.guna2HtmlLabel1.Text = "Đăng ký";
             // 
             // btnExit
             // 
@@ -131,7 +131,7 @@ namespace QuanLyKS
             this.txbFistName.Name = "txbFistName";
             this.txbFistName.PasswordChar = '\0';
             this.txbFistName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbFistName.PlaceholderText = "Firstname";
+            this.txbFistName.PlaceholderText = "Họ";
             this.txbFistName.SelectedText = "";
             this.txbFistName.Size = new System.Drawing.Size(290, 50);
             this.txbFistName.TabIndex = 13;
@@ -158,7 +158,7 @@ namespace QuanLyKS
             this.txbLastName.Name = "txbLastName";
             this.txbLastName.PasswordChar = '\0';
             this.txbLastName.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbLastName.PlaceholderText = "Lastname";
+            this.txbLastName.PlaceholderText = "Tên ";
             this.txbLastName.SelectedText = "";
             this.txbLastName.Size = new System.Drawing.Size(291, 50);
             this.txbLastName.TabIndex = 14;
@@ -195,7 +195,7 @@ namespace QuanLyKS
             this.txbNationality.ForeColor = System.Drawing.Color.Black;
             this.txbNationality.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbNationality.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbNationality.IconLeft")));
-            this.txbNationality.Location = new System.Drawing.Point(360, 100);
+            this.txbNationality.Location = new System.Drawing.Point(360, 310);
             this.txbNationality.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbNationality.Name = "txbNationality";
             this.txbNationality.PasswordChar = '\0';
@@ -227,7 +227,7 @@ namespace QuanLyKS
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(180, 45);
             this.btnSignup.TabIndex = 21;
-            this.btnSignup.Text = "Sign up";
+            this.btnSignup.Text = "Đăng ký";
             this.btnSignup.Click += new System.EventHandler(this.signupBtn_Click);
             // 
             // guna2CirclePictureBox1
@@ -266,7 +266,7 @@ namespace QuanLyKS
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.PasswordChar = '●';
             this.txbPassWord.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbPassWord.PlaceholderText = "Password";
+            this.txbPassWord.PlaceholderText = "Mật khẩu";
             this.txbPassWord.SelectedText = "";
             this.txbPassWord.Size = new System.Drawing.Size(290, 50);
             this.txbPassWord.TabIndex = 25;
@@ -297,7 +297,7 @@ namespace QuanLyKS
             this.txbConfirmPassword.Name = "txbConfirmPassword";
             this.txbConfirmPassword.PasswordChar = '●';
             this.txbConfirmPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbConfirmPassword.PlaceholderText = "Confirm your password";
+            this.txbConfirmPassword.PlaceholderText = "Xác nhận mật khẩu";
             this.txbConfirmPassword.SelectedText = "";
             this.txbConfirmPassword.Size = new System.Drawing.Size(290, 50);
             this.txbConfirmPassword.TabIndex = 26;
@@ -323,7 +323,7 @@ namespace QuanLyKS
             this.txbMail.ForeColor = System.Drawing.Color.Black;
             this.txbMail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbMail.IconLeft = ((System.Drawing.Image)(resources.GetObject("txbMail.IconLeft")));
-            this.txbMail.Location = new System.Drawing.Point(360, 310);
+            this.txbMail.Location = new System.Drawing.Point(360, 100);
             this.txbMail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbMail.Name = "txbMail";
             this.txbMail.PasswordChar = '\0';
@@ -373,7 +373,7 @@ namespace QuanLyKS
             this.txbRegistration.Name = "txbRegistration";
             this.txbRegistration.PasswordChar = '\0';
             this.txbRegistration.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbRegistration.PlaceholderText = "Registration code";
+            this.txbRegistration.PlaceholderText = "Mã CCCD";
             this.txbRegistration.SelectedText = "";
             this.txbRegistration.Size = new System.Drawing.Size(290, 50);
             this.txbRegistration.TabIndex = 29;
@@ -401,7 +401,7 @@ namespace QuanLyKS
             this.txbPhone.Name = "txbPhone";
             this.txbPhone.PasswordChar = '\0';
             this.txbPhone.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbPhone.PlaceholderText = "Phone";
+            this.txbPhone.PlaceholderText = "Số điện thoại";
             this.txbPhone.SelectedText = "";
             this.txbPhone.Size = new System.Drawing.Size(290, 50);
             this.txbPhone.TabIndex = 35;
@@ -464,7 +464,7 @@ namespace QuanLyKS
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 26);
             this.btnLogin.TabIndex = 42;
-            this.btnLogin.Text = "Log in";
+            this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.loginBt_Click);
             // 
             // ChbMale
@@ -615,7 +615,7 @@ namespace QuanLyKS
             this.lnPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.lnPb.Image = ((System.Drawing.Image)(resources.GetObject("lnPb.Image")));
             this.lnPb.ImageRotate = 0F;
-            this.lnPb.Location = new System.Drawing.Point(339, 185);
+            this.lnPb.Location = new System.Drawing.Point(340, 185);
             this.lnPb.Name = "lnPb";
             this.lnPb.Size = new System.Drawing.Size(20, 20);
             this.lnPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -629,7 +629,7 @@ namespace QuanLyKS
             this.unPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.unPb.Image = ((System.Drawing.Image)(resources.GetObject("unPb.Image")));
             this.unPb.ImageRotate = 0F;
-            this.unPb.Location = new System.Drawing.Point(649, 115);
+            this.unPb.Location = new System.Drawing.Point(649, 325);
             this.unPb.Name = "unPb";
             this.unPb.Size = new System.Drawing.Size(20, 20);
             this.unPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -657,7 +657,7 @@ namespace QuanLyKS
             this.mPb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
             this.mPb.Image = ((System.Drawing.Image)(resources.GetObject("mPb.Image")));
             this.mPb.ImageRotate = 0F;
-            this.mPb.Location = new System.Drawing.Point(649, 325);
+            this.mPb.Location = new System.Drawing.Point(649, 115);
             this.mPb.Name = "mPb";
             this.mPb.Size = new System.Drawing.Size(20, 20);
             this.mPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -739,23 +739,22 @@ namespace QuanLyKS
             this.Controls.Add(this.txbPhone);
             this.Controls.Add(this.txbRegistration);
             this.Controls.Add(this.DateOfBirth);
-            this.Controls.Add(this.txbMail);
             this.Controls.Add(this.txbConfirmPassword);
             this.Controls.Add(this.txbPassWord);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.txbNationality);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbLastName);
             this.Controls.Add(this.txbFistName);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.txbMail);
+            this.Controls.Add(this.txbNationality);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Logup";
             this.Load += new System.EventHandler(this.Logup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fnPb)).EndInit();

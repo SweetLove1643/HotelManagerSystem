@@ -36,19 +36,6 @@ namespace QuanLyKS
             viewpwBtn.Visible = false;
         }
 
-        public void RunCheckDataValid(bool flag, ErrorProvider eP, Control c, string e)
-        {
-            if (flag == false)
-            {
-                c.Focus();
-                eP.SetError(c, e);
-            }
-            else
-            {
-                eP.SetError(c, null);
-            }
-        }
-
         private void Logup_Load(object sender, EventArgs e)
         {
             ChbMale.Checked = true;
@@ -145,7 +132,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbFistName.Text))
                 {
                     fnPb.Visible = true;
-                    invalidInfoTT.SetToolTip(fnPb, "Please enter your firstname!");
+                    invalidInfoTT.SetToolTip(fnPb, "Vui lòng nhập họ của bạn!");
                 }
                 else
                 {
@@ -155,7 +142,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbLastName.Text))
                 {
                     lnPb.Visible = true;
-                    invalidInfoTT.SetToolTip(lnPb, "Please enter your lastname!");
+                    invalidInfoTT.SetToolTip(lnPb, "Vui lòng nhập tên của bạn!");
                 }
                 else
                 {
@@ -165,7 +152,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbRegistration.Text))
                 {
                     rcPb.Visible = true;
-                    invalidInfoTT.SetToolTip(rcPb, "Please enter your registration code!");
+                    invalidInfoTT.SetToolTip(rcPb, "Vui lòng nhập mã CCCD của bạn!");
                 }
                 else
                 {
@@ -175,7 +162,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbNationality.Text))
                 {
                     unPb.Visible = true;
-                    invalidInfoTT.SetToolTip(unPb, "Please enter your username!");
+                    invalidInfoTT.SetToolTip(unPb, "Vui lòng nhập quốc tịch của bạn!");
                 }
                 else
                 {
@@ -185,7 +172,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbPassWord.Text))
                 {
                     pwPb.Visible = true;
-                    invalidInfoTT.SetToolTip(pwPb, "Please enter your password!");
+                    invalidInfoTT.SetToolTip(pwPb, "Vui lòng nhập mật khẩu của bạn!");
                 }
                 else
                 {
@@ -195,7 +182,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbConfirmPassword.Text))
                 {
                     cpwPb.Visible = true;
-                    invalidInfoTT.SetToolTip(cpwPb, "Please confirm your password!");
+                    invalidInfoTT.SetToolTip(cpwPb, "Vui lòng xác nhận lại mật khẩu của bạn!");
                 }
                 else
                 {
@@ -205,7 +192,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbMail.Text))
                 {
                     mPb.Visible = true;
-                    invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
+                    invalidInfoTT.SetToolTip(mPb, "Vui lòng nhập mail của bạn!");
                 }
                 else
                 {
@@ -215,7 +202,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbPhone.Text))
                 {
                     pPb.Visible = true;
-                    invalidInfoTT.SetToolTip(pPb, "Please enter your phonenumber!");
+                    invalidInfoTT.SetToolTip(pPb, "Vui lòng nhập số điện thoại của bạn!");
                 }
                 else
                 {
@@ -227,6 +214,8 @@ namespace QuanLyKS
             {
                 if (ex.Number == 2627)
                 {
+                    /*pPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pPb, "Số điện thoại hoặc email đã tồn tại. Vui lòng nhập lại.");*/
                     MessageBox.Show("Số điện thoại hoặc email đã tồn tại. Vui lòng nhập lại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
@@ -250,6 +239,8 @@ namespace QuanLyKS
             {
                 if (IsValidPassword(txbPassWord.Text) == false)
                 {
+                    /*pwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pwPb, "Vui lòng nhật mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt!");*/
                     MessageBox.Show("Vui lòng nhật mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
@@ -260,7 +251,9 @@ namespace QuanLyKS
             {
                 if (txbConfirmPassword.Text != txbPassWord.Text)
                 {
-                    MessageBox.Show("Nhập lại mật khẩu chưa đúng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    /*cpwPb.Visible = true;
+                    invalidInfoTT.SetToolTip(cpwPb, "Nhập lại mật khẩu chưa đúng. Vui lòng nhập lại.");*/
+                    MessageBox.Show("Nhập lại mật khẩu chưa đúng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
             }
@@ -270,6 +263,8 @@ namespace QuanLyKS
             {
                 if (IsValidEmail(txbMail.Text) == false)
                 {
+                    /*mPb.Visible = true;
+                    invalidInfoTT.SetToolTip(mPb, "Email chưa đúng định dạng. Vui lòng nhập lại.");*/
                     MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
@@ -281,6 +276,8 @@ namespace QuanLyKS
             {
                 if (IsValidPhoneNumber(txbPhone.Text) == false)
                 {
+                    /*pPb.Visible = true;
+                    invalidInfoTT.SetToolTip(pPb, "Số điện thoại chưa đúng định dạng. Vui lòng nhập lại.");*/
                     MessageBox.Show("Số điện thoại chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }

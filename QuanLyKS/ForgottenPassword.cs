@@ -31,7 +31,7 @@ namespace QuanLyKS
                 if (string.IsNullOrEmpty(txbMail.Text)) // kiểm tra txb rỗng
                 {
                     mPb.Visible = true;
-                    invalidInfoTT.SetToolTip(mPb, "Please enter your mail!");
+                    invalidInfoTT.SetToolTip(mPb, "Vui lòng nhập mail của bạn!");
                 }
                 else
                 {
@@ -50,8 +50,9 @@ namespace QuanLyKS
                     }
                     else
                     {
-                        MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                        mPb.Visible = true;
+                        invalidInfoTT.SetToolTip(mPb, "Vui lòng nhập đúng định dạng của mail!  VD:abc@gmail.com");
+                        //MessageBox.Show("Email chưa đúng định dạng", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 

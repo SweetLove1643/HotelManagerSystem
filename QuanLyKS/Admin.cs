@@ -173,19 +173,30 @@ namespace QuanLyKS
         }
         private void allAccBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+            accountTimer.Start();
+            blankTimer.Start();
+
+            AddUserControl(ac_uc);
             ac_uc.LoadFormAccount();
         }
 
         private void employeeAccBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+            accountTimer.Start();
+            blankTimer.Start();
+            AddUserControl(ac_uc);
             ac_uc.FillEmployyes();
         }
 
         private void customerAccBtn_Click(object sender, EventArgs e)
         {
+            sidebarTimer.Start();
+            accountTimer.Start();
+            blankTimer.Start();
+            AddUserControl(ac_uc);
             ac_uc.FillCustomer();
         }
-
-
     }
 }

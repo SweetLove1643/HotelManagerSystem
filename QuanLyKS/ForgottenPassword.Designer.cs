@@ -63,11 +63,11 @@ namespace QuanLyKS
             this.FypTb.AutoSize = false;
             this.FypTb.BackColor = System.Drawing.Color.Transparent;
             this.FypTb.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.FypTb.Location = new System.Drawing.Point(150, 20);
+            this.FypTb.Location = new System.Drawing.Point(200, 20);
             this.FypTb.Name = "FypTb";
-            this.FypTb.Size = new System.Drawing.Size(425, 55);
+            this.FypTb.Size = new System.Drawing.Size(350, 55);
             this.FypTb.TabIndex = 25;
-            this.FypTb.Text = "Forgot your password?";
+            this.FypTb.Text = "Quên mật khẩu?";
             // 
             // btnExit
             // 
@@ -120,12 +120,11 @@ namespace QuanLyKS
             this.noteTb.AutoSize = false;
             this.noteTb.BackColor = System.Drawing.Color.Transparent;
             this.noteTb.ForeColor = System.Drawing.Color.Gray;
-            this.noteTb.Location = new System.Drawing.Point(75, 100);
+            this.noteTb.Location = new System.Drawing.Point(110, 100);
             this.noteTb.Name = "noteTb";
-            this.noteTb.Size = new System.Drawing.Size(580, 20);
+            this.noteTb.Size = new System.Drawing.Size(500, 20);
             this.noteTb.TabIndex = 33;
-            this.noteTb.Text = "Please enter your mail and we\'ll send you verification code that you can reset yo" +
-    "ur password";
+            this.noteTb.Text = "Vui lòng nhập mail của bạn để chúng tôi có thể gửi mã xác nhận OTP cho bạn";
             // 
             // btnContinue
             // 
@@ -142,15 +141,15 @@ namespace QuanLyKS
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(180, 45);
             this.btnContinue.TabIndex = 34;
-            this.btnContinue.Text = "Continue";
+            this.btnContinue.Text = "Tiếp tục";
             this.btnContinue.Click += new System.EventHandler(this.continueBtn_Click);
             // 
             // linePn
             // 
             this.linePn.BackColor = System.Drawing.Color.Gray;
-            this.linePn.Location = new System.Drawing.Point(215, 85);
+            this.linePn.Location = new System.Drawing.Point(220, 85);
             this.linePn.Name = "linePn";
-            this.linePn.Size = new System.Drawing.Size(285, 1);
+            this.linePn.Size = new System.Drawing.Size(260, 1);
             this.linePn.TabIndex = 35;
             // 
             // btnBack
