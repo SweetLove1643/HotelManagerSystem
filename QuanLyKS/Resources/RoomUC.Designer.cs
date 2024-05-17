@@ -476,7 +476,6 @@ namespace QuanLyKS.Resources
             this.addBtn.Size = new System.Drawing.Size(200, 40);
             this.addBtn.TabIndex = 27;
             this.addBtn.Text = "Thêm";
-            this.addBtn.Visible = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // RoomUC

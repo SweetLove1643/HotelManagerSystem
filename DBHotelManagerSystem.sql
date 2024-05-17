@@ -76,7 +76,7 @@ create table TaiKhoan
 (
 	SDT VARCHAR(30) UNIQUE NOT NULL,
 	Mail varchar(30) UNIQUE NOT NULL, -- đăng nhập bẳng mail hoặc sdt
-	MatKhau nvarchar(70) NOT NULL,
+	MatKhau nvarchar(150) NOT NULL,
 	LoaiTaiKhoan varchar(20) NOT NULL, -- quản lí, nhân viên hoặc khách
 	PRIMARY KEY(SDT,Mail)	
 )
@@ -366,6 +366,38 @@ BEGIN
 END
 GO
 
+CREATE PROC Update_Info_KhachHang @IDKH INT, @Name NVARCHAR(50), @Sex NVARCHAR(5), @Dateofbirth DATE, @Phone VARCHAR(11), @CCCD VARCHAR(15), @Mail VARCHAR(50), @Nationality VARCHAR(50)
+AS
+BEGIN
+	IF NOT EXISTS (SELECT 1 FROM dbo.Khach WHERE CCCD = @CCCD AND @IDKH <> @IDKH)
+    BEGIN
+        -- CCCD không trùng lặp, tiến hành cập nhật thông tin nhân viên
+        UPDATE dbo.Khach
+        SET TenKhach = @Name, 
+            GioiTinh = @Sex, 
+            NgaySinh = @Dateofbirth, 
+            SDT = @Phone, 
+            CCCD = @CCCD, 
+            Mail = @Mail,
+			QuocTich = @Nationality
+        WHERE IDKhach = @IDKH;
+    END
+    ELSE
+    BEGIN
+        -- CCCD trùng lặp, thông báo lỗi
+        UPDATE dbo.Khach 
+        SET TenKhach = @Name, 
+            GioiTinh = @Sex, 
+            NgaySinh = @Dateofbirth, 
+            SDT = @Phone, 
+            Mail = @Mail,
+			QuocTich = @Nationality
+        WHERE IDKhach = @IDKH;
+    END
+END
+GO
+SELECT * FROM dbo.NhanVien
+
 CREATE PROC CreateNewReceipt @Name NVARCHAR(40), @Roomcode VARCHAR(20), @IDNV INT,@Roomprice MONEY, @Discount MONEY, @VAT MONEY
 AS
 BEGIN
@@ -402,8 +434,6 @@ BEGIN
 END
 GO
 
-<<<<<<< HEAD
-=======
 CREATE PROC Select_Booking @Date1 DATE, @Date2 DATE
 AS
 BEGIN
@@ -466,7 +496,7 @@ BEGIN
 	    )
 END
  
->>>>>>> 35c6b3f94881d5c42f14093171bed8a29b18f685
+
 
 
 
