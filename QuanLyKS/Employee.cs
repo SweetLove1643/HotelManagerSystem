@@ -102,6 +102,7 @@ namespace QuanLyKS
             sidebarTimer.Start();
             PaymentUC pa_uc = new PaymentUC();
             AddUserControl(pa_uc);
+            pa_uc.Idnv = this.Idnv;
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)

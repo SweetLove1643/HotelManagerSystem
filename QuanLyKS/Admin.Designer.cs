@@ -133,7 +133,7 @@ namespace QuanLyKS
             this.btnProperties.Name = "btnProperties";
             this.btnProperties.Size = new System.Drawing.Size(145, 45);
             this.btnProperties.TabIndex = 26;
-            this.btnProperties.Text = "Vũ Anh";
+            this.btnProperties.Text = "Admin";
             this.btnProperties.Click += new System.EventHandler(this.btnProperties_Click);
             // 
             // accountContainer
@@ -164,7 +164,7 @@ namespace QuanLyKS
             this.accountBtn.Name = "accountBtn";
             this.accountBtn.Size = new System.Drawing.Size(231, 44);
             this.accountBtn.TabIndex = 1;
-            this.accountBtn.Text = "Account";
+            this.accountBtn.Text = "Tài khoản";
             this.accountBtn.Click += new System.EventHandler(this.accountBtn_Click);
             // 
             // customerAccBtn
@@ -247,7 +247,7 @@ namespace QuanLyKS
             this.employeeBtn.Name = "employeeBtn";
             this.employeeBtn.Size = new System.Drawing.Size(231, 44);
             this.employeeBtn.TabIndex = 1;
-            this.employeeBtn.Text = "Employee";
+            this.employeeBtn.Text = "Nhân viên";
             this.employeeBtn.Click += new System.EventHandler(this.employeeBtn_Click);
             // 
             // guna2Panel10
@@ -273,7 +273,7 @@ namespace QuanLyKS
             this.customerBtn.Name = "customerBtn";
             this.customerBtn.Size = new System.Drawing.Size(231, 44);
             this.customerBtn.TabIndex = 1;
-            this.customerBtn.Text = "Customer";
+            this.customerBtn.Text = "Khách hàng";
             this.customerBtn.Click += new System.EventHandler(this.customerBtn_Click);
             // 
             // guna2Panel9
@@ -299,7 +299,7 @@ namespace QuanLyKS
             this.InvoiceBtn.Name = "InvoiceBtn";
             this.InvoiceBtn.Size = new System.Drawing.Size(231, 44);
             this.InvoiceBtn.TabIndex = 1;
-            this.InvoiceBtn.Text = "Invoice";
+            this.InvoiceBtn.Text = "Hóa đơn";
             this.InvoiceBtn.Click += new System.EventHandler(this.InvoiceBtn_Click);
             // 
             // guna2Panel8
@@ -325,7 +325,7 @@ namespace QuanLyKS
             this.roomBtn.Name = "roomBtn";
             this.roomBtn.Size = new System.Drawing.Size(231, 44);
             this.roomBtn.TabIndex = 1;
-            this.roomBtn.Text = "Room";
+            this.roomBtn.Text = "Phòng";
             this.roomBtn.Click += new System.EventHandler(this.roomBtn_Click);
             // 
             // blankContainer
@@ -375,7 +375,7 @@ namespace QuanLyKS
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(231, 44);
             this.btnLogout.TabIndex = 1;
-            this.btnLogout.Text = "Log out";
+            this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // accountTimer

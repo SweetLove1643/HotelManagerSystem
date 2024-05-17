@@ -74,7 +74,7 @@ namespace QuanLyKS
             this.txbUsername.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.txbUsername.BorderThickness = 0;
             this.txbUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbUsername.DefaultText = "0947119702";
+            this.txbUsername.DefaultText = "trungtreo207@gmail.com";
             this.txbUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txbUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txbUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -207,7 +207,7 @@ namespace QuanLyKS
             this.btnForgetPass.LinkColor = System.Drawing.Color.Gray;
             this.btnForgetPass.Location = new System.Drawing.Point(467, 326);
             this.btnForgetPass.Name = "btnForgetPass";
-            this.btnForgetPass.Size = new System.Drawing.Size(113, 17);
+            this.btnForgetPass.Size = new System.Drawing.Size(103, 16);
             this.btnForgetPass.TabIndex = 10;
             this.btnForgetPass.TabStop = true;
             this.btnForgetPass.Text = "Quên mật khẩu?";

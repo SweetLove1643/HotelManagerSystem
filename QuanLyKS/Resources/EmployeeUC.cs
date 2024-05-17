@@ -39,19 +39,6 @@ namespace QuanLyKS.Resources
                 MessageBox.Show(ex.Message);
             }
         }
-        private void updateBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                updateBtn.Visible = false;
-                deleteBtn.Visible = false;
-                confirmBtn.Visible = true;
-            }
-            catch (FormatException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
 
         private void confirmBtn_Click(object sender, EventArgs e)
         {
@@ -61,24 +48,21 @@ namespace QuanLyKS.Resources
                 {
                     if (IsValidEmail(txbMail.Text))
                     {
-                        updateBtn.Visible = true;
-                        deleteBtn.Visible = true;
-                        confirmBtn.Visible = false;
                         string sex = "Nam";
                         if (ChbFemale.Checked == true)
                             sex = "Nữ";
                         DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.NhanVien SET TenNV = N'{txbName.Text}', GioiTinh = '{sex}', NgaySinh = '{DateOfBirth.Value.ToString("yyyy/MM/dd")}', SDT = '{txbPhone.Text}', CCCD = '{txbCCCD.Text}', Mail = '{txbMail.Text}' WHERE IDNV = {txbManhanvien.Text}");
-                        MessageBox.Show("Cập nhập thành công", "Messages", MessageBoxButtons.OK);
+                        MessageBox.Show("Cập nhập thành công", "Thông báo", MessageBoxButtons.OK);
                         LoadFormEmployyes();
                     }
                     else
                     {
-                        MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập đúng định dạng số điện thoại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (SqlException ex)
@@ -89,7 +73,7 @@ namespace QuanLyKS.Resources
 
         private void dtgvEmployyes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            updateBtn.Visible = true;
+            confirmBtn.Visible = true;
             deleteBtn.Visible = true;
             LoadBidings();
         }

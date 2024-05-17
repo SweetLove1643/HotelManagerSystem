@@ -53,9 +53,8 @@ namespace QuanLyKS.Resources
             this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
             this.deleteBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.addBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.confirmBtn = new Guna.UI2.WinForms.Guna2Button();
             this.dtgvroom = new System.Windows.Forms.DataGridView();
+            this.addBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvroom)).BeginInit();
             this.SuspendLayout();
@@ -73,12 +72,13 @@ namespace QuanLyKS.Resources
             this.updateBtn.ForeColor = System.Drawing.Color.Black;
             this.updateBtn.Image = ((System.Drawing.Image)(resources.GetObject("updateBtn.Image")));
             this.updateBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.updateBtn.Location = new System.Drawing.Point(410, 550);
+            this.updateBtn.Location = new System.Drawing.Point(420, 550);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(200, 40);
             this.updateBtn.TabIndex = 28;
             this.updateBtn.Text = "Cập nhật";
-            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            this.updateBtn.Visible = false;
+            this.updateBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // guna2HtmlLabel17
             // 
@@ -430,52 +430,13 @@ namespace QuanLyKS.Resources
             this.deleteBtn.ForeColor = System.Drawing.Color.Black;
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.deleteBtn.Location = new System.Drawing.Point(700, 550);
+            this.deleteBtn.Location = new System.Drawing.Point(720, 550);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(200, 40);
             this.deleteBtn.TabIndex = 29;
             this.deleteBtn.Text = "Xóa";
+            this.deleteBtn.Visible = false;
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
-            // 
-            // addBtn
-            // 
-            this.addBtn.BorderRadius = 10;
-            this.addBtn.BorderThickness = 1;
-            this.addBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.ForeColor = System.Drawing.Color.Black;
-            this.addBtn.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.Image")));
-            this.addBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.addBtn.Location = new System.Drawing.Point(100, 550);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(200, 40);
-            this.addBtn.TabIndex = 27;
-            this.addBtn.Text = "Thêm";
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
-            // 
-            // confirmBtn
-            // 
-            this.confirmBtn.BorderRadius = 10;
-            this.confirmBtn.BorderThickness = 1;
-            this.confirmBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.confirmBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.confirmBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.confirmBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.confirmBtn.FillColor = System.Drawing.Color.LightCoral;
-            this.confirmBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmBtn.ForeColor = System.Drawing.Color.Black;
-            this.confirmBtn.Image = ((System.Drawing.Image)(resources.GetObject("confirmBtn.Image")));
-            this.confirmBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.confirmBtn.Location = new System.Drawing.Point(410, 550);
-            this.confirmBtn.Name = "confirmBtn";
-            this.confirmBtn.Size = new System.Drawing.Size(200, 40);
-            this.confirmBtn.TabIndex = 30;
-            this.confirmBtn.Text = "Xác nhận";
-            this.confirmBtn.Click += new System.EventHandler(this.confirmBtn_Click);
             // 
             // dtgvroom
             // 
@@ -497,6 +458,27 @@ namespace QuanLyKS.Resources
             this.dtgvroom.TabIndex = 31;
             this.dtgvroom.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvroom_CellClick);
             // 
+            // addBtn
+            // 
+            this.addBtn.BorderRadius = 10;
+            this.addBtn.BorderThickness = 1;
+            this.addBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addBtn.FillColor = System.Drawing.Color.LightCoral;
+            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.ForeColor = System.Drawing.Color.Black;
+            this.addBtn.Image = ((System.Drawing.Image)(resources.GetObject("addBtn.Image")));
+            this.addBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addBtn.Location = new System.Drawing.Point(100, 550);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(200, 40);
+            this.addBtn.TabIndex = 27;
+            this.addBtn.Text = "Thêm";
+            this.addBtn.Visible = false;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
             // RoomUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -509,7 +491,6 @@ namespace QuanLyKS.Resources
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txbSeach);
             this.Controls.Add(this.updateBtn);
-            this.Controls.Add(this.confirmBtn);
             this.Name = "RoomUC";
             this.Size = new System.Drawing.Size(1020, 600);
             this.guna2Panel1.ResumeLayout(false);
@@ -537,13 +518,12 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox txbSeach;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Button deleteBtn;
-        private Guna.UI2.WinForms.Guna2Button addBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private Guna.UI2.WinForms.Guna2TextBox txbmota;
-        private Guna.UI2.WinForms.Guna2Button confirmBtn;
         private System.Windows.Forms.DataGridView dtgvroom;
         private Guna.UI2.WinForms.Guna2ComboBox cbStatus;
         private Guna.UI2.WinForms.Guna2ComboBox txbroomtype;
+        private Guna.UI2.WinForms.Guna2Button addBtn;
     }
 }

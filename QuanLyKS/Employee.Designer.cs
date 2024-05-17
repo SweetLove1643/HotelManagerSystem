@@ -121,9 +121,9 @@ namespace QuanLyKS
             this.guna2Button6.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.guna2Button6.Location = new System.Drawing.Point(60, 9);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(145, 45);
+            this.guna2Button6.Size = new System.Drawing.Size(152, 45);
             this.guna2Button6.TabIndex = 26;
-            this.guna2Button6.Text = "Vũ Anh";
+            this.guna2Button6.Text = "Employee";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Panel3
@@ -149,7 +149,7 @@ namespace QuanLyKS
             this.btnCheckIn.Name = "btnCheckIn";
             this.btnCheckIn.Size = new System.Drawing.Size(231, 44);
             this.btnCheckIn.TabIndex = 1;
-            this.btnCheckIn.Text = "Check-in";
+            this.btnCheckIn.Text = "Nhận phòng";
             this.btnCheckIn.Click += new System.EventHandler(this.btnCheckIn_Click);
             // 
             // guna2Panel2
@@ -175,7 +175,7 @@ namespace QuanLyKS
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(231, 44);
             this.btnPayment.TabIndex = 1;
-            this.btnPayment.Text = "Payment";
+            this.btnPayment.Text = "Thanh toán";
             this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // guna2Panel10
@@ -305,7 +305,7 @@ namespace QuanLyKS
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.Size = new System.Drawing.Size(231, 44);
             this.logoutBtn.TabIndex = 1;
-            this.logoutBtn.Text = "Log out";
+            this.logoutBtn.Text = "Đăng xuất";
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // guna2Button8

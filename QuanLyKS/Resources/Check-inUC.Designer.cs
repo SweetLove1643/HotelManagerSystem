@@ -33,6 +33,9 @@ namespace QuanLyKS.Resources
             this.btnCorrect = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txbRoomcode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rtbMota = new System.Windows.Forms.RichTextBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -49,9 +52,6 @@ namespace QuanLyKS.Resources
             this.txbUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvRoomCheckin = new System.Windows.Forms.DataGridView();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rtbMota = new System.Windows.Forms.RichTextBox();
-            this.txbRoomcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvRoomCheckin)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@ namespace QuanLyKS.Resources
             this.btnCorrect.ForeColor = System.Drawing.Color.Black;
             this.btnCorrect.Image = ((System.Drawing.Image)(resources.GetObject("btnCorrect.Image")));
             this.btnCorrect.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCorrect.Location = new System.Drawing.Point(625, 550);
+            this.btnCorrect.Location = new System.Drawing.Point(610, 546);
             this.btnCorrect.Name = "btnCorrect";
             this.btnCorrect.Size = new System.Drawing.Size(200, 40);
             this.btnCorrect.TabIndex = 35;
@@ -112,6 +112,55 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(600, 490);
             this.guna2Panel1.TabIndex = 32;
+            // 
+            // txbRoomcode
+            // 
+            this.txbRoomcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbRoomcode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbRoomcode.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.txbRoomcode.BorderThickness = 0;
+            this.txbRoomcode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbRoomcode.DefaultText = "";
+            this.txbRoomcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbRoomcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbRoomcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbRoomcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbRoomcode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbRoomcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbRoomcode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txbRoomcode.ForeColor = System.Drawing.Color.Black;
+            this.txbRoomcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbRoomcode.Location = new System.Drawing.Point(190, 70);
+            this.txbRoomcode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbRoomcode.Name = "txbRoomcode";
+            this.txbRoomcode.PasswordChar = '\0';
+            this.txbRoomcode.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txbRoomcode.PlaceholderText = "";
+            this.txbRoomcode.ReadOnly = true;
+            this.txbRoomcode.SelectedText = "";
+            this.txbRoomcode.Size = new System.Drawing.Size(400, 40);
+            this.txbRoomcode.TabIndex = 72;
+            // 
+            // rtbMota
+            // 
+            this.rtbMota.Location = new System.Drawing.Point(190, 314);
+            this.rtbMota.Name = "rtbMota";
+            this.rtbMota.ReadOnly = true;
+            this.rtbMota.Size = new System.Drawing.Size(407, 154);
+            this.rtbMota.TabIndex = 71;
+            this.rtbMota.Text = "";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 314);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel1.TabIndex = 70;
+            this.guna2HtmlLabel1.Text = "Mô tả";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -369,55 +418,6 @@ namespace QuanLyKS.Resources
             this.dtgvRoomCheckin.Size = new System.Drawing.Size(387, 490);
             this.dtgvRoomCheckin.TabIndex = 36;
             this.dtgvRoomCheckin.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvRoomCheckin_CellClick);
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 314);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 30);
-            this.guna2HtmlLabel1.TabIndex = 70;
-            this.guna2HtmlLabel1.Text = "Mô tả";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // rtbMota
-            // 
-            this.rtbMota.Location = new System.Drawing.Point(190, 314);
-            this.rtbMota.Name = "rtbMota";
-            this.rtbMota.ReadOnly = true;
-            this.rtbMota.Size = new System.Drawing.Size(407, 154);
-            this.rtbMota.TabIndex = 71;
-            this.rtbMota.Text = "";
-            // 
-            // txbRoomcode
-            // 
-            this.txbRoomcode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbRoomcode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbRoomcode.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.txbRoomcode.BorderThickness = 0;
-            this.txbRoomcode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbRoomcode.DefaultText = "";
-            this.txbRoomcode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbRoomcode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbRoomcode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbRoomcode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbRoomcode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbRoomcode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbRoomcode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txbRoomcode.ForeColor = System.Drawing.Color.Black;
-            this.txbRoomcode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbRoomcode.Location = new System.Drawing.Point(190, 70);
-            this.txbRoomcode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txbRoomcode.Name = "txbRoomcode";
-            this.txbRoomcode.PasswordChar = '\0';
-            this.txbRoomcode.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.txbRoomcode.PlaceholderText = "";
-            this.txbRoomcode.ReadOnly = true;
-            this.txbRoomcode.SelectedText = "";
-            this.txbRoomcode.Size = new System.Drawing.Size(400, 40);
-            this.txbRoomcode.TabIndex = 72;
             // 
             // Check_inUC
             // 

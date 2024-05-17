@@ -52,6 +52,8 @@ namespace QuanLyKS.Resources
             this.btnThanhtoan = new Guna.UI2.WinForms.Guna2Button();
             this.txbSeach = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtgvPayment = new System.Windows.Forms.DataGridView();
+            this.prfDocument = new System.Drawing.Printing.PrintDocument();
+            this.prfDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPayment)).BeginInit();
             this.SuspendLayout();
@@ -366,7 +368,7 @@ namespace QuanLyKS.Resources
             this.btnThanhtoan.ForeColor = System.Drawing.Color.Black;
             this.btnThanhtoan.Image = ((System.Drawing.Image)(resources.GetObject("btnThanhtoan.Image")));
             this.btnThanhtoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnThanhtoan.Location = new System.Drawing.Point(625, 550);
+            this.btnThanhtoan.Location = new System.Drawing.Point(610, 546);
             this.btnThanhtoan.Name = "btnThanhtoan";
             this.btnThanhtoan.Size = new System.Drawing.Size(200, 40);
             this.btnThanhtoan.TabIndex = 40;
@@ -421,6 +423,20 @@ namespace QuanLyKS.Resources
             this.dtgvPayment.TabIndex = 41;
             this.dtgvPayment.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvPayment_CellClick);
             // 
+            // prfDocument
+            // 
+            this.prfDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.prfDocument_PrintPage);
+            // 
+            // prfDialog
+            // 
+            this.prfDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.prfDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.prfDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.prfDialog.Enabled = true;
+            this.prfDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("prfDialog.Icon")));
+            this.prfDialog.Name = "prfDialog";
+            this.prfDialog.Visible = false;
+            // 
             // PaymentUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -463,5 +479,7 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox txbSeach;
         private System.Windows.Forms.DataGridView dtgvPayment;
         private Guna.UI2.WinForms.Guna2ComboBox txbPhuongthuc;
+        private System.Drawing.Printing.PrintDocument prfDocument;
+        private System.Windows.Forms.PrintPreviewDialog prfDialog;
     }
 }

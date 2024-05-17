@@ -77,10 +77,8 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                addBtn.Visible = true;
                 updateBtn.Visible = true;
                 deleteBtn.Visible = true;
-                confirmBtn.Visible = false;
                 int status = 0;
                 if (cbStatus.Text == "Đang sửa chữa")
                     status = -1;
@@ -88,29 +86,13 @@ namespace QuanLyKS.Resources
                     status = 1;
                 if (DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.Phong SET LoaiPhong = N'{txbroomtype.Text}' ,SucChua = {txbsucchua.Text} , Gia = {Regex.Replace(txbprice.Text, @"[^\d.]", "")} , TrangThai = {status} , Mota = N'{txbmota.Text}' WHERE MaPhong = N'{txbroomcode.Text}'") != 0)
                 {
-                    MessageBox.Show("Cập nhật thành công.", "Messages", MessageBoxButtons.OK);
+                    MessageBox.Show("Cập nhật thành công.", "Thông báo", MessageBoxButtons.OK);
                     LoadFormRoom();
                 }
                 else
                 {
-                    MessageBox.Show("Mã phòng này không tồn tại.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Mã phòng này không tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void updateBtn_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                addBtn.Visible = false;
-                updateBtn.Visible = false;
-                deleteBtn.Visible = false;
-                confirmBtn.Visible = true;
-               
             }
             catch (SqlException ex)
             {
@@ -121,6 +103,9 @@ namespace QuanLyKS.Resources
         private void dtgvroom_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             AddBindings();
+            addBtn.Visible = true;
+            updateBtn.Visible = true;
+            deleteBtn.Visible = true;
         }
 
         private void txbSeach_TextChanged(object sender, EventArgs e)
@@ -142,7 +127,7 @@ namespace QuanLyKS.Resources
             {
                 if (DataProvider.Instance.ExecuteQuerry($"SELECT 1 FROM dbo.Phong WHERE MaPhong = '{txbroomcode.Text}'").Rows.Count > 0) 
                 {
-                    MessageBox.Show("Mã phòng này đã tồn tại", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    MessageBox.Show("Mã phòng này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 }
                 else
                 {
@@ -152,7 +137,7 @@ namespace QuanLyKS.Resources
                     else if (cbStatus.Text == "Đang cho thuê")
                         status = 1;
                     DataProvider.Instance.ExecuteQuerry("EXEC dbo.CreateNewRoom @Roomcode , @Roomtype , @Mota , @Status , @Price , @SucChua ", new object[] {txbroomcode.Text, txbroomtype.Text, txbmota.Text, status, Regex.Replace(txbprice.Text, @"[^\d.]", ""), txbsucchua.Text});
-                    MessageBox.Show("Thêm phòng mới thành công", "Messages", MessageBoxButtons.OK);
+                    MessageBox.Show("Thêm phòng mới thành công", "Thông báo", MessageBoxButtons.OK);
                     LoadFormRoom();
                 }
             }
@@ -168,12 +153,12 @@ namespace QuanLyKS.Resources
             {
                 if (DataProvider.Instance.ExecuteNonQuerry($"DELETE FROM dbo.Phong WHERE MaPhong = '{txbroomcode.Text}'") != 0)
                 {
-                    MessageBox.Show("Xóa thành công.", "Messages", MessageBoxButtons.OK);
+                    MessageBox.Show("Xóa thành công.", "Thông báo", MessageBoxButtons.OK);
                     LoadFormRoom();
                 }
                 else
                 {
-                    MessageBox.Show("Phòng này không tồn tại.", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    MessageBox.Show("Phòng này không tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 }
             }
             catch(SqlException ex)

@@ -284,7 +284,7 @@ namespace QuanLyKS
             this.userBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.userBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.userBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.userBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.userBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userBtn.ForeColor = System.Drawing.Color.Black;
             this.userBtn.Image = ((System.Drawing.Image)(resources.GetObject("userBtn.Image")));
             this.userBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -292,7 +292,7 @@ namespace QuanLyKS
             this.userBtn.Name = "userBtn";
             this.userBtn.Size = new System.Drawing.Size(191, 44);
             this.userBtn.TabIndex = 1;
-            this.userBtn.Text = "Vu Anh";
+            this.userBtn.Text = "Guest";
             this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // guna2Panel1
@@ -319,7 +319,7 @@ namespace QuanLyKS
             this.accountBtn.Name = "accountBtn";
             this.accountBtn.Size = new System.Drawing.Size(188, 35);
             this.accountBtn.TabIndex = 1;
-            this.accountBtn.Text = "Account";
+            this.accountBtn.Text = "Tài khoản";
             this.accountBtn.Click += new System.EventHandler(this.accountBtn_Click);
             // 
             // guna2Panel2
@@ -346,7 +346,7 @@ namespace QuanLyKS
             this.bookingBtn.Name = "bookingBtn";
             this.bookingBtn.Size = new System.Drawing.Size(188, 35);
             this.bookingBtn.TabIndex = 1;
-            this.bookingBtn.Text = "Booking";
+            this.bookingBtn.Text = "Đặt phòng";
             this.bookingBtn.Click += new System.EventHandler(this.bookingBtn_Click);
             // 
             // guna2Panel3
@@ -373,7 +373,7 @@ namespace QuanLyKS
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.Size = new System.Drawing.Size(188, 35);
             this.logoutBtn.TabIndex = 1;
-            this.logoutBtn.Text = "Log out";
+            this.logoutBtn.Text = "Đăng xuất";
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // accountTimer
