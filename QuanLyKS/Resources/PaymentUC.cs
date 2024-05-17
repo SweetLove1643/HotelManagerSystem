@@ -58,7 +58,12 @@ namespace QuanLyKS.Resources
                     TimeSpan timeSpan = DateTime.Now - DateOfBirth.Value;
                     this.Idbienlai = data.Cells["Mã biên lai"].Value.ToString();
                     txbTotalprice.Text = (timeSpan.TotalDays * double.Parse(data.Cells["TienPhong"].Value.ToString()) - double.Parse(data.Cells["discount"].Value.ToString()) + double.Parse(data.Cells["VAT"].Value.ToString())).ToString();
-                    txbTotalprice.Text = Math.Round(double.Parse(txbTotalprice.Text), 2).ToString() + " vnđ";
+                    double total = Math.Round(double.Parse(txbTotalprice.Text), 2);
+                    if(total < 0)
+                    {
+                        total = 0;
+                    }
+                    txbTotalprice.Text = total.ToString() + " vnđ";
                 }
             }
             catch (FormatException ex)
