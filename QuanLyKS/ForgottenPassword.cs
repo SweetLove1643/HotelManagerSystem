@@ -82,7 +82,7 @@ namespace QuanLyKS
                 smtp.Credentials = new NetworkCredential("Hotel.HL.BB@gmail.com", "ucfocygvvxbawius");
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
                 smtp.Send(message);
-                MessageBox.Show("OTP đã được gửi qua mail", "Messages", MessageBoxButtons.OK);
+                //MessageBox.Show("OTP đã được gửi qua mail", "Messages", MessageBoxButtons.OK);
             }
             catch (FormatException ex)
             {

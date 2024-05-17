@@ -121,8 +121,8 @@ namespace QuanLyKS
             accountTimer.Start();
             blankTimer.Start();
 
-            AddUserControl(ac_uc);
-            ac_uc.LoadFormAccount();
+            /*AddUserControl(ac_uc);
+            ac_uc.LoadFormAccount();*/
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
