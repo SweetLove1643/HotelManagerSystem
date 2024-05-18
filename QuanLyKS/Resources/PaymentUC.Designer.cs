@@ -76,7 +76,6 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel1.Controls.Add(this.DateOfBirth);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel15);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel14);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel13);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel9);
@@ -89,6 +88,7 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Controls.Add(this.txbGuestcode);
             this.guna2Panel1.Controls.Add(this.guna2Panel9);
             this.guna2Panel1.Controls.Add(this.txbUserName);
+            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel14);
             this.guna2Panel1.Location = new System.Drawing.Point(420, 50);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(600, 490);
@@ -97,19 +97,19 @@ namespace QuanLyKS.Resources
             // txbPhuongthuc
             // 
             this.txbPhuongthuc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbPhuongthuc.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbPhuongthuc.BorderColor = System.Drawing.Color.Gray;
             this.txbPhuongthuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txbPhuongthuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txbPhuongthuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbPhuongthuc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbPhuongthuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPhuongthuc.FocusedColor = System.Drawing.Color.Gray;
+            this.txbPhuongthuc.FocusedState.BorderColor = System.Drawing.Color.Gray;
             this.txbPhuongthuc.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txbPhuongthuc.ForeColor = System.Drawing.Color.Black;
             this.txbPhuongthuc.ItemHeight = 30;
             this.txbPhuongthuc.Items.AddRange(new object[] {
             "Chuyển khoản",
             "Tiền mặt"});
-            this.txbPhuongthuc.Location = new System.Drawing.Point(190, 330);
+            this.txbPhuongthuc.Location = new System.Drawing.Point(190, 320);
             this.txbPhuongthuc.Name = "txbPhuongthuc";
             this.txbPhuongthuc.Size = new System.Drawing.Size(400, 36);
             this.txbPhuongthuc.TabIndex = 68;
@@ -119,9 +119,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 330);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(20, 315);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel1.TabIndex = 66;
             this.guna2HtmlLabel1.Text = "Phương thức";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,9 +148,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel15.AutoSize = false;
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(20, 270);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(20, 255);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            this.guna2HtmlLabel15.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel15.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel15.TabIndex = 63;
             this.guna2HtmlLabel15.Text = "Tổng tiền";
             this.guna2HtmlLabel15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -160,9 +160,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel14.AutoSize = false;
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 200);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(20, 190);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
-            this.guna2HtmlLabel14.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel14.Size = new System.Drawing.Size(170, 41);
             this.guna2HtmlLabel14.TabIndex = 62;
             this.guna2HtmlLabel14.Text = "Ngày nhận phòng";
             this.guna2HtmlLabel14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,9 +172,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel13.AutoSize = false;
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(20, 140);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(20, 130);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel13.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel13.TabIndex = 61;
             this.guna2HtmlLabel13.Text = "Mã phòng";
             this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -184,9 +184,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel10.AutoSize = false;
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(20, 80);
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(20, 70);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel10.TabIndex = 58;
             this.guna2HtmlLabel10.Text = "Mã khách hàng";
             this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,9 +196,9 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel9.AutoSize = false;
             this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(20, 20);
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(20, 10);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(150, 30);
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(150, 41);
             this.guna2HtmlLabel9.TabIndex = 57;
             this.guna2HtmlLabel9.Text = "Tên khách hàng";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,7 +206,7 @@ namespace QuanLyKS.Resources
             // guna2Panel7
             // 
             this.guna2Panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel7.Location = new System.Drawing.Point(190, 300);
+            this.guna2Panel7.Location = new System.Drawing.Point(190, 295);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.Size = new System.Drawing.Size(400, 1);
             this.guna2Panel7.TabIndex = 45;
@@ -228,7 +228,7 @@ namespace QuanLyKS.Resources
             this.txbTotalprice.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTotalprice.ForeColor = System.Drawing.Color.Black;
             this.txbTotalprice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbTotalprice.Location = new System.Drawing.Point(190, 260);
+            this.txbTotalprice.Location = new System.Drawing.Point(190, 255);
             this.txbTotalprice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbTotalprice.Name = "txbTotalprice";
             this.txbTotalprice.PasswordChar = '\0';
@@ -242,7 +242,7 @@ namespace QuanLyKS.Resources
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel6.Location = new System.Drawing.Point(190, 360);
+            this.guna2Panel6.Location = new System.Drawing.Point(190, 355);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(400, 1);
             this.guna2Panel6.TabIndex = 45;

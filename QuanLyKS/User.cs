@@ -18,11 +18,6 @@ namespace QuanLyKS
         private Booking bF;
         public string Username { get => username; set => username = value; }
         public Booking BF { get => bF; set => bF = value; }
-
-        public User()
-        {
-            InitializeComponent();
-        }
         public User(string Username)
         {
             InitializeComponent();

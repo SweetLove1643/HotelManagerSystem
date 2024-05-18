@@ -93,7 +93,7 @@ namespace QuanLyKS
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            User u = new User();
+            User u = new User(Username);
             this.Hide();
             u.Show();
         }

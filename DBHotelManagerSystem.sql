@@ -3,7 +3,6 @@ GO
 
 USE DBHotelManagerSystem
 go
-
 create table NhanVien
 (
 	IDNV INT IDENTITY PRIMARY KEY, -- id tự tăng
@@ -17,7 +16,6 @@ create table NhanVien
 	QuocTich NVARCHAR(50)
 )
 GO
-
 create table Khach
 (
 	IDKhach INT IDENTITY PRIMARY KEY, -- id tự tăng
@@ -30,7 +28,6 @@ create table Khach
 	Mail varchar(50) NOT NULL UNIQUE
 )
 GO
-
 create table Phong
 (
 	MaPhong VARCHAR(20) PRIMARY KEY,
@@ -42,7 +39,6 @@ create table Phong
     
 )
 GO
-
 CREATE TABLE DatTruoc(
 	ID INT IDENTITY PRIMARY KEY,
 	IDKhach INT REFERENCES dbo.Khach(IDKhach) ON DELETE SET NULL,
@@ -52,7 +48,6 @@ CREATE TABLE DatTruoc(
 	TienCoc MONEY
 )
 GO
-
 create table BienLai
 (
 	IDBienLai INT IDENTITY PRIMARY KEY,
@@ -71,7 +66,6 @@ create table BienLai
 	TenPhuongThuc NVARCHAR(20), -- chuyển khoản hoặc tiền mặt
 )
 GO
-
 create table TaiKhoan
 (
 	SDT VARCHAR(30) UNIQUE NOT NULL,
@@ -81,14 +75,6 @@ create table TaiKhoan
 	PRIMARY KEY(SDT,Mail)	
 )
 GO
-
-CREATE TABLE KhachInfoBill(
-	ID INT IDENTITY PRIMARY KEY,
-	IDKhach INT REFERENCES dbo.Khach(IDKhach) ON DELETE SET NULL,
-	IDBienLai INT REFERENCES dbo.BienLai(IDBienLai) ON DELETE SET NULL
-)
-GO
-
 CREATE TRIGGER Unique_CCCD_NhanVien
 ON dbo.NhanVien
 AFTER INSERT, UPDATE
@@ -101,7 +87,6 @@ BEGIN
 	END
 END
 GO
-
 CREATE TRIGGER Unique_CCCD_Khach
 ON dbo.Khach
 AFTER INSERT, UPDATE
@@ -114,7 +99,6 @@ BEGIN
 	END
 END
 GO
-
 CREATE TRIGGER Unique_MaPhong_Phong
 ON dbo.Phong
 AFTER INSERT
@@ -127,7 +111,6 @@ BEGIN
 	END
 END
 GO
-
 CREATE TRIGGER Check_NgayTra_DatTruoc
 ON dbo.DatTruoc
 AFTER INSERT, UPDATE
@@ -140,7 +123,6 @@ BEGIN
 	END
 END
 GO
-
 CREATE TRIGGER Update_Tongtien_BienLai
 ON dbo.BienLai
 AFTER INSERT, UPDATE
@@ -155,7 +137,6 @@ BEGIN
 	TrangThai = CASE WHEN NgayRa IS NOT NULL THEN 1 ELSE 0 END
 END
 GO
-
 CREATE TRIGGER Insert_TienPhong
 ON dbo.BienLai
 AFTER INSERT
@@ -164,7 +145,7 @@ BEGIN
     UPDATE dbo.BienLai
 	SET TienPhong = (SELECT Gia FROM dbo.Phong WHERE dbo.BienLai.MaPhong = dbo.Phong.MaPhong)
 END
-
+GO
 CREATE TRIGGER Unique_SDT_Mail_TaiKhoan
 ON dbo.TaiKhoan
 AFTER INSERT, UPDATE
@@ -183,8 +164,6 @@ BEGIN
 	END
 END
 GO
-
-
 CREATE PROCEDURE CreateNewAccount -- tạo tài khoản mới
 	@SDT VARCHAR(30), @Mail VARCHAR(30), @Password NVARCHAR(150), @Accounttype NVARCHAR(20)
 AS
@@ -204,7 +183,6 @@ BEGIN
         )
 END
 GO
-
 CREATE PROCEDURE CreateNewGuest --tạo khách
 @Guestname NVARCHAR(50),
 @Sex NVARCHAR(5),
@@ -236,7 +214,6 @@ BEGIN
     )
 END
 GO
-
 CREATE PROC CreateNewPersonnel -- thêm nhân viên
 @Name NVARCHAR(50),
 @Sex NVARCHAR(5),
@@ -271,14 +248,12 @@ BEGIN
         )
 END
 GO
-
 CREATE PROC SeachEmail @Email VARCHAR(30) -- kiểm tra account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE Mail = @Email
 END
 GO
-
 CREATE PROC ChangePassword @Email VARCHAR(30), @Newpassword NVARCHAR(150) -- đổi pass
 AS
 BEGIN
@@ -287,7 +262,6 @@ BEGIN
 	WHERE Mail = @Email
 END
 GO
-
 CREATE FUNCTION CheckAccount (@username VARCHAR(30), @password NVARCHAR(150)) -- check quyền
 RETURNS INT
 AS
@@ -304,15 +278,12 @@ BEGIN
 	RETURN @accounttype
 END
 GO
-
 CREATE PROC CheckAccountAndPassword @username VARCHAR(30), @password VARCHAR(150) -- check account
 AS
 BEGIN
     SELECT * FROM dbo.TaiKhoan WHERE (SDT = @username OR Mail = @username) AND MatKhau = @password
 END
 GO
-
-
 CREATE PROC CreateNewRoom @Roomcode VARCHAR(20), @Roomtype NVARCHAR(30), @Mota NVARCHAR(500), @Status INT, @Price MONEY, @SucChua INT
 AS
 BEGIN
@@ -335,8 +306,6 @@ BEGIN
         )
 END
 GO
-
-
 CREATE PROC Update_Info_NhanVien @IDNV INT, @Name NVARCHAR(50), @Sex NVARCHAR(5), @Dateofbirth DATE, @Phone VARCHAR(11), @CCCD VARCHAR(15), @Mail VARCHAR(50)
 AS
 BEGIN
@@ -365,7 +334,6 @@ BEGIN
     END
 END
 GO
-
 CREATE PROC Update_Info_KhachHang @IDKH INT, @Name NVARCHAR(50), @Sex NVARCHAR(5), @Dateofbirth DATE, @Phone VARCHAR(11), @CCCD VARCHAR(15), @Mail VARCHAR(50), @Nationality VARCHAR(50)
 AS
 BEGIN
@@ -396,8 +364,6 @@ BEGIN
     END
 END
 GO
-SELECT * FROM dbo.NhanVien
-
 CREATE PROC CreateNewReceipt @Name NVARCHAR(40), @Roomcode VARCHAR(20), @IDNV INT,@Roomprice MONEY, @Discount MONEY, @VAT MONEY
 AS
 BEGIN
@@ -433,7 +399,6 @@ BEGIN
 	    )    
 END
 GO
-
 CREATE PROC Select_Booking @Date1 DATE, @Date2 DATE
 AS
 BEGIN
@@ -444,7 +409,6 @@ BEGIN
 )
 END
 GO
-
 CREATE PROC CreateBooking @IDGuest INT, @Roomcode VARCHAR(20), @Checkin DATE, @Checkout DATE, @Coc MONEY
 AS
 BEGIN

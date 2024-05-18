@@ -42,12 +42,10 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbprice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbsucchua = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.txbroomcode = new Guna.UI2.WinForms.Guna2TextBox();
             this.cbStatus = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -103,12 +101,10 @@ namespace QuanLyKS.Resources
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel13);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel9);
-            this.guna2Panel1.Controls.Add(this.guna2Panel7);
             this.guna2Panel1.Controls.Add(this.guna2Panel6);
             this.guna2Panel1.Controls.Add(this.txbprice);
             this.guna2Panel1.Controls.Add(this.guna2Panel5);
             this.guna2Panel1.Controls.Add(this.txbsucchua);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Controls.Add(this.guna2Panel9);
             this.guna2Panel1.Controls.Add(this.txbroomcode);
             this.guna2Panel1.Controls.Add(this.cbStatus);
@@ -120,12 +116,12 @@ namespace QuanLyKS.Resources
             // txbroomtype
             // 
             this.txbroomtype.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbroomtype.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.txbroomtype.BorderColor = System.Drawing.Color.Gray;
             this.txbroomtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.txbroomtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txbroomtype.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.txbroomtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbroomtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbroomtype.FocusedColor = System.Drawing.Color.Gray;
+            this.txbroomtype.FocusedState.BorderColor = System.Drawing.Color.Gray;
             this.txbroomtype.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txbroomtype.ForeColor = System.Drawing.Color.Black;
             this.txbroomtype.ItemHeight = 30;
@@ -244,14 +240,6 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel9.Text = "Mã phòng";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel7.Location = new System.Drawing.Point(190, 290);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(400, 1);
-            this.guna2Panel7.TabIndex = 45;
-            // 
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
@@ -324,14 +312,6 @@ namespace QuanLyKS.Resources
             this.txbsucchua.TabIndex = 44;
             this.txbsucchua.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbsucchua_KeyPress);
             // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel2.Location = new System.Drawing.Point(190, 110);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(400, 1);
-            this.guna2Panel2.TabIndex = 45;
-            // 
             // guna2Panel9
             // 
             this.guna2Panel9.BackColor = System.Drawing.SystemColors.Control;
@@ -370,12 +350,12 @@ namespace QuanLyKS.Resources
             // cbStatus
             // 
             this.cbStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cbStatus.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
+            this.cbStatus.BorderColor = System.Drawing.Color.Gray;
             this.cbStatus.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(218)))), ((int)(((byte)(222)))));
-            this.cbStatus.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbStatus.FocusedColor = System.Drawing.Color.Gray;
+            this.cbStatus.FocusedState.BorderColor = System.Drawing.Color.Gray;
             this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbStatus.ForeColor = System.Drawing.Color.Black;
             this.cbStatus.ItemHeight = 30;
@@ -511,11 +491,9 @@ namespace QuanLyKS.Resources
         private Guna.UI2.WinForms.Guna2TextBox txbprice;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
         private Guna.UI2.WinForms.Guna2TextBox txbsucchua;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
         private Guna.UI2.WinForms.Guna2TextBox txbroomcode;
         private Guna.UI2.WinForms.Guna2TextBox txbSeach;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
         private Guna.UI2.WinForms.Guna2Button deleteBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;

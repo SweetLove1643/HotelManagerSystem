@@ -110,7 +110,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel16.AutoSize = false;
             this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(20, 435);
+            this.guna2HtmlLabel16.Location = new System.Drawing.Point(20, 440);
             this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
             this.guna2HtmlLabel16.Size = new System.Drawing.Size(150, 40);
             this.guna2HtmlLabel16.TabIndex = 64;
@@ -259,7 +259,7 @@ namespace QuanLyKS.Resources
             this.ChbMale.Name = "ChbMale";
             this.ChbMale.Size = new System.Drawing.Size(140, 40);
             this.ChbMale.TabIndex = 53;
-            this.ChbMale.Text = "Name";
+            this.ChbMale.Text = "Nam";
             this.ChbMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.ChbMale.UncheckedState.BorderRadius = 2;
             this.ChbMale.UncheckedState.BorderThickness = 1;
@@ -518,9 +518,11 @@ namespace QuanLyKS.Resources
             this.dtgvCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvCustomer.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dtgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvCustomer.ColumnHeadersVisible = false;
             this.dtgvCustomer.Location = new System.Drawing.Point(14, 50);
             this.dtgvCustomer.Name = "dtgvCustomer";
             this.dtgvCustomer.ReadOnly = true;
+            this.dtgvCustomer.RowHeadersVisible = false;
             this.dtgvCustomer.RowHeadersWidth = 51;
             this.dtgvCustomer.RowTemplate.Height = 24;
             this.dtgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

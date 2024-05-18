@@ -170,9 +170,9 @@ namespace QuanLyKS
             // guna2Panel6
             // 
             this.guna2Panel6.BackColor = System.Drawing.SystemColors.Control;
-            this.guna2Panel6.Location = new System.Drawing.Point(190, 250);
+            this.guna2Panel6.Location = new System.Drawing.Point(190, 230);
             this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(400, 1);
+            this.guna2Panel6.Size = new System.Drawing.Size(350, 1);
             this.guna2Panel6.TabIndex = 45;
             // 
             // txbTiencoc
@@ -192,7 +192,7 @@ namespace QuanLyKS
             this.txbTiencoc.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txbTiencoc.ForeColor = System.Drawing.Color.Black;
             this.txbTiencoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbTiencoc.Location = new System.Drawing.Point(190, 192);
+            this.txbTiencoc.Location = new System.Drawing.Point(190, 190);
             this.txbTiencoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbTiencoc.Name = "txbTiencoc";
             this.txbTiencoc.PasswordChar = '\0';
@@ -250,6 +250,7 @@ namespace QuanLyKS
             this.txbRoomcode.PasswordChar = '\0';
             this.txbRoomcode.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.txbRoomcode.PlaceholderText = "";
+            this.txbRoomcode.ReadOnly = true;
             this.txbRoomcode.SelectedText = "";
             this.txbRoomcode.Size = new System.Drawing.Size(330, 40);
             this.txbRoomcode.TabIndex = 18;
@@ -316,12 +317,12 @@ namespace QuanLyKS
             this.dtgvroom.AllowUserToAddRows = false;
             this.dtgvroom.AllowUserToDeleteRows = false;
             this.dtgvroom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvroom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgvroom.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dtgvroom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvroom.Location = new System.Drawing.Point(20, 50);
             this.dtgvroom.Name = "dtgvroom";
             this.dtgvroom.ReadOnly = true;
+            this.dtgvroom.RowHeadersVisible = false;
             this.dtgvroom.RowHeadersWidth = 51;
             this.dtgvroom.RowTemplate.Height = 24;
             this.dtgvroom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;

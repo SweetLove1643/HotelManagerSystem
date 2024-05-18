@@ -125,20 +125,27 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                if (DataProvider.Instance.ExecuteQuerry($"SELECT 1 FROM dbo.Phong WHERE MaPhong = '{txbroomcode.Text}'").Rows.Count > 0) 
+                if (string.IsNullOrEmpty(txbroomcode.Text) == false && string.IsNullOrEmpty(txbroomtype.Text) == false && string.IsNullOrEmpty(txbsucchua.Text) == false && string.IsNullOrEmpty(txbprice.Text) == false && string.IsNullOrEmpty(cbStatus.Text) == false && string.IsNullOrEmpty(txbmota.Text) == false)
                 {
-                    MessageBox.Show("Mã phòng này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    if (DataProvider.Instance.ExecuteQuerry($"SELECT 1 FROM dbo.Phong WHERE MaPhong = '{txbroomcode.Text}'").Rows.Count > 0)
+                    {
+                        MessageBox.Show("Mã phòng này đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                    }
+                    else
+                    {
+                        int status = 0;
+                        if (cbStatus.Text == "Đang sửa chữa")
+                            status = -1;
+                        else if (cbStatus.Text == "Đang cho thuê")
+                            status = 1;
+                        DataProvider.Instance.ExecuteQuerry("EXEC dbo.CreateNewRoom @Roomcode , @Roomtype , @Mota , @Status , @Price , @SucChua ", new object[] { txbroomcode.Text, txbroomtype.Text, txbmota.Text, status, Regex.Replace(txbprice.Text, @"[^\d.]", ""), txbsucchua.Text });
+                        MessageBox.Show("Thêm phòng mới thành công", "Thông báo", MessageBoxButtons.OK);
+                        LoadFormRoom();
+                    }
                 }
                 else
                 {
-                    int status = 0;
-                    if (cbStatus.Text == "Đang sửa chữa")
-                        status = -1;
-                    else if (cbStatus.Text == "Đang cho thuê")
-                        status = 1;
-                    DataProvider.Instance.ExecuteQuerry("EXEC dbo.CreateNewRoom @Roomcode , @Roomtype , @Mota , @Status , @Price , @SucChua ", new object[] {txbroomcode.Text, txbroomtype.Text, txbmota.Text, status, Regex.Replace(txbprice.Text, @"[^\d.]", ""), txbsucchua.Text});
-                    MessageBox.Show("Thêm phòng mới thành công", "Thông báo", MessageBoxButtons.OK);
-                    LoadFormRoom();
+                    MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (SqlException ex)
@@ -161,7 +168,7 @@ namespace QuanLyKS.Resources
                     MessageBox.Show("Phòng này không tồn tại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 }
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -171,11 +178,11 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
                 {
                     e.Handled = true;
                 }
-                if((e.KeyChar == '.') && (sender as Guna2TextBox).Text.IndexOf('.') > -1)
+                if ((e.KeyChar == '.') && (sender as Guna2TextBox).Text.IndexOf('.') > -1)
                 {
                     e.Handled = true;
                 }
@@ -190,12 +197,12 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                if(!char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
+                if (!char.IsControl(e.KeyChar) && !Char.IsDigit(e.KeyChar))
                 {
                     e.Handled = true;
                 }
             }
-            catch(FormatException ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show(ex.Message);
             }

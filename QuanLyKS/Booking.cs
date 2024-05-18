@@ -82,11 +82,13 @@ namespace QuanLyKS
                 if (DateCheckout.Value > DateCheckin.Value)
                 {
                     string idguet = "";
-                    DataTable data = DataProvider.Instance.ExecuteQuerry($" SELECT IDKhach FROM dbo.Khach WHERE SDT = '{Username}' OR Mail = '{Username}'");
+                    string nameguest = "";
+                    DataTable data = DataProvider.Instance.ExecuteQuerry($" SELECT IDKhach, TenKhach FROM dbo.Khach WHERE SDT = '{Username}' OR Mail = '{Username}'");
                     if (data != null)
                     {
                         idguet = data.Rows[0]["IDKhach"].ToString();
-                        DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateBooking @IDGuest , @Roomcode , @Checkin , @Checkout ,  @Coc ", new object[] {idguet, txbRoomcode.Text, DateCheckin.Value.ToString("yyyy/MM/dd"), DateCheckout.Value.ToString("yyyy/MM/dd"), txbTiencoc.Text });
+                        nameguest = data.Rows[0]["TenKhach"].ToString();
+                        DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.CreateBooking @IDGuest , @Roomcode , @Checkin , @Checkout ,  @Coc , @TenKhach ", new object[] {idguet, txbRoomcode.Text, DateCheckin.Value.ToString("yyyy/MM/dd"), DateCheckout.Value.ToString("yyyy/MM/dd"), txbTiencoc.Text, nameguest });
                         MessageBox.Show("Đặt phòng thành công", "Messages", MessageBoxButtons.OK);
                         LoadFormBooking();
                     }

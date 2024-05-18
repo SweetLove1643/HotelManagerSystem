@@ -480,7 +480,7 @@ namespace QuanLyKS
             this.ChbMale.Name = "ChbMale";
             this.ChbMale.Size = new System.Drawing.Size(140, 50);
             this.ChbMale.TabIndex = 46;
-            this.ChbMale.Text = "Male";
+            this.ChbMale.Text = "Nam";
             this.ChbMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.ChbMale.UncheckedState.BorderRadius = 2;
             this.ChbMale.UncheckedState.BorderThickness = 1;
@@ -501,7 +501,7 @@ namespace QuanLyKS
             this.ChbFemale.Name = "ChbFemale";
             this.ChbFemale.Size = new System.Drawing.Size(140, 50);
             this.ChbFemale.TabIndex = 47;
-            this.ChbFemale.Text = "Female";
+            this.ChbFemale.Text = "Nữ";
             this.ChbFemale.UncheckedState.BorderColor = System.Drawing.Color.Gray;
             this.ChbFemale.UncheckedState.BorderRadius = 2;
             this.ChbFemale.UncheckedState.BorderThickness = 1;

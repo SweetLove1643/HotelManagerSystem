@@ -107,7 +107,7 @@ namespace QuanLyKS
                         string hasspass = Hashing.Instance.Hash384(txbNewPassword.Text);
                         if (DataProvider.Instance.ExecuteNonQuerry("EXEC dbo.ChangePassword @Email , @Newpassword ", new object[] { mail, hasspass }) != 0)
                         {
-                            MessageBox.Show("Thay đổi mật khẩu thành công", "Messages", MessageBoxButtons.OK);
+                            MessageBox.Show("Cập nhật mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
                             LogIn logIn = new LogIn();
                             logIn.Show();
                             this.Hide();
@@ -117,7 +117,6 @@ namespace QuanLyKS
                     {
                         cnpwPb.Visible = true;
                         invalidInfoTT.SetToolTip(cnpwPb, "Xác nhận lại mật khẩu chưa đúng chưa đúng!");
-                        //MessageBox.Show("Nhập lại mật khẩu chưa đúng!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
@@ -131,13 +130,12 @@ namespace QuanLyKS
                     {
                         npwPb.Visible = true;
                         invalidInfoTT.SetToolTip(npwPb, "Vui lòng nhập mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt!");
-                        //MessageBox.Show("Vui lòng nhật mật khẩu tối thiểu 8 kí tự, có chữ kí tự hoa, thường và đặc biệt ", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
             }
-            catch (FormatException ex)
+            catch
             {
-                MessageBox.Show($"{ex.Message}", "Message", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Tài khoản chưa đăng kí", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

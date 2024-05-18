@@ -121,7 +121,7 @@ namespace QuanLyKS
             this.guna2Button6.HoverState.FillColor = System.Drawing.Color.LightCoral;
             this.guna2Button6.Location = new System.Drawing.Point(60, 9);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(152, 45);
+            this.guna2Button6.Size = new System.Drawing.Size(170, 45);
             this.guna2Button6.TabIndex = 26;
             this.guna2Button6.Text = "Employee";
             this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);

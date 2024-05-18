@@ -186,7 +186,7 @@ namespace QuanLyKS.Resources
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(150, 30);
             this.guna2HtmlLabel5.TabIndex = 91;
-            this.guna2HtmlLabel5.Text = "Discount";
+            this.guna2HtmlLabel5.Text = "Giảm giá";
             this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2HtmlLabel4

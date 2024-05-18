@@ -61,7 +61,7 @@ namespace QuanLyKS.Resources
                     this.Idbienlai = data.Cells["Mã biên lai"].Value.ToString();
                     txbTotalprice.Text = (timeSpan.TotalDays * double.Parse(data.Cells["TienPhong"].Value.ToString()) - double.Parse(data.Cells["discount"].Value.ToString()) + double.Parse(data.Cells["VAT"].Value.ToString())).ToString();
                     double total = Math.Round(double.Parse(txbTotalprice.Text), 2);
-                    if(total < 0)
+                    if (total < 0)
                     {
                         total = 0;
                     }
@@ -84,24 +84,36 @@ namespace QuanLyKS.Resources
         {
             try
             {
-                if(string.IsNullOrEmpty(txbPhuongthuc.Text))
+                if ((string.IsNullOrEmpty(txbUserName.Text) == false || string.IsNullOrEmpty(txbGuestcode.Text) == false) && string.IsNullOrEmpty(txbRoomcode.Text) == false)
                 {
-                    MessageBox.Show("Vui lòng nhập phương thức thanh toán !", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (string.IsNullOrEmpty(txbPhuongthuc.Text))
+                    {
+                        MessageBox.Show("Vui lòng nhập phương thức thanh toán !", "Messages", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        DialogResult inhoadon = MessageBox.Show("Bạn có muốn in hóa đơn không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (inhoadon == DialogResult.Yes)
+                        {
+                            Inhoadon();
+                        }
+                        DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.Phong SET TrangThai = 0 WHERE MaPhong = '{txbRoomcode.Text}'");
+                        DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.BienLai SET TenPhuongThuc = '{txbPhuongthuc.Text}', NgayRa = '{DateTime.Now.ToString("yyyy/MM/dd")}' WHERE IDBienLai = '{Idbienlai}'");
+                        MessageBox.Show("Thanh toán thành công", "Messages", MessageBoxButtons.OK);
+                        LoadFormPayment();
+                        txbUserName.Text = "";
+                        txbGuestcode.Text = "";
+                        txbPhuongthuc.Text = "";
+                        txbRoomcode.Text = "";
+                        txbTotalprice.Text = "";
+                    }
                 }
                 else
                 {
-                    DialogResult inhoadon = MessageBox.Show("Bạn có muốn in hóa đơn không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if(inhoadon == DialogResult.Yes)
-                    {
-                        Inhoadon();
-                    }
-                    DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.Phong SET TrangThai = 0 WHERE MaPhong = '{txbRoomcode.Text}'");
-                    DataProvider.Instance.ExecuteNonQuerry($"UPDATE dbo.BienLai SET TenPhuongThuc = '{txbPhuongthuc.Text}', NgayRa = '{DateTime.Now.ToString("yyyy/MM/dd")}' WHERE IDBienLai = '{Idbienlai}'");
-                    MessageBox.Show("Thanh toán thành công", "Messages", MessageBoxButtons.OK);
-                    LoadFormPayment();
+                    MessageBox.Show("Vui lòng chọn phòng cần thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show(ex.Message);
             }
